@@ -253,12 +253,12 @@ namespace madness {
         // to children but may leave interior nodes without coefficients
         // ... but they still need to sum down so just give them zeros
         if (node.has_children() && !node.has_coeff()) {
-            node.set_coeff(coeffT(cdata.v2k,targs));
+            node.set_coeff(coeffT(cdata.v2k));
         }
 
         if (node.has_children() || node.has_coeff()) { // Must allow for inconsistent state from transform, etc.
             coeffT d = node.coeff();
-            if (!d.has_data()) d = coeffT(cdata.v2k,targs);
+            if (!d.has_data()) d = coeffT(cdata.v2k);
             if (key.level() > 0) d(cdata.s0) += s; // -- note accumulate for NS summation
             if (d.dim(0)==2*get_k()) {              // d might be pre-truncated if it's a leaf
                 d = unfilter(d);
@@ -267,19 +267,18 @@ namespace madness {
                 for (KeyChildIterator<NDIM> kit(key); kit; ++kit) {
                     const keyT& child = kit.key();
                     coeffT ss = copy(d(child_patch(child)));
-                    ss.reduce_rank(thresh);
                     PROFILE_BLOCK(recon_send);
                     woT::task(coeffs.owner(child), &implT::reconstruct_op, child, ss);
                 }
             } else {
                 MADNESS_ASSERT(node.is_leaf());
-//                node.coeff()+=s;
-                node.coeff().reduce_rank(targs.thresh);
+                node.coeff()+=s;
+                //node.coeff().reduce_rank(targs.thresh);
             }
         }
         else {
         	coeffT ss=s;
-        	if (s.has_no_data()) ss=coeffT(cdata.vk,targs);
+        	//if (s.has_no_data()) ss=coeffT(cdata.vk); ??????????????????????????
             if (key.level()) node.set_coeff(copy(ss));
             else node.set_coeff(ss);
         }
@@ -482,65 +481,25 @@ namespace madness {
             }
             else {
                 if (truncate_on_project) {
-                	coeffT s(s0,thresh,FunctionDefaults<NDIM>::get_tensor_type());
+                	coeffT s(s0);
                     coeffs.replace(key,nodeT(s,false));
                 }
                 else {
                     coeffs.replace(key,nodeT(coeffT(),true)); // Insert empty node for parent
                     for (KeyChildIterator<NDIM> it(key); it; ++it) {
                         const keyT& child = it.key();
-                        coeffT s(r(child_patch(child)),thresh,FunctionDefaults<NDIM>::get_tensor_type());
+                        coeffT s(r(child_patch(child)));
                         coeffs.replace(child,nodeT(s,false));
                     }
                 }
             }
         }
         else {
-            coeffs.replace(key,nodeT(coeffT(project(key),targs),false));
+            coeffs.replace(key,nodeT(coeffT(project(key)),false));
         }
         return None;
     }
 
-    template <typename T, std::size_t NDIM>
-    void FunctionImpl<T,NDIM>::add_scalar_inplace(T t, bool fence) {
-        std::vector<long> v0(NDIM,0L);
-        std::vector<long> v1(NDIM,1L);
-        std::vector<Slice> s(NDIM,Slice(0,0));
-        const TensorArgs full_args(-1.0,TT_FULL);
-        if (is_compressed()) {
-            if (world.rank() == coeffs.owner(cdata.key0)) {
-                typename dcT::iterator it = coeffs.find(cdata.key0).get();
-                MADNESS_ASSERT(it != coeffs.end());
-                nodeT& node = it->second;
-                MADNESS_ASSERT(node.has_coeff());
-//                node.node_to_full_rank();
-//                node.full_tensor_reference()(v0) += t*sqrt(FunctionDefaults<NDIM>::get_cell_volume());
-//                node.node_to_low_rank();
-                change_tensor_type(node.coeff(),full_args);
-                node.coeff().full_tensor()(v0) += t*sqrt(FunctionDefaults<NDIM>::get_cell_volume());
-                change_tensor_type(node.coeff(),targs);
-            }
-        }
-        else {
-            for (typename dcT::iterator it=coeffs.begin(); it!=coeffs.end(); ++it) {
-                Level n = it->first.level();
-                nodeT& node = it->second;
-                if (node.has_coeff()) {
-                	// this looks funny, but is necessary for GenTensor, since you can't access a
-                	// single matrix element. Therefore make a (1^NDIM) tensor, convert to GenTensor, then
-                	// add to the original one by adding a slice.
-                	tensorT ttt(v1);
-                	ttt=t*sqrt(FunctionDefaults<NDIM>::get_cell_volume()*pow(0.5,double(NDIM*n)));
-                	coeffT tt(ttt,get_tensor_args());
-                    node.coeff()(s) += tt;
-                    // this was the original line:
-                    // node.coeff().full_tensor()(v0) += t*sqrt(FunctionDefaults<NDIM>::get_cell_volume()*pow(0.5,double(NDIM*n)));
-
-                }
-            }
-        }
-        if (fence) world.gop.fence();
-    }
 
     template <typename T, std::size_t NDIM>
     void FunctionImpl<T,NDIM>::insert_zero_down_to_initial_level(const keyT& key) {
@@ -552,7 +511,7 @@ namespace madness {
                     coeffs.replace(key, nodeT(coeffT(), false));
                 }
                 else {
-                    coeffs.replace(key, nodeT(coeffT(cdata.v2k,targs), true));
+                    coeffs.replace(key, nodeT(coeffT(cdata.v2k), true));
                 }
             }
             else {
@@ -560,7 +519,7 @@ namespace madness {
                     coeffs.replace(key, nodeT(coeffT(), true));
                 }
                 else {
-                    coeffs.replace(key, nodeT(coeffT(cdata.vk,targs), false));
+                    coeffs.replace(key, nodeT(coeffT(cdata.vk), false));
                 }
             }
         }
@@ -571,71 +530,6 @@ namespace madness {
         }
 
     }
-
-
-    template <typename T, std::size_t NDIM>
-    Future<bool> FunctionImpl<T,NDIM>::truncate_spawn(const keyT& key, double tol) {
-        PROFILE_MEMBER_FUNC(FunctionImpl);
-        typename dcT::iterator it = coeffs.find(key).get();
-        if (it == coeffs.end()) {
-            // In a standard tree all children would exist but some ops (transform)
-            // can leave the tree in a messy state.  Just make the missing node as an
-            // empty leaf.
-            coeffs.replace(key,nodeT());
-            it = coeffs.find(key).get();
-        }
-        nodeT& node = it->second;
-        if (node.has_children()) {
-            std::vector< Future<bool> > v = future_vector_factory<bool>(1<<NDIM);
-            int i=0;
-            for (KeyChildIterator<NDIM> kit(key); kit; ++kit,++i) {
-                v[i] = woT::task(coeffs.owner(kit.key()), &implT::truncate_spawn, kit.key(), tol, TaskAttributes::generator());
-            }
-            return woT::task(world.rank(),&implT::truncate_op, key, tol, v);
-        }
-        else {
-            // In compressed form leaves should not have coeffs ... however the
-            // transform op could leave the tree with leaves that do have coeffs
-            // in which case we want something sensible to happen
-            //MADNESS_ASSERT(!node.has_coeff());
-            if (node.has_coeff() && key.level()>1) {
-                double dnorm = node.coeff().normf();
-                if (dnorm < truncate_tol(tol,key)) {
-                    node.clear_coeff();
-                }
-            }
-            return Future<bool>(node.has_coeff());
-        }
-    }
-
-
-    template <typename T, std::size_t NDIM>
-    bool FunctionImpl<T,NDIM>::truncate_op(const keyT& key, double tol, const std::vector< Future<bool> >& v) {
-        PROFILE_MEMBER_FUNC(FunctionImpl);
-        // If any child has coefficients, a parent cannot truncate
-        for (int i=0; i<(1<<NDIM); ++i) if (v[i].get()) return true;
-        nodeT& node = coeffs.find(key).get()->second;
-
-        // Interior nodes should always have coeffs but transform might
-        // leave empty interior nodes ... hence just force no coeffs to
-        // be zero coeff unless it is a leaf.
-        if (node.has_children() && !node.has_coeff()) node.set_coeff(coeffT(cdata.v2k,targs));
-
-        if (key.level() > 1) { // >1 rather >0 otherwise reconstruct might get confused
-            double dnorm = node.coeff().normf();
-            if (dnorm < truncate_tol(tol,key)) {
-                node.clear_coeff();
-                if (node.has_children()) {
-                    node.set_has_children(false);
-                    for (KeyChildIterator<NDIM> kit(key); kit; ++kit) {
-                        coeffs.erase(kit.key());
-                    }
-                }
-            }
-        }
-        return node.has_coeff();
-    }
-
 
     template <typename T, std::size_t NDIM>
     void FunctionImpl<T,NDIM>::print_tree(Level maxlevel) const {
@@ -673,7 +567,7 @@ namespace madness {
         if (not functor) MADNESS_EXCEPTION("FunctionImpl: project: confusion about function?",0);
 
         // if functor provides coeffs directly, awesome; otherwise use compute by yourself
-        if (functor->provides_coeff()) return functor->coeff(key).full_tensor_copy();
+        if (functor->provides_coeff()) return copy(functor->coeff(key));
 
         MADNESS_ASSERT(cdata.npt == cdata.k); // only necessary due to use of fast transform
         tensorT fval(cdata.vq,false); // this will be the returned result
@@ -686,66 +580,6 @@ namespace madness {
         //return transform(work,cdata.quad_phiw);
         return fast_transform(work,cdata.quad_phiw,fval,workq);
     }
-
-    template <typename T, std::size_t NDIM>
-    Future<double> FunctionImpl<T,NDIM>::get_norm_tree_recursive(const keyT& key) const {
-        if (coeffs.probe(key)) {
-            return Future<double>(coeffs.find(key).get()->second.get_norm_tree());
-        }
-        MADNESS_ASSERT(key.level());
-        keyT parent = key.parent();
-        return woT::task(coeffs.owner(parent), &implT::get_norm_tree_recursive, parent, TaskAttributes::hipri());
-    }
-
-
-    template <typename T, std::size_t NDIM>
-    Void FunctionImpl<T,NDIM>::sock_it_to_me(const keyT& key,
-            const RemoteReference< FutureImpl< std::pair<keyT,coeffT> > >& ref) const {
-        PROFILE_MEMBER_FUNC(FunctionImpl);
-        if (coeffs.probe(key)) {
-            const nodeT& node = coeffs.find(key).get()->second;
-            Future< std::pair<keyT,coeffT> > result(ref);
-            if (node.has_coeff()) {
-                //madness::print("sock found it with coeff",key);
-                result.set(std::pair<keyT,coeffT>(key,node.coeff()));
-            }
-            else {
-                //madness::print("sock found it without coeff",key);
-                result.set(std::pair<keyT,coeffT>(key,coeffT()));
-            }
-        }
-        else {
-            keyT parent = key.parent();
-            //madness::print("sock forwarding to parent",key,parent);
-            PROFILE_BLOCK(sitome_send);
-            woT::task(coeffs.owner(parent), &FunctionImpl<T,NDIM>::sock_it_to_me, parent, ref, TaskAttributes::hipri());
-        }
-        return None;
-    }
-
-// like sock_it_to_me, but it replaces empty node with averaged coeffs from further down the tree
-    template <typename T, std::size_t NDIM>
-    Void FunctionImpl<T,NDIM>::sock_it_to_me_too(const keyT& key,
-            const RemoteReference< FutureImpl< std::pair<keyT,coeffT> > >& ref) const {
-        PROFILE_MEMBER_FUNC(FunctionImpl);
-        if (coeffs.probe(key)) {
-            const nodeT& node = coeffs.find(key).get()->second;
-            Future< std::pair<keyT,coeffT> > result(ref);
-            if (node.has_coeff()) {
-               result.set(std::pair<keyT,coeffT>(key,node.coeff()));
-            }
-            else {
-                result.set(std::pair<keyT,coeffT>(key,nodeT(coeffT(project(key),targs),false).coeff()));
-            }
-        }
-        else {
-            keyT parent = key.parent();
-            PROFILE_BLOCK(sitome2_send);
-            woT::task(coeffs.owner(parent), &FunctionImpl<T,NDIM>::sock_it_to_me_too, parent, ref, TaskAttributes::hipri());
-        }
-        return None;
-    }
-
 
     template <typename T, std::size_t NDIM>
     Void FunctionImpl<T,NDIM>::eval(const Vector<double,NDIM>& xin,
@@ -771,7 +605,7 @@ namespace madness {
                 typename dcT::iterator it = fut.get();
                 nodeT& node = it->second;
                 if (node.has_coeff()) {
-                    Future<T>(ref).set(eval_cube(key.level(), x, node.coeff().full_tensor_copy()));
+                    Future<T>(ref).set(eval_cube(key.level(), x, copy(node.coeff())));
                     return None;
                 }
                 else {
@@ -787,121 +621,6 @@ namespace madness {
             }
         }
         //MADNESS_EXCEPTION("should not be here",0);
-    }
-
-
-    template <typename T, std::size_t NDIM>
-    std::pair<bool,T>
-    FunctionImpl<T,NDIM>::eval_local_only(const Vector<double,NDIM>& xin, Level maxlevel) {
-        Vector<double,NDIM> x = xin;
-        keyT key(0);
-        Vector<Translation,NDIM> l = key.translation();
-        const ProcessID me = world.rank();
-        while (key.level() <= maxlevel) {
-            if (coeffs.owner(key) == me) {
-                typename dcT::futureT fut = coeffs.find(key);
-                typename dcT::iterator it = fut.get();
-                if (it != coeffs.end()) {
-                    nodeT& node = it->second;
-                    if (node.has_coeff()) {
-                        return std::pair<bool,T>(true,eval_cube(key.level(), x, node.coeff().full_tensor_copy()));
-                    }
-                }
-            }
-            for (std::size_t i=0; i<NDIM; ++i) {
-                double xi = x[i]*2.0;
-                int li = int(xi);
-                if (li == 2) li = 1;
-                x[i] = xi - li;
-                l[i] = 2*l[i] + li;
-            }
-            key = keyT(key.level()+1,l);
-        }
-        return std::pair<bool,T>(false,0.0);
-    }
-
-    template <typename T, std::size_t NDIM>
-    Void FunctionImpl<T,NDIM>::evaldepthpt(const Vector<double,NDIM>& xin,
-                                const keyT& keyin,
-                                const typename Future<Level>::remote_refT& ref) {
-
-        PROFILE_MEMBER_FUNC(FunctionImpl);
-        // This is ugly.  We must figure out a clean way to use
-        // owner computes rule from the container.
-        Vector<double,NDIM> x = xin;
-        keyT key = keyin;
-        Vector<Translation,NDIM> l = key.translation();
-        ProcessID me = world.rank();
-        while (1) {
-            ProcessID owner = coeffs.owner(key);
-            if (owner != me) {
-                PROFILE_BLOCK(eval_send);
-                woT::task(owner, &implT::evaldepthpt, x, key, ref, TaskAttributes::hipri());
-                return None;
-            }
-            else {
-                typename dcT::futureT fut = coeffs.find(key);
-                typename dcT::iterator it = fut.get();
-                nodeT& node = it->second;
-                if (node.has_coeff()) {
-                    Future<Level>(ref).set(key.level());
-                    return None;
-                }
-                else {
-                    for (std::size_t i=0; i<NDIM; ++i) {
-                        double xi = x[i]*2.0;
-                        int li = int(xi);
-                        if (li == 2) li = 1;
-                        x[i] = xi - li;
-                        l[i] = 2*l[i] + li;
-                    }
-                    key = keyT(key.level()+1,l);
-                }
-            }
-        }
-        //MADNESS_EXCEPTION("should not be here",0);
-    }
-
-    template <typename T, std::size_t NDIM>
-    Void FunctionImpl<T,NDIM>::evalR(const Vector<double,NDIM>& xin,
-    		const keyT& keyin,
-    		const typename Future<long>::remote_refT& ref) {
-
-    	PROFILE_MEMBER_FUNC(FunctionImpl);
-    	// This is ugly.  We must figure out a clean way to use
-    	// owner computes rule from the container.
-    	Vector<double,NDIM> x = xin;
-    	keyT key = keyin;
-    	Vector<Translation,NDIM> l = key.translation();
-    	ProcessID me = world.rank();
-    	while (1) {
-    		ProcessID owner = coeffs.owner(key);
-    		if (owner != me) {
-    			PROFILE_BLOCK(eval_send);
-    			woT::task(owner, &implT::evalR, x, key, ref, TaskAttributes::hipri());
-    			return None;
-    		}
-    		else {
-    			typename dcT::futureT fut = coeffs.find(key);
-    			typename dcT::iterator it = fut.get();
-    			nodeT& node = it->second;
-    			if (node.has_coeff()) {
-    				Future<long>(ref).set(node.coeff().rank());
-    				return None;
-    			}
-    			else {
-    				for (std::size_t i=0; i<NDIM; ++i) {
-    					double xi = x[i]*2.0;
-    					int li = int(xi);
-    					if (li == 2) li = 1;
-    					x[i] = xi - li;
-    					l[i] = 2*l[i] + li;
-    				}
-    				key = keyT(key.level()+1,l);
-    			}
-    		}
-    	}
-    	//MADNESS_EXCEPTION("should not be here",0);
     }
 
 
@@ -920,74 +639,6 @@ namespace madness {
         *hi = work.normf();
     }
 
-    namespace detail {
-        template <typename A, typename B>
-        struct noop {
-            void operator()(const A& a, const B& b) const {};
-
-            template <typename Archive> void serialize(Archive& ar) {}
-        };
-
-        template <typename T, std::size_t NDIM>
-        struct scaleinplace {
-            T q;
-            scaleinplace() {}
-	    // G++ 4.1.2 ICEs on BGP ... scaleinplace(T q) : q(q) {}
-            scaleinplace(T q) {this->q = q;}
-            void operator()(const Key<NDIM>& key, Tensor<T>& t) const {
-                t.scale(q);
-            }
-            void operator()(const Key<NDIM>& key, FunctionNode<T,NDIM>& node) const {
-                node.coeff().scale(q);
-            }
-            template <typename Archive> void serialize(Archive& ar) {
-                ar & q;
-            }
-        };
-
-        template <typename T, std::size_t NDIM>
-        struct squareinplace {
-            void operator()(const Key<NDIM>& key, Tensor<T>& t) const {
-                t.emul(t);
-            }
-            template <typename Archive> void serialize(Archive& ar) {}
-        };
-          
-        template <typename T, std::size_t NDIM>
-        struct absinplace {
-            void operator()(const Key<NDIM>& key, Tensor<T>& t) const {t=abs(t);}
-            template <typename Archive> void serialize(Archive& ar) {}
-        };      
-
-        template <typename T, std::size_t NDIM>
-        struct abssquareinplace {
-            void operator()(const Key<NDIM>& key, Tensor<T>& t) const {abs(t.emul(t));}
-            template <typename Archive> void serialize(Archive& ar) {}
-        };      
-    }
-
-    template <typename T, std::size_t NDIM>
-    void FunctionImpl<T,NDIM>::scale_inplace(const T q, bool fence) {
-//        unary_op_coeff_inplace(detail::scaleinplace<T,NDIM>(q), fence);
-        unary_op_node_inplace(detail::scaleinplace<T,NDIM>(q), fence);
-    }
-
-    template <typename T, std::size_t NDIM>
-    void FunctionImpl<T,NDIM>::square_inplace(bool fence) {
-        //unary_op_value_inplace(&implT::autorefine_square_test, detail::squareinplace<T,NDIM>(), fence);
-        unary_op_value_inplace(detail::squareinplace<T,NDIM>(), fence);
-    }
-
-    template <typename T, std::size_t NDIM>
-    void FunctionImpl<T,NDIM>::abs_inplace(bool fence) {
-        unary_op_value_inplace(detail::absinplace<T,NDIM>(), fence);
-    }
-
-    template <typename T, std::size_t NDIM>
-    void FunctionImpl<T,NDIM>::abs_square_inplace(bool fence) {
-        unary_op_value_inplace(detail::abssquareinplace<T,NDIM>(), fence);
-    }
-
     template <typename T, std::size_t NDIM>
     void FunctionImpl<T,NDIM>::phi_for_mul(Level np, Translation lp, Level nc, Translation lc, Tensor<double>& phi) const {
         PROFILE_MEMBER_FUNC(FunctionImpl);
@@ -1003,8 +654,7 @@ namespace madness {
     }
 
     template <typename T, std::size_t NDIM>
-
-    const GenTensor<T> FunctionImpl<T,NDIM>::parent_to_child(const coeffT& s, const keyT& parent, const keyT& child) const {
+    const Tensor<T> FunctionImpl<T,NDIM>::parent_to_child(const coeffT& s, const keyT& parent, const keyT& child) const {
         PROFILE_MEMBER_FUNC(FunctionImpl);
         // An invalid parent/child means that they are out of the box
         // and it is the responsibility of the caller to worry about that
@@ -1020,78 +670,9 @@ namespace madness {
     }
 
 
-    template <typename T, std::size_t NDIM>
-    T FunctionImpl<T,NDIM>::trace_local() const {
-        PROFILE_MEMBER_FUNC(FunctionImpl);
-        std::vector<long> v0(NDIM,0);
-        T sum = 0.0;
-        if (compressed) {
-            if (world.rank() == coeffs.owner(cdata.key0)) {
-                typename dcT::const_iterator it = coeffs.find(cdata.key0).get();
-                if (it != coeffs.end()) {
-                    const nodeT& node = it->second;
-                    if (node.has_coeff()) sum = node.coeff().full_tensor_copy()(v0);
-                }
-            }
-        }
-        else {
-            for (typename dcT::const_iterator it=coeffs.begin(); it!=coeffs.end(); ++it) {
-                const keyT& key = it->first;
-                const nodeT& node = it->second;
-                if (node.has_coeff()) sum += node.coeff().full_tensor_copy()(v0)*pow(0.5,NDIM*key.level()*0.5);
-            }
-        }
-        return sum*sqrt(FunctionDefaults<NDIM>::get_cell_volume());
-    }
-
-
-    static inline bool enforce_bc(bool is_periodic, Level n, Translation& l) {
-        Translation two2n = 1ul << n;
-        if (l < 0) {
-            if (is_periodic)
-                l += two2n; // Periodic BC
-            else
-                return false; // Zero BC
-        }
-        else if (l >= two2n) {
-            if (is_periodic)
-                l -= two2n; // Periodic BC
-            else
-                return false; // Zero BC
-        }
-        return true;
-    }
 
     template <typename T, std::size_t NDIM>
-    Key<NDIM> FunctionImpl<T,NDIM>::neighbor(const keyT& key, const Key<NDIM>& disp, const std::vector<bool>& is_periodic) const {
-        Vector<Translation,NDIM> l = key.translation();
-
-        for (std::size_t axis=0; axis<NDIM; ++axis) {
-            l[axis] += disp.translation()[axis];
-
-            //if (!enforce_bc(bc(axis,0), bc(axis,1), key.level(), l[axis])) {
-            if (!enforce_bc(is_periodic[axis], key.level(), l[axis])) {
-                return keyT::invalid();
-            }
-        }
-        return keyT(key.level(),l);
-    }
-
-
-    template <typename T, std::size_t NDIM>
-    Future< std::pair< Key<NDIM>, GenTensor<T> > >
-    FunctionImpl<T,NDIM>::find_me(const Key<NDIM>& key) const {
-        PROFILE_MEMBER_FUNC(FunctionImpl);
-        typedef std::pair< Key<NDIM>,coeffT > argT;
-        Future<argT> result;
-        PROFILE_BLOCK(find_me_send);
-        woT::task(coeffs.owner(key), &implT::sock_it_to_me_too, key, result.remote_ref(world), TaskAttributes::hipri());
-        return result;
-    }
-
-
-    template <typename T, std::size_t NDIM>
-    Future< GenTensor<T> > FunctionImpl<T,NDIM>::compress_spawn(const Key<NDIM>& key,
+    Future< Tensor<T> > FunctionImpl<T,NDIM>::compress_spawn(const Key<NDIM>& key,
             bool nonstandard, bool keepleaves, bool redundant) {
         if (!coeffs.probe(key)) print("missing node",key);
         MADNESS_ASSERT(coeffs.probe(key));
@@ -1107,7 +688,7 @@ namespace madness {
                 v[i] = woT::task(coeffs.owner(kit.key()), &implT::compress_spawn, kit.key(),
                         nonstandard, keepleaves, redundant, TaskAttributes::hipri());
             }
-            if (redundant) return woT::task(world.rank(),&implT::make_redundant_op, key, v);
+            //if (redundant) return woT::task(world.rank(),&implT::make_redundant_op, key, v);
             return woT::task(world.rank(),&implT::compress_op, key, v, nonstandard, redundant);
         }
         else {
@@ -1115,218 +696,6 @@ namespace madness {
             if (!keepleaves) node.clear_coeff();
             return result;
         }
-    }
-
-    template <typename T, std::size_t NDIM>
-    Void FunctionImpl<T,NDIM>::plot_cube_kernel(archive::archive_ptr< Tensor<T> > ptr,
-                                                const keyT& key,
-                                                const coordT& plotlo, const coordT& plothi, const std::vector<long>& npt,
-                                                bool eval_refine) const {
-
-        Tensor<T>& r = *ptr;
-
-        coordT h; // Increment between points in each dimension
-        for (std::size_t i=0; i<NDIM; ++i) {
-            if (npt[i] > 1) {
-                h[i] = (plothi[i]-plotlo[i])/(npt[i]-1);
-            }
-            else {
-                MADNESS_ASSERT(plotlo[i] == plothi[i]);
-                h[i] = 0.0;
-            }
-        }
-
-        const Level n = key.level();
-        const Vector<Translation,NDIM>& l = key.translation();
-        const double twon = pow(2.0,double(n));
-        const tensorT& coeff = coeffs.find(key).get()->second.coeff().full_tensor_copy(); // Ugh!
-//        const tensorT coeff = coeffs.find(key).get()->second.full_tensor_copy(); // Ugh!
-        long ind[NDIM];
-        coordT x;
-
-        coordT boxlo, boxhi;
-        Vector<int,NDIM> boxnpt;
-        double fac = pow(0.5,double(key.level()));
-        int npttotal = 1;
-        for (std::size_t d=0; d<NDIM; ++d) {
-            // Coords of box
-            boxlo[d] = fac*key.translation()[d];
-            boxhi[d] = boxlo[d]+fac;
-
-            if (boxlo[d] > plothi[d] || boxhi[d] < plotlo[d]) {
-                // Discard boxes out of the plot range
-                npttotal = boxnpt[d] = 0;
-                //print("OO range?");
-                break;
-            }
-            else if (npt[d] == 1) {
-                // This dimension is only a single point
-                boxlo[d] = boxhi[d] = plotlo[d];
-                boxnpt[d] = 1;
-            }
-            else {
-                // Restrict to plot range
-                boxlo[d] = std::max(boxlo[d],plotlo[d]);
-                boxhi[d] = std::min(boxhi[d],plothi[d]);
-
-                // Round lo up to next plot point; round hi down
-                double xlo = long((boxlo[d]-plotlo[d])/h[d])*h[d] + plotlo[d];
-                if (xlo < boxlo[d]) xlo += h[d];
-                boxlo[d] =  xlo;
-                double xhi = long((boxhi[d]-plotlo[d])/h[d])*h[d] + plotlo[d];
-                if (xhi > boxhi[d]) xhi -= h[d];
-                // MADNESS_ASSERT(xhi >= xlo);  // nope
-                boxhi[d] = xhi;
-                boxnpt[d] = long(round((boxhi[d] - boxlo[d])/h[d])) + 1;
-            }
-            npttotal *= boxnpt[d];
-        }
-        //print("    box", boxlo, boxhi, boxnpt, npttotal);
-        if (npttotal > 0) {
-            for (IndexIterator it(boxnpt); it; ++it) {
-                for (std::size_t d=0; d<NDIM; ++d) {
-                    double xd = boxlo[d] + it[d]*h[d]; // Sim. coords of point
-                    x[d] = twon*xd - l[d]; // Offset within box
-                    MADNESS_ASSERT(x[d]>=0.0 && x[d] <=1.0);  // sanity
-                    if (npt[d] > 1) {
-                        ind[d] = long(round((xd-plotlo[d])/h[d])); // Index of plot point
-                    }
-                    else {
-                        ind[d] = 0;
-                    }
-                    MADNESS_ASSERT(ind[d]>=0 && ind[d]<npt[d]); // sanity
-                }
-                if (eval_refine) {
-                    r(ind) = n;
-                }
-                else {
-                    T tmp = eval_cube(n, x, coeff);
-                    r(ind) = tmp;
-                    //print("    eval", ind, tmp, r(ind));
-                }
-            }
-        }
-
-        return None;
-    }
-
-    /// Set plot_refine=true to get a plot of the refinment levels of
-    /// the given function (defaulted to false in prototype).
-    template <typename T, std::size_t NDIM>
-    Tensor<T> FunctionImpl<T,NDIM>::eval_plot_cube(const coordT& plotlo,
-                                                   const coordT& plothi,
-                                                   const std::vector<long>& npt,
-                                                   const bool eval_refine) const {
-        PROFILE_MEMBER_FUNC(FunctionImpl);
-        Tensor<T> r(NDIM, &npt[0]);
-        //r(___) = 99.0;
-        MADNESS_ASSERT(!compressed);
-
-        for (typename dcT::const_iterator it=coeffs.begin(); it!=coeffs.end(); ++it) {
-            const keyT& key = it->first;
-            const nodeT& node = it->second;
-            if (node.has_coeff()) {
-                woT::task(world.rank(), &implT::plot_cube_kernel,
-                    archive::archive_ptr< Tensor<T> >(&r), key, plotlo, plothi, npt, eval_refine);
-            }
-        }
-
-        //        ITERATOR(r, if (r(IND) == 99.0) {print("BAD", IND); error("bad",0);});
-
-        world.taskq.fence();
-        world.gop.sum(r.ptr(), r.size());
-        world.gop.fence();
-
-        return r;
-    }
-
-    static inline void dxprintvalue(FILE* f, const double t) {
-        fprintf(f,"%.6e\n",t);
-    }
-
-    static inline void dxprintvalue(FILE* f, const double_complex& t) {
-        fprintf(f,"%.6e %.6e\n", t.real(), t.imag());
-    }
-
-    template <typename T, std::size_t NDIM>
-    void plotdx(const Function<T,NDIM>& function,
-                const char* filename,
-                const Tensor<double>& cell,
-                const std::vector<long>& npt,
-                bool binary) {
-        PROFILE_FUNC;
-        MADNESS_ASSERT(NDIM<=6);
-        const char* element[6] = {"lines","quads","cubes","cubes4D","cubes5D","cubes6D"};
-
-        function.verify();
-        World& world = const_cast< Function<T,NDIM>& >(function).world();
-        FILE *f=0;
-        if (world.rank() == 0) {
-            f = fopen(filename, "w");
-            if (!f) MADNESS_EXCEPTION("plotdx: failed to open the plot file", 0);
-
-            fprintf(f,"object 1 class gridpositions counts ");
-            for (std::size_t d=0; d<NDIM; ++d) fprintf(f," %ld",npt[d]);
-            fprintf(f,"\n");
-
-            fprintf(f,"origin ");
-            for (std::size_t d=0; d<NDIM; ++d) fprintf(f, " %.6e", cell(d,0));
-            fprintf(f,"\n");
-
-            for (std::size_t d=0; d<NDIM; ++d) {
-                fprintf(f,"delta ");
-                for (std::size_t c=0; c<d; ++c) fprintf(f, " 0");
-                double h = 0.0;
-                if (npt[d]>1) h = (cell(d,1)-cell(d,0))/(npt[d]-1);
-                fprintf(f," %.6e", h);
-                for (std::size_t c=d+1; c<NDIM; ++c) fprintf(f, " 0");
-                fprintf(f,"\n");
-            }
-            fprintf(f,"\n");
-
-            fprintf(f,"object 2 class gridconnections counts ");
-            for (std::size_t d=0; d<NDIM; ++d) fprintf(f," %ld",npt[d]);
-            fprintf(f,"\n");
-            fprintf(f, "attribute \"element type\" string \"%s\"\n", element[NDIM-1]);
-            fprintf(f, "attribute \"ref\" string \"positions\"\n");
-            fprintf(f,"\n");
-
-            int npoint = 1;
-            for (std::size_t d=0; d<NDIM; ++d) npoint *= npt[d];
-            const char* iscomplex = "";
-            if (TensorTypeData<T>::iscomplex) iscomplex = "category complex";
-            const char* isbinary = "";
-            if (binary) isbinary = "binary";
-            fprintf(f,"object 3 class array type double %s rank 0 items %d %s data follows\n",
-                    iscomplex, npoint, isbinary);
-        }
-
-        world.gop.fence();
-        Tensor<T> r = function.eval_cube(cell, npt);
-
-        if (world.rank() == 0) {
-            if (binary) {
-                // This assumes that the values are double precision
-                fflush(f);
-                fwrite((void *) r.ptr(), sizeof(T), r.size(), f);
-                fflush(f);
-            }
-            else {
-                for (IndexIterator it(npt); it; ++it) {
-                    //fprintf(f,"%.6e\n",r(*it));
-                    dxprintvalue(f,r(*it));
-                }
-            }
-            fprintf(f,"\n");
-
-            fprintf(f,"object \"%s\" class field\n",filename);
-            fprintf(f,"component \"positions\" value 1\n");
-            fprintf(f,"component \"connections\" value 2\n");
-            fprintf(f,"component \"data\" value 3\n");
-            fprintf(f,"\nend\n");
-            fclose(f);
-        }
-        world.gop.fence();
     }
 
     template <std::size_t NDIM>
@@ -1349,8 +718,8 @@ namespace madness {
         recompute_cell_info();
 
         //pmap = std::shared_ptr< WorldDCPmapInterface< Key<NDIM> > >(new WorldDCDefaultPmap< Key<NDIM> >(world));
-        pmap = std::shared_ptr< WorldDCPmapInterface< Key<NDIM> > >(new madness::LevelPmap< Key<NDIM> >(world));
-        //pmap = std::shared_ptr< WorldDCPmapInterface< Key<NDIM> > >(new SimplePmap< Key<NDIM> >(world));
+        //pmap = std::shared_ptr< WorldDCPmapInterface< Key<NDIM> > >(new madness::LevelPmap< Key<NDIM> >(world));
+        pmap = std::shared_ptr< WorldDCPmapInterface< Key<NDIM> > >(new SimplePmap< Key<NDIM> >(world));
     }
 
     template <typename T, std::size_t NDIM>

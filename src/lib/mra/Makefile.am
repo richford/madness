@@ -12,58 +12,27 @@ lib_LIBRARIES = libMADmra.a
 #        testdiff1Db testdiff1D testdiff2D testdiff3D testgconv testopdir \
 #        testqm testunaryop testper
 
-TESTS = testbsh testproj testpdiff testper \
-        testdiff1Db testdiff1D testdiff2D testdiff3D testgconv testopdir \
-        testsuite 
+#TESTS = testbsh testproj testpdiff testper \
+#        testdiff1Db testdiff1D testdiff2D testdiff3D testgconv testopdir \
+#        testsuite 
 
 
 data_DATA = autocorr coeffs gaussleg
 
 thisincludedir = $(includedir)/mra
-thisinclude_HEADERS = adquad.h  funcimpl.h  indexit.h  legendre.h  operator.h  vmra.h \
-                      funcdefaults.h  key.h mra.h      power.h     qmprop.h  twoscale.h lbdeux.h mraimpl.h \
-                      funcplot.h
+thisinclude_HEADERS = funcimpl.h  indexit.h  legendre.h  operator.h  vmra.h \
+                      funcdefaults.h  key.h mra.h      power.h     twoscale.h mraimpl.h
 
 
 LDADD = libMADmra.a $(LIBLINALG) $(LIBTENSOR) $(LIBMISC) $(LIBMUPARSER) $(LIBWORLD)
 
-libMADmra_a_SOURCES = mra1.cc mra2.cc mra3.cc mra4.cc mra5.cc mra6.cc \
-                      startup.cc legendre.cc twoscale.cc qmprop.cc \
+libMADmra_a_SOURCES = \
+                      startup.cc legendre.cc twoscale.cc \
                       \
-                      adquad.h  funcimpl.h  indexit.h  legendre.h  operator.h  vmra.h \
-                      funcdefaults.h  key.h mra.h      power.h     qmprop.h  twoscale.h lbdeux.h mraimpl.h \
+                      funcimpl.h  indexit.h  legendre.h  operator.h  vmra.h \
+                      funcdefaults.h  key.h mra.h      power.h     twoscale.h mraimpl.h \
                       funcplot.h function_common_data.h
 
-
-
-
-#testsuite_SOURCES = testsuite.cc test_sepop.cc
-#testperiodic_SOURCES = testperiodic.cc
-#testper_SOURCES = testper.cc test_sepop.cc
-#testbsh_SOURCES = testbsh.cc
-#test6_SOURCES = test6.cc
-#
-#testbc_SOURCES = testbc.cc
-#testproj_SOURCES = testproj.cc
-#testgconv_SOURCES = testgconv.cc
-#
-#testopdir_SOURCES = testopdir.cc
-#
-#mraplot_SOURCES = mraplot.cc
-#
-#testpdiff_SOURCES = testpdiff.cc
-#
-#testdiff1D_SOURCES = testdiff1D.cc
-#
-#testdiff1Db_SOURCES = testdiff1Db.cc
-#
-#testdiff2D_SOURCES = testdiff2D.cc
-#
-#testdiff3D_SOURCES = testdiff3D.cc
-#
-#testqm_SOURCES = testqm.cc
-
-#testop2_SOURCES = testop2.cc
 
 
 libraries:	$(lib_LIBRARIES)

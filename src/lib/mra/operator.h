@@ -126,9 +126,6 @@ namespace madness {
 
         typedef Key<NDIM> keyT;
         const static size_t opdim=NDIM;
-        Timer timer_full;
-        Timer timer_low_transf;
-        Timer timer_low_accumulate;
 
         // if this is a Slater-type convolution kernel: 1-exp(-mu r12)/(2 mu)
         bool is_slaterf12;
@@ -1020,13 +1017,6 @@ namespace madness {
 
         virtual ~SeparatedConvolution() { }
 
-        void print_timer() const {
-        	if (this->world.rank()==0) {
-                timer_full.print("op full tensor       ");
-                timer_low_transf.print("op low rank transform");
-                timer_low_accumulate.print("op low rank addition ");
-        	}
-        }
 
         void reset_timer() const {
         	if (this->world.rank()==0) {
