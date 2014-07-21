@@ -3,7 +3,7 @@ include $(top_srcdir)/config/MakeGlobal.am
 #AM_CPPFLAGS += -DMRA_DATA_DIR="\"`pwd`\""
 AM_CPPFLAGS += -DMRA_DATA_DIR=\"$(abs_srcdir)\"
 
-bin_PROGRAMS = testsuite  testperiodic testbsh testbc testproj mraplot testpdiff testdiff1Db testdiff1D testdiff2D testdiff3D testgconv testopdir testqm testper test6
+#bin_PROGRAMS = testsuite  testperiodic testbsh testbc testproj mraplot testpdiff testdiff1Db testdiff1D testdiff2D testdiff3D testgconv testopdir testqm testper test6
 lib_LIBRARIES = libMADmra.a
 
 
@@ -37,31 +37,31 @@ libMADmra_a_SOURCES = mra1.cc mra2.cc mra3.cc mra4.cc mra5.cc mra6.cc \
 
 
 
-testsuite_SOURCES = testsuite.cc test_sepop.cc
-testperiodic_SOURCES = testperiodic.cc
-testper_SOURCES = testper.cc test_sepop.cc
-testbsh_SOURCES = testbsh.cc
-test6_SOURCES = test6.cc
-
-testbc_SOURCES = testbc.cc
-testproj_SOURCES = testproj.cc
-testgconv_SOURCES = testgconv.cc
-
-testopdir_SOURCES = testopdir.cc
-
-mraplot_SOURCES = mraplot.cc
-
-testpdiff_SOURCES = testpdiff.cc
-
-testdiff1D_SOURCES = testdiff1D.cc
-
-testdiff1Db_SOURCES = testdiff1Db.cc
-
-testdiff2D_SOURCES = testdiff2D.cc
-
-testdiff3D_SOURCES = testdiff3D.cc
-
-testqm_SOURCES = testqm.cc
+#testsuite_SOURCES = testsuite.cc test_sepop.cc
+#testperiodic_SOURCES = testperiodic.cc
+#testper_SOURCES = testper.cc test_sepop.cc
+#testbsh_SOURCES = testbsh.cc
+#test6_SOURCES = test6.cc
+#
+#testbc_SOURCES = testbc.cc
+#testproj_SOURCES = testproj.cc
+#testgconv_SOURCES = testgconv.cc
+#
+#testopdir_SOURCES = testopdir.cc
+#
+#mraplot_SOURCES = mraplot.cc
+#
+#testpdiff_SOURCES = testpdiff.cc
+#
+#testdiff1D_SOURCES = testdiff1D.cc
+#
+#testdiff1Db_SOURCES = testdiff1Db.cc
+#
+#testdiff2D_SOURCES = testdiff2D.cc
+#
+#testdiff3D_SOURCES = testdiff3D.cc
+#
+#testqm_SOURCES = testqm.cc
 
 #testop2_SOURCES = testop2.cc
 
