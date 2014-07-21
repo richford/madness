@@ -2,7 +2,6 @@
 
 #define WORLD_INSTANTIATE_STATIC_TEMPLATES
 #include <mra/mra.h>
-#include <mra/operator.h>
 
 using namespace madness;
 
@@ -31,6 +30,8 @@ int main(int argc, char** argv) {
     startup(world,argc,argv);
     std::cout.precision(6);
 
+    FunctionDefaults<3>::set_defaults(world);
+
     FunctionDefaults<3>::set_k(k);
     FunctionDefaults<3>::set_thresh(thresh);
     FunctionDefaults<3>::set_refine(true);
@@ -43,9 +44,13 @@ int main(int argc, char** argv) {
     real_function_3d Vpsi = (Vnuc*psi);
     real_function_3d spsi = Vpsi+psi;
     double norm = spsi.norm2();
+    spsi.compress();
+    double normc = spsi.norm2();
+    spsi.reconstruct();
+    double normr = spsi.norm2();
 
     if (world.rank() == 0) {
-	print("                    Norm is ", norm);
+	print("                    Norm is ", norm, normc, normr);
     }
 
     world.gop.fence();
