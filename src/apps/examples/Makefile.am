@@ -6,7 +6,7 @@ SVNREV="SVNREVISION=\"`svnversion $(top_srcdir)`\" "
 
 AM_CPPFLAGS += -D$(GITREV) -D$(SVNREV)
 
-bin_PROGRAMS = h2dft hedft hello hatom_energy h2 he tdse heat heat2 csqrt \
+bin_PROGRAMS = test_AST h2dft hedft hello hatom_energy h2 he tdse heat heat2 csqrt \
  sdf_shape_tester test_gmres tdse1d vnucso nonlinschro sininteg functionio \
  dataloadbal hatom_1d binaryop dielectric hehf 3dharmonic testsolver \
  testspectralprop dielectric_external_field mp2 tiny oep h2dynamic newsolver \
@@ -70,6 +70,8 @@ dielectric_SOURCES = dielectric.cc
 hatom_energy_SOURCES = hatom_energy.cc
 
 h2_SOURCES = h2.cc
+
+test_AST_SOURCES = test_AST.cc
  
 h2dynamic_SOURCES = h2dynamic.cc
 
