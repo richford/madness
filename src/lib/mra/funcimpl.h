@@ -34,6 +34,12 @@
 
 #ifndef MADNESS_MRA_FUNCIMPL_H__INCLUDED
 #define MADNESS_MRA_FUNCIMPL_H__INCLUDED
+#define NOT_OPERATOR 999
+#define ADD_OPERATOR 0
+#define MULTIPLY_OPERATOR 1
+#define RECONSTRUCT_OPERATOR 2
+#define DIFF_OPERATOR 3
+#define DEBUG 0
 
 /// \file funcimpl.h
 /// \brief Provides FunctionCommonData, FunctionImpl and FunctionFactory
@@ -45,7 +51,8 @@
 #include <world/typestuff.h>
 #include <misc/misc.h>
 #include <tensor/tensor.h>
-
+#include <cstdarg>
+#include <vector>
 #include <mra/function_common_data.h>
 #include <mra/indexit.h>
 #include <mra/key.h>
@@ -55,6 +62,9 @@
 namespace madness {
     template<typename T, std::size_t NDIM>
     class FunctionImpl;
+
+    template<typename T, std::size_t NDIM>
+    class AST;
 
     template<typename T, std::size_t NDIM>
     class FunctionNode;
@@ -89,6 +99,253 @@ namespace madness {
         }
     };
 
+    /////////////////////////////////////////////////////////////////////////////////////////	
+    /* ---------------------------Composing Operations using AST -------------------------*/
+    ////////////////////////////////////////////////////////////////////////////////////////
+
+    template<typename T, std::size_t NDIM> 
+	class AST {
+	
+	friend class FunctionImpl<T,NDIM>; 
+    public:
+	typedef AST<T,NDIM> astT;
+	typedef Tensor <T> coeffT;
+	typedef Key<NDIM> keyT;
+	typedef std::pair<keyT,coeffT> kcT;
+	typedef std::list <AST <T,NDIM> > listT;
+	typedef std::vector <AST <T,NDIM> > vecT;
+	typedef FunctionImpl<T,NDIM> implT;
+	typedef std::shared_ptr<implT> spimplT;
+
+    private:
+
+	
+    public:
+	spimplT _impl;
+	kcT _key_coeff;
+	vecT _operands;
+	int _operator;
+	bool _is_ready, _has_coefficients;
+
+       
+    AST():
+	_impl(NULL),
+	    _operator(NOT_OPERATOR),
+	    _is_ready(false),
+	    _has_coefficients(false)
+	    {
+	    }
+
+    
+
+	//Constructors
+    AST(const Function<T,NDIM> &function):
+	_impl(function.impl),	    
+	    _operator(NOT_OPERATOR),
+	    _is_ready(false),
+	    _has_coefficients(false){
+	    //std::cout<<"Function Impl Set"<<std::endl;
+	    //_impl->print_tree();
+	}
+	
+
+    AST(spimplT &impl):
+	_impl(impl),
+	    _operator(NOT_OPERATOR),
+	    _is_ready(false),
+	    _has_coefficients(false){
+	    
+	}
+	
+    AST(kcT& keyCoeff):
+	    _impl(NULL),
+		_key_coeff(keyCoeff),	
+		_operator(NOT_OPERATOR),
+		_is_ready(false),	    
+		_has_coefficients(true)
+		{
+		}
+	    
+    AST(int op, vecT &operands):
+	_impl(NULL),
+	    _operands(operands),
+	    _operator(op),
+	    _is_ready(false),
+	    _has_coefficients(false)
+	    {
+	    }
+
+    AST(int op, astT a1, astT a2):    
+	_impl(NULL),
+	    _operator(op),    
+	    _is_ready(false),
+	    _has_coefficients(false)
+	
+	    {
+		vecT operands;
+		operands.push_back(a1);
+		operands.push_back(a2);
+		_operands = operands;
+		    
+	    }
+
+    AST(int op, astT a1, astT a2, astT a3):
+	_impl(NULL),
+	    _operator(op),    
+	    _is_ready(false),
+	    _has_coefficients(false)
+	    {
+		vecT operands;
+		operands.push_back(a1);
+		operands.push_back(a2);
+		operands.push_back(a3);
+		_operands = operands;
+		    
+	    }
+    AST(int op, astT a1, astT a2, astT a3, astT a4):_operator(op),    
+	    _is_ready(false),
+	    _has_coefficients(false),
+	    _impl(NULL)
+	    {
+		vecT operands;
+		operands.push_back(a1);
+		operands.push_back(a2);
+		operands.push_back(a3);
+		operands.push_back(a4);
+		_operands = operands;
+		    
+	    }
+	
+	//Copy Constructor
+    AST(const AST& other):
+	_impl(other._impl),
+	_key_coeff(other._key_coeff),
+	    _operands(other._operands),
+	    _operator(other._operator),		
+	    _is_ready(other._is_ready),
+	    _has_coefficients(other._has_coefficients)
+
+	    {
+	    	    
+	    } 
+
+	bool is_operator() const
+	{
+	    return !(_operator==NOT_OPERATOR);
+	}
+
+	bool has_coeffs() const
+	{
+	    return _has_coefficients;
+	}
+	int get_operator() const
+	{
+	    return _operator;
+	}
+
+	implT* get_impl() const{
+	    return _impl.get();
+	}
+	
+	vecT  get_operand_list() const
+	{
+	    return _operands;
+	}
+
+        kcT get_key_coeff_pair() const
+	{
+	    return _key_coeff;
+	}
+	
+	void set_ready(bool is_ready) 
+	{
+	    _is_ready = is_ready;
+	}
+
+	void set_has_coeff(bool has_coeff)
+	{
+	    _has_coefficients = has_coeff;
+	}
+
+	void set_key_coeff(kcT &keyCoeff)
+	{
+	    _key_coeff= keyCoeff;
+	}
+
+	void set_function(std::shared_ptr<FunctionImpl<T,NDIM>> function)
+	{
+	    _impl = function;
+	}  
+
+    };
+
+    namespace archive {
+        /// Serialize an AST
+        template <class Archive, typename T, std::size_t NDIM>
+	    struct ArchiveStoreImpl< Archive, AST<T,NDIM> > {
+		static void store(const Archive& s, const AST<T,NDIM>& t) {
+		    s & t.has_coeffs() & t.is_operator();
+		    if(t.has_coeffs())
+			s & t.get_key_coeff_pair();
+		    else if(t.get_operator() == NOT_OPERATOR)
+			
+			s & t.get_impl();
+		    else
+			s & t.get_operator() & t.get_operand_list();
+		}
+        };
+	
+        /// Deserialize an AST 
+        template <class Archive, typename T, std::size_t NDIM>
+	    struct ArchiveLoadImpl< Archive, AST<T,NDIM> > {
+            	typedef Tensor <T> coeffT;
+		typedef Key<NDIM> keyT;
+		typedef std::pair<keyT,coeffT> kcT;
+		typedef std::vector <AST <T,NDIM> > vecT;
+		
+		
+		static void load(const Archive& s, AST<T,NDIM>& t) {
+		    
+		    bool hasCoeff = false, isOperator = false;
+		    s & hasCoeff & isOperator;
+
+		    if(hasCoeff)
+		    {
+			kcT keyCoeff;
+			s & keyCoeff;
+			t = AST<T,NDIM>(keyCoeff);	
+
+		    }
+		    else if(!isOperator)
+		    {
+			typedef FunctionImpl<T,NDIM> implT;
+			implT* impl = NULL;
+			s & impl;
+			std::shared_ptr<implT> simpl(impl);
+			t = AST<T,NDIM>(simpl);
+			
+		    }
+		    else
+		    {
+		    
+			vecT operand_list;
+			int op = 0;
+			s & op & operand_list;
+			t = AST<T,NDIM>(op, operand_list);
+		    }
+		
+		}
+        };
+
+
+
+
+    }
+	
+    /////////////////////////////////////////////////////////////////////////////////////////
+    /*---------------------------------------Ends Here-------------------------------------*/
+    /////////////////////////////////////////////////////////////////////////////////////////
+
 
     /// FunctionNode holds the coefficients, etc., at each node of the 2^NDIM-tree
     template<typename T, std::size_t NDIM>
@@ -107,6 +364,7 @@ namespace madness {
         coeffT buffer; ///< The coefficients, if any
 
     public:
+
         typedef WorldContainer<Key<NDIM> , FunctionNode<T, NDIM> > dcT; ///< Type of container holding the nodes
         /// Default constructor makes node without coeff or children
         FunctionNode() :
@@ -309,6 +567,7 @@ namespace madness {
         return s;
     }
 
+    
 
     /// FunctionImpl holds all Function state to facilitate shallow copy semantics
 
@@ -327,11 +586,14 @@ namespace madness {
     /// The LB stuff might have to be an exception.
     template <typename T, std::size_t NDIM>
     class FunctionImpl : public WorldObject< FunctionImpl<T,NDIM> > {
+	template<typename Q,std::size_t NDIM1> friend class AST;
+
     private:
         typedef WorldObject< FunctionImpl<T,NDIM> > woT; ///< Base class world object type
 
     public:
         typedef FunctionImpl<T,NDIM> implT; ///< Type of this class (implementation)
+	typedef std::list <AST <T,NDIM> > listT;
         typedef std::shared_ptr< FunctionImpl<T,NDIM> > pimplT; ///< pointer to this class
         typedef Tensor<T> tensorT; ///< Type of tensor for anything but to hold coeffs
         typedef Vector<Translation,NDIM> tranT; ///< Type of array holding translation
@@ -341,8 +603,10 @@ namespace madness {
         typedef WorldContainer<keyT,nodeT> dcT; ///< Type of container holding the coefficients
         typedef std::pair<const keyT,nodeT> datumT; ///< Type of entry in container
         typedef Vector<double,NDIM> coordT; ///< Type of vector holding coordinates
+	typedef AST<T,NDIM> astT;
+	typedef std::vector<astT> vecT;
 
-        //template <typename Q, int D> friend class Function;
+        //template <atypename Q, int D> friend class Function;
         template <typename Q, std::size_t D> friend class FunctionImpl;
 
         World& world;
@@ -371,6 +635,8 @@ namespace madness {
         FunctionImpl(const FunctionImpl<T,NDIM>& p);
 
     public:
+
+	static keyT debugKey;
 
         /// Initialize function impl from data in factory
         FunctionImpl(const FunctionFactory<T,NDIM>& factory)
@@ -404,24 +670,33 @@ namespace madness {
             if (do_refine)
                 initial_level = std::max(0,initial_level - 1);
 
-            if (empty) { // Do not set any coefficients at all
-            // additional functors are only evaluated on-demand
-            } else if (functor) { // Project function and optionally refine
-                insert_zero_down_to_initial_level(cdata.key0);
-                typename dcT::const_iterator end = coeffs.end();
-                for (typename dcT::const_iterator it=coeffs.begin(); it!=end; ++it) {
-                    if (it->second.is_leaf())
-                        woT::task(coeffs.owner(it->first), &implT::project_refine_op, it->first, do_refine,
-                             functor->special_points());
-                }
-            }
-            else { // Set as if a zero function
-                initial_level = 1;
-                insert_zero_down_to_initial_level(keyT(0));
-            }
+
+		if (empty) { // Do not set any coefficients at all
+
+		    // additional functors are only evaluated on-demand
+		} else if (functor) { // Project function and optionally refine
+
+		    insert_zero_down_to_initial_level(cdata.key0);
+
+		    typename dcT::const_iterator end = coeffs.end();
+
+		    for (typename dcT::const_iterator it=coeffs.begin(); it!=end; ++it) {
+
+			if (it->second.is_leaf())
+			    woT::task(coeffs.owner(it->first), &implT::project_refine_op, it->first, do_refine,
+				      functor->special_points());
+		    }
+		}
+
+		else { // Set as if a zero function
+
+		    initial_level = 1;
+		    insert_zero_down_to_initial_level(keyT(0));
+		}
 
             coeffs.process_pending();
             this->process_pending();
+
             if (factory._fence && functor)
                 world.gop.fence();
         }
@@ -462,12 +737,298 @@ namespace madness {
             this->process_pending();
         }
 
+	static void set_debug(keyT key)
+	{
+	    debugKey = key;
+	}
+
         virtual ~FunctionImpl() { }
 
         const std::shared_ptr< WorldDCPmapInterface< Key<NDIM> > >& get_pmap() const {
             return coeffs.get_pmap();
         }
 
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
+	/*--------------------------------------- AST Tree Traversal --------------------------------------*/
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	coeffT get_coeff_from_parent(astT parent_ast, keyT child_key)
+	{
+	    keyT parent_key = parent_ast._key_coeff.first;
+	    coeffT parent_coeff = parent_ast._key_coeff.second;
+	    coeffT child_coeff = copy(parent_to_child(parent_coeff, parent_key, child_key));
+	    return child_coeff;
+	}
+
+	astT add_ready_operands(vecT ready_operands_list, keyT& key)
+	{
+	    
+	    coeffT result_coeff = get_coeff_from_parent(ready_operands_list[0],key);
+	    
+	    for(int i =1; i<ready_operands_list.size(); i++)
+	    {
+		coeffT operand = get_coeff_from_parent(ready_operands_list[i],key);
+		result_coeff += operand;
+	    }
+	    
+	    std::pair<keyT,coeffT> key_coeff(key,result_coeff);
+	    astT result_ast(key_coeff);
+	    return result_ast;
+
+	}
+
+	astT multiply_ready_operands(vecT ready_operands_list, keyT& key)
+	{
+	    int num_ready_operands = ready_operands_list.size();
+	    if (num_ready_operands > 2)
+	    {
+		if(DEBUG && key == debugKey)
+		    madness::print("Entering loop");
+		
+		//double product_norm = 1.0;
+		//for(int i =0; i<ready_operands_list.size(); i++)
+		//{
+		//    product_norm *= ready_operands_list[i]._key_coeff.second.normf();
+		//}
+
+		    
+		vecT evaluated_operand_list;
+		for(int i =0; i<ready_operands_list.size()-1; i+=2)
+		{
+		    
+		    
+		    PROFILE_MEMBER_FUNC(FunctionImpl);
+
+
+		    //madness::print("do_mul: r", rkey, rcoeff.size());
+		    coeffT rcube = fcube_for_mul(key, ready_operands_list[i]._key_coeff.first, ready_operands_list[i]._key_coeff.second);
+		    
+		    //madness::print("do_mul: l", key, left.size());
+		    coeffT lcube = fcube_for_mul(key, ready_operands_list[i+1]._key_coeff.first, ready_operands_list[i+1]._key_coeff.second);
+
+		    coeffT tcube(cdata.vk,false);
+		    TERNARY_OPTIMIZED_ITERATOR(T, tcube, T, lcube, T, rcube, *_p0 = *_p1 * *_p2;);
+		    double scale = pow(0.5,0.5*NDIM*key.level())*sqrt(FunctionDefaults<NDIM>::get_cell_volume());
+		    tcube = transform(tcube,cdata.quad_phiw).scale(scale);
+		    
+		    std::pair<keyT,coeffT> key_coeff(key,tcube);
+
+		    astT result_ast(key_coeff);		    		    
+		    evaluated_operand_list.push_back(result_ast);
+		    
+		}
+
+		if(DEBUG && key == debugKey)
+		    madness::print("adding the odd coeff");
+
+
+		if (num_ready_operands % 2 !=0)
+		    evaluated_operand_list.push_back(ready_operands_list[num_ready_operands-1]);
+
+		astT result(MULTIPLY_OPERATOR,evaluated_operand_list);
+		return result;
+
+	    }else{
+		PROFILE_MEMBER_FUNC(FunctionImpl);
+		    //madness::print("do_mul: r", rkey, rcoeff.size());
+		    coeffT rcube = fcube_for_mul(key, ready_operands_list[0]._key_coeff.first, ready_operands_list[0]._key_coeff.second);
+		    
+		    //madness::print("do_mul: l", key, left.size());
+		    coeffT lcube = fcube_for_mul(key, ready_operands_list[1]._key_coeff.first, ready_operands_list[1]._key_coeff.second);
+
+		    coeffT tcube(cdata.vk,false);
+		    TERNARY_OPTIMIZED_ITERATOR(T, tcube, T, lcube, T, rcube, *_p0 = *_p1 * *_p2;);
+		    double scale = pow(0.5,0.5*NDIM*key.level())*sqrt(FunctionDefaults<NDIM>::get_cell_volume());
+		    tcube = transform(tcube,cdata.quad_phiw).scale(scale);
+		    
+		    std::pair<keyT,coeffT> key_coeff(key,tcube);
+
+		    astT result_ast(key_coeff);		    		    
+		    return result_ast;
+
+	    }
+
+	}
+
+	//not implemented yet
+	astT binary_op(int op, vecT ready_operands_list, keyT& key)
+	{
+
+	    if(ready_operands_list.size() == 1)
+		return ready_operands_list[0];
+
+	    if(DEBUG && key == debugKey)
+		std::cout<<"About to Compute "<<std::endl;
+
+	    if (op == ADD_OPERATOR)
+		return add_ready_operands(ready_operands_list, key);
+
+	    if (op == MULTIPLY_OPERATOR)
+		return multiply_ready_operands(ready_operands_list, key);
+
+	    //this should not happen
+	    astT temp;
+	    return temp;
+	}
+
+	/*exp represents a function node that may or may not have coefficients.
+	  If coefficients are already present, then no need for further evaluation.
+	  If coefficients are not present then check to see if coefficients are available at the key*/
+	astT soft_evaluation(astT& exp, keyT& key)
+	{
+            typedef typename implT::dcT::const_iterator iterT;
+
+	    if(exp._has_coefficients)
+		return exp;
+
+	    else{
+
+		std::shared_ptr<implT> func = exp._impl;
+		
+		iterT it = func->coeffs.find(key).get();		
+		
+		if (it->second.has_coeff()){
+		    //std::cout<<key<<std::endl;
+
+		    coeffT temp = copy(it->second.coeff());
+		    exp._key_coeff  = std::pair<keyT,coeffT>(key,temp);
+		    exp._has_coefficients = true;
+
+		    }
+		
+		return exp;		 
+		}
+	}
+
+
+	//if the coefficients are available, checks if further refinement is necessary
+	//based on the operation
+	bool is_coeff_ready(int op, astT exp, keyT& key)
+	{
+	    if (!exp._has_coefficients) return false;
+
+	    if (op == ADD_OPERATOR && key >= exp._key_coeff.first) return true;
+
+	    if (op == MULTIPLY_OPERATOR && key >= exp._key_coeff.first) return true;
+	    return false;
+
+	}
+
+	astT evaluate_AST(astT &exp, keyT& key)
+	{
+	    vecT not_ready_operands_list;
+	    vecT ready_operands_list;
+	    astT result_ast;
+
+	    //binary operation
+	    if (exp.is_operator() && exp._operands.size() > 1)
+	    {
+		if(DEBUG && key == debugKey)
+		    std::cout<<key<<std::endl;
+		int op = exp._operator;
+		vecT* operands = &exp._operands;
+	
+		//evaluate each of the operands
+		for(typename vecT::iterator it = operands->begin(); it != operands->end(); it++)
+		{		
+		    astT evaluated_operand = evaluate_AST(*it,key);
+		
+		    //if the evaluated operand has coefficients check if they are ready to be consumed
+		    //put them in the ready list if they are
+		    if(evaluated_operand._has_coefficients && is_coeff_ready(op,evaluated_operand,key))
+		    {
+			if(DEBUG && key == debugKey)
+			    std::cout<<"OK operand ready "<<std::endl;
+
+			ready_operands_list.push_back(evaluated_operand);	     
+		    }
+		    else
+			not_ready_operands_list.push_back(evaluated_operand);
+
+		
+		}
+
+
+		//if there more at least two operands ready then apply the operation on them
+		astT result;
+		int num_ready_operands = ready_operands_list.size();
+
+		if(num_ready_operands > 0)
+		    result = binary_op(op,ready_operands_list, key);
+
+		if(not_ready_operands_list.size() >0)
+		{		     
+		    if(num_ready_operands > 0)	
+			not_ready_operands_list.push_back(result);
+		    
+		    exp._operands = not_ready_operands_list;
+		    return exp;
+		}
+
+		if(DEBUG && key == debugKey){
+		    std::cout<<"Computed Coeff Norm is :"<<result._key_coeff.second.normf()<<std::endl;
+		    std::cout<<"Computed and returning "<<std::endl;
+		}
+		
+		return result;
+	    }
+
+	    //unary operation
+	    else if (exp.is_operator())
+	    {
+		//do unary operation
+		return exp;
+	    }
+	    else
+	    {		
+		return soft_evaluation(exp,key);
+
+	    }
+	}
+
+	void traverse_tree(astT &exp, keyT key = keyT(0))
+	{
+	
+	    if (world.rank() != coeffs.owner(key)) return;
+	    //if(DEBUG)
+		//std::cout<<key<<std::endl;
+	    
+
+	    astT evaluated_exp = evaluate_AST(exp,key);
+	    if(DEBUG && key == debugKey)
+	    {
+		std::cout<<"Evaluated ";
+		if( evaluated_exp._has_coefficients)
+			std::cout<<"and Has Coefficients "<<std::endl;
+
+	    }
+	    if (evaluated_exp._has_coefficients)
+	    {		
+		if(DEBUG && key == debugKey){
+		    std::cout<<"Replacing"<<std::endl;
+		    std::cout<<"Result has Coeff "<<evaluated_exp._key_coeff.second.has_data()<<std::endl;
+		}
+		coeffs.replace(key,nodeT(copy(evaluated_exp._key_coeff.second),false));
+	    }
+	    else 
+	    {
+		coeffs.replace(key, nodeT(coeffT(),true)); // Interior node
+
+		for (KeyChildIterator<NDIM> kit(key); kit; ++kit) {
+
+                    const keyT& child = kit.key();
+		    astT exp_copy = astT(evaluated_exp);
+		    woT::task(coeffs.owner(child), &implT:: traverse_tree, exp_copy, child);
+                }
+	    }	    		
+
+	}
+
+	/*
+	////////////////////////////////////////// END of AST stuff ////////////////////////////////////////
+	*/
+
+	
         /// Returns true if the function is compressed.
         bool is_compressed() const {
             return compressed;
@@ -542,7 +1103,7 @@ namespace madness {
         /// Returns the truncation threshold according to truncate_method
 
         /// here is our handwaving argument:
-        /// this threshold will give each FunctionNode an error of less than tol. The
+        /// this threshold will give each FunctionNodean error of less than tol. The
         /// total error can then be as high as sqrt(#nodes) * tol. Therefore in order
         /// to account for higher dimensions: divide tol by about the root of number
         /// of siblings (2^NDIM) that have a large error when we refine along a deep
@@ -648,15 +1209,25 @@ namespace madness {
             PROFILE_MEMBER_FUNC(FunctionImpl);
             const keyT& rkey = arg.first;
             const Tensor<R>& rcoeff = arg.second;
-            //madness::print("do_mul: r", rkey, rcoeff.size());
+            if(DEBUG && rkey == debugKey){
+		madness::print("do_mul: r", rkey, rcoeff.normf());
+		madness::print("do_mul: l", key, left.normf());
+	    }
+	
+	    
             Tensor<R> rcube = fcube_for_mul(key, rkey, rcoeff);
             //madness::print("do_mul: l", key, left.size());
             Tensor<L> lcube = fcube_for_mul(key, key, left);
-
+	    
+	    
             Tensor<T> tcube(cdata.vk,false);
             TERNARY_OPTIMIZED_ITERATOR(T, tcube, L, lcube, R, rcube, *_p0 = *_p1 * *_p2;);
             double scale = pow(0.5,0.5*NDIM*key.level())*sqrt(FunctionDefaults<NDIM>::get_cell_volume());
             tcube = transform(tcube,cdata.quad_phiw).scale(scale);
+	    if(DEBUG && key == debugKey){
+		std::cout<<"Computed Coeff at "<<key<<" Norm is :"<<tcube.normf()<<std::endl;
+	    }
+	
             coeffs.replace(key, nodeT(coeffT(tcube),false));
             return None;
         }
@@ -1012,7 +1583,11 @@ namespace madness {
 
             return sum;
         }
+
     };
+
+    template<typename T, std::size_t NDIM> Key<NDIM> FunctionImpl<T,NDIM>::debugKey=Key<NDIM>(0);
+
 
     namespace archive {
         template <class Archive, class T, std::size_t NDIM>

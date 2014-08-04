@@ -180,6 +180,19 @@ namespace madness {
             return !(*this == other);
         }
 
+	/* --------------------------For the AST implementation -------------------*/
+
+	//tests only the level of the keys
+	bool operator>=(const Key& other) const {
+	    return ((*this).n >= other.n);
+	}
+
+	//tests only the level of the keys
+	bool operator>(const Key& other) const {
+	    return ((*this).n > other.n);
+	}
+	/* -----------------------------------End ---------------------------------*/
+ 
         /// Comparison based upon depth first lexical order
         bool
         operator<(const Key& other) const {
@@ -215,6 +228,7 @@ namespace madness {
         // serialize(Archive& ar) {
         //     ar & archive::wrap((unsigned char*) this, sizeof(*this));
         // }
+
 
         Level
         level() const {

@@ -1,6 +1,7 @@
 /*
   This file is part of MADNESS.
 
+
   Copyright (C) 2007,2010 Oak Ridge National Laboratory
 
   This program is free software; you can redistribute it and/or modify
@@ -417,6 +418,8 @@ namespace madness {
             return *this;
         }
 
+	
+ 
 
         /// Type conversion makes a deep copy
         template <class Q> operator Tensor<Q>() const { // type conv => deep copy

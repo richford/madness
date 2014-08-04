@@ -59,6 +59,9 @@ namespace madness {
 	template<typename T, std::size_t NDIM>
 	class Function;
 
+	template<typename T, std::size_t NDIM>
+	class AST;
+
     template<typename T, std::size_t NDIM>
     Tensor<T> fcube(const Key<NDIM>&, T (*f)(const Vector<double,NDIM>&), const Tensor<double>&);
 
@@ -79,6 +82,7 @@ namespace madness {
 	class FunctionFactory {
 		friend class FunctionImpl<T, NDIM> ;
 		typedef Vector<double, NDIM> coordT; ///< Type of vector holding coordinates
+
 	protected:
 		World& _world;
 		int _k;
@@ -92,6 +96,7 @@ namespace madness {
 		bool _truncate_on_project;
 		bool _fence;
 		bool _is_on_demand;
+		
 		//Tensor<int> _bc;
 		std::shared_ptr<WorldDCPmapInterface<Key<NDIM> > > _pmap;
 
@@ -122,8 +127,11 @@ namespace madness {
 					FunctionDefaults<NDIM>::get_truncate_on_project()),
 				_fence(true), // _bc(FunctionDefaults<NDIM>::get_bc()),
 				_is_on_demand(false),
-				_pmap(FunctionDefaults<NDIM>::get_pmap()), _functor() {
+				    _pmap(FunctionDefaults<NDIM>::get_pmap()), _functor()
+				     {
+				    
 		}
+
 		virtual ~FunctionFactory() {};
 		FunctionFactory&
 		functor(

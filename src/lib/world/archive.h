@@ -420,6 +420,7 @@
 #include <cstdio>
 #include <vector>
 #include <map>
+#include <list>
 #include <world/typestuff.h>
 //#include <world/worldprofile.h>
 #include <world/enable_if.h>
@@ -1032,6 +1033,41 @@ namespace madness {
                     std::pair<T,Q> p;
                     ar & p;
                     t[p.first] = p.second;
+                }
+            }
+        };
+
+        /// Serialize an STL list.
+        template <class Archive, typename T>
+        struct ArchiveStoreImpl< Archive, std::list<T> > {
+            static void store(const Archive& ar, const std::list<T>& t) {
+                MAD_ARCHIVE_DEBUG(std::cout << "serialize STL map" << std::endl);
+                ar << t.size();
+                for (typename std::list<T>::const_iterator p = t.begin();
+                        p != t.end(); ++p) {
+                    // Fun and games here since IBM's iterator (const or
+                    // otherwise) gives us a const qualified key
+                    // (p->first) which buggers up the type matching
+                    // unless the user defines pair(T,Q) and pair(const
+                    // T,Q) to have cookie (which is tedious).
+                    T pp = *p;
+                    ar & pp;
+                }
+            }
+        };
+
+
+        /// Deserialize an STL list
+        template <class Archive, typename T>
+        struct ArchiveLoadImpl< Archive, std::list<T> > {
+            static void load(const Archive& ar, std::list<T>& t) {
+                MAD_ARCHIVE_DEBUG(std::cout << "deserialize STL map" << std::endl);
+                std::size_t n = 0;
+                ar & n;
+                while (n--) {
+                    T p;
+                    ar & p;
+                    t.push_back(p);
                 }
             }
         };

@@ -76,7 +76,9 @@ namespace madness {
 
 // some forward declarations
 namespace madness {
-
+    template<typename T, std::size_t NDIM>
+    class AST;
+    
     template<typename T, std::size_t NDIM>
     class FunctionImpl;
 
@@ -106,6 +108,7 @@ namespace madness {
         // and friend declarations.  However, this open access should
         // not be abused.
 
+	friend class AST<T,NDIM>;
     private:
         std::shared_ptr< FunctionImpl<T,NDIM> > impl;
 
@@ -122,7 +125,7 @@ namespace madness {
 
         /// Returns true if the function is initialized
         bool is_initialized() const {
-            return impl.get();
+            return impl->get();
         }
 
         /// Default constructor makes uninitialized function.  No communication.
@@ -130,11 +133,20 @@ namespace madness {
         /// An unitialized function can only be assigned to.  Any other operation will throw.
         Function() : impl() {}
 
+	//The resulting function is the result of the expression represented by the AST
+        Function(const factoryT& factory, AST<T,NDIM>& exp) : impl(new FunctionImpl<T,NDIM>(factory))
+	{
+
+	    impl->traverse_tree(exp);
+	    impl->world.gop.fence();
+	    
+	}
 
         /// Constructor from FunctionFactory provides named parameter idiom.  Possible non-blocking communication.
         Function(const factoryT& factory)
                 : impl(new FunctionImpl<T,NDIM>(factory)) {
             PROFILE_MEMBER_FUNC(Function);
+		
         }
 
 
@@ -403,8 +415,6 @@ namespace madness {
             if (fence && VERIFY_TREE) verify_tree(); // Must be after in case nonstandard
         }
 
-
-
         /// Clears the function as if constructed uninitialized.  Optional fence.
 
         /// Any underlying data will not be freed until the next global fence.
@@ -434,8 +444,6 @@ namespace madness {
             if (VERIFY_TREE) g.verify_tree();
             return impl->inner_local(*(g.get_impl()));
         }
-
-
 
         /// Returns the inner product
 
@@ -526,6 +534,7 @@ namespace madness {
         PROFILE_FUNC;
         left.verify();
         right.verify();
+
         MADNESS_ASSERT(!(left.is_compressed() || right.is_compressed()));
         if (VERIFY_TREE) left.verify_tree();
         if (VERIFY_TREE) right.verify_tree();
@@ -533,6 +542,7 @@ namespace madness {
         Function<TENSOR_RESULT_TYPE(L,R),NDIM> result;
         result.set_impl(left, false);
         result.get_impl()->mulXX(left.get_impl().get(), right.get_impl().get(), tol, fence);
+
         return result;
     }
 
