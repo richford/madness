@@ -1008,7 +1008,7 @@ namespace madness {
 		    std::cout<<"Replacing"<<std::endl;
 		    std::cout<<"Result has Coeff "<<evaluated_exp._key_coeff.second.has_data()<<std::endl;
 		}
-		coeffs.replace(key,nodeT(copy(evaluated_exp._key_coeff.second),false));
+		coeffs.replace(key,nodeT(evaluated_exp._key_coeff.second,false));
 	    }
 	    else 
 	    {
