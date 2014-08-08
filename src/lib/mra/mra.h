@@ -291,7 +291,11 @@ namespace madness {
             verify();
             return impl->get_k();
         }
-
+	
+	void print_quadrature(Key<NDIM> key){
+	    impl->print_quad(key);
+		
+	}
 
         /// Returns a shared-pointer to the implementation
         const std::shared_ptr< FunctionImpl<T,NDIM> >& get_impl() const {

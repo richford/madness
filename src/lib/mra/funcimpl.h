@@ -777,6 +777,8 @@ namespace madness {
 
 	}
 
+
+
 	astT multiply_ready_operands(vecT ready_operands_list, keyT& key)
 	{
 	    int num_ready_operands = ready_operands_list.size();
@@ -899,7 +901,7 @@ namespace madness {
 		return exp;		 
 		}
 	}
-
+	
 
 	//if the coefficients are available, checks if further refinement is necessary
 	//based on the operation
@@ -1264,6 +1266,24 @@ namespace madness {
                 world.gop.fence();
         }
 
+	int print_quad(keyT key)
+	{
+            typedef typename implT::dcT::const_iterator iterT;
+	    
+	    iterT it = coeffs.find(key).get();		
+		
+		if (it->second.has_coeff()){
+		    coeffT rcube = fcube_for_mul(key, key, it->second.coeff());
+		    print(cdata.quad_x);
+		   print(rcube);
+		   return 1;
+		}
+		std::cout<<"Not found"<<std::endl;
+
+		return -1;
+
+
+	}
 
         // Multiplication using recursive descent and assuming same distribution
         template <typename L, typename R>
