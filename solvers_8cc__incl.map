@@ -1,0 +1,33 @@
+<map id="solvers.cc" name="solvers.cc">
+<area shape="rect" id="node2" href="$solvers_8h.html" title="Defines interfaces for optimization and non&#45;linear equation solvers. " alt="" coords="2797,81,2986,109"/>
+<area shape="rect" id="node3" href="$tensor_8h.html" title="Defines and implements most of Tensor. " alt="" coords="1159,248,1344,276"/>
+<area shape="rect" id="node47" href="$print_8h.html" title="Defines simple templates for printing to std::cout &quot;a la Python&quot;. " alt="" coords="3274,423,3445,451"/>
+<area shape="rect" id="node49" href="$tensor__lapack_8h.html" title="Prototypes for a partial interface from Tensor to LAPACK. " alt="" coords="2490,157,2663,200"/>
+<area shape="rect" id="node4" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="752,682,953,709"/>
+<area shape="rect" id="node6" href="$ran_8h.html" title="madness/misc/ran.h" alt="" coords="1430,332,1584,359"/>
+<area shape="rect" id="node24" href="$posixmem_8h.html" title="Implement dummy posix_memalign if it is missing on the system. " alt="" coords="793,332,1000,359"/>
+<area shape="rect" id="node26" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="382,324,553,367"/>
+<area shape="rect" id="node34" href="$archive_8h.html" title="Interface templates for the archives (serialization) " alt="" coords="2967,423,3154,451"/>
+<area shape="rect" id="node36" href="$basetensor_8h.html" title="Declares BaseTensor. " alt="" coords="1067,507,1281,534"/>
+<area shape="rect" id="node41" href="$aligned_8h.html" title="Provides routines for internal use optimized for aligned data. " alt="" coords="577,332,769,359"/>
+<area shape="rect" id="node43" href="$mxm_8h.html" title="Internal use only. " alt="" coords="1747,332,1924,359"/>
+<area shape="rect" id="node44" href="$mtxmq_8h.html" title="madness/tensor/mtxmq.h" alt="" coords="5,332,196,359"/>
+<area shape="rect" id="node45" href="$tensorexcept_8h.html" title="Declares and implements TensorException. " alt="" coords="824,423,1052,451"/>
+<area shape="rect" id="node46" href="$tensoriter_8h.html" title="Declares TensorIterator. " alt="" coords="1148,332,1355,359"/>
+<area shape="rect" id="node5" href="$config_8h.html" title="madness/config.h" alt="" coords="784,765,921,793"/>
+<area shape="rect" id="node7" href="$worldthread_8h.html" title="Implements Dqueue, Thread, ThreadBase and ThreadPool. " alt="" coords="1886,423,2104,451"/>
+<area shape="rect" id="node8" href="$TAU_8h.html" title="madness/TAU.h" alt="" coords="1989,507,2111,534"/>
+<area shape="rect" id="node9" href="$dqueue_8h.html" title="Implements DQueue. " alt="" coords="2269,507,2457,534"/>
+<area shape="rect" id="node17" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="2696,507,2892,534"/>
+<area shape="rect" id="node18" href="$type__traits_8h.html" title="madness/world/type\l_traits.h" alt="" coords="1828,582,1984,626"/>
+<area shape="rect" id="node19" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="3071,590,3269,618"/>
+<area shape="rect" id="node20" href="$function__traits__bits_8h.html" title="madness/world/function\l_traits_bits.h" alt="" coords="2703,582,2885,626"/>
+<area shape="rect" id="node27" href="$boost__checked__delete__bits_8h.html" title="madness/world/boost\l_checked_delete_bits.h" alt="" coords="270,415,440,459"/>
+<area shape="rect" id="node28" href="$shared__ptr__bits_8h.html" title="madness/world/shared\l_ptr_bits.h" alt="" coords="1176,415,1347,459"/>
+<area shape="rect" id="node29" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="795,507,993,534"/>
+<area shape="rect" id="node37" href="$tensor__macros_8h.html" title="Macros for easy and efficient iteration over tensors. " alt="" coords="941,582,1114,626"/>
+<area shape="rect" id="node38" href="$type__data_8h.html" title="Defines and implements TensorTypeData, a type traits class. " alt="" coords="1138,582,1298,626"/>
+<area shape="rect" id="node39" href="$slice_8h.html" title="Declares and implements Slice. " alt="" coords="1424,590,1596,618"/>
+<area shape="rect" id="node40" href="$vector__factory_8h.html" title="Declares and implements factories for short vectors. " alt="" coords="1424,674,1596,717"/>
+<area shape="rect" id="node50" href="$fortran__ctypes_8h.html" title="Corresponding C and Fortran types. " alt="" coords="2482,507,2671,534"/>
+</map>

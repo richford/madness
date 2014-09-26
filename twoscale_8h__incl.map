@@ -1,0 +1,36 @@
+<map id="twoscale.h" name="twoscale.h">
+<area shape="rect" id="node2" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="941,650,1141,678"/>
+<area shape="rect" id="node4" href="$tensor_8h.html" title="Defines and implements most of Tensor. " alt="" coords="978,308,1163,336"/>
+<area shape="rect" id="node38" href="$world_8h.html" title="This header should include pretty much everything needed for the parallel runtime. " alt="" coords="2790,81,2967,109"/>
+<area shape="rect" id="node3" href="$config_8h.html" title="madness/config.h" alt="" coords="973,742,1110,769"/>
+<area shape="rect" id="node5" href="$ran_8h.html" title="madness/misc/ran.h" alt="" coords="1108,392,1263,419"/>
+<area shape="rect" id="node13" href="$posixmem_8h.html" title="Implement dummy posix_memalign if it is missing on the system. " alt="" coords="145,392,351,419"/>
+<area shape="rect" id="node15" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="2447,384,2617,427"/>
+<area shape="rect" id="node24" href="$archive_8h.html" title="Interface templates for the archives (serialization) " alt="" coords="1722,483,1908,511"/>
+<area shape="rect" id="node27" href="$basetensor_8h.html" title="Declares BaseTensor. " alt="" coords="1281,567,1495,594"/>
+<area shape="rect" id="node32" href="$aligned_8h.html" title="Provides routines for internal use optimized for aligned data. " alt="" coords="376,392,568,419"/>
+<area shape="rect" id="node34" href="$mxm_8h.html" title="Internal use only. " alt="" coords="642,392,819,419"/>
+<area shape="rect" id="node35" href="$mtxmq_8h.html" title="madness/tensor/mtxmq.h" alt="" coords="843,392,1034,419"/>
+<area shape="rect" id="node36" href="$tensorexcept_8h.html" title="Declares and implements TensorException. " alt="" coords="1420,483,1647,511"/>
+<area shape="rect" id="node37" href="$tensoriter_8h.html" title="Declares TensorIterator. " alt="" coords="1338,392,1545,419"/>
+<area shape="rect" id="node6" href="$worldthread_8h.html" title="Implements Dqueue, Thread, ThreadBase and ThreadPool. " alt="" coords="1932,483,2150,511"/>
+<area shape="rect" id="node10" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="2047,567,2244,594"/>
+<area shape="rect" id="node11" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="2046,650,2245,678"/>
+<area shape="rect" id="node16" href="$boost__checked__delete__bits_8h.html" title="madness/world/boost\l_checked_delete_bits.h" alt="" coords="2730,475,2899,519"/>
+<area shape="rect" id="node17" href="$shared__ptr__bits_8h.html" title="madness/world/shared\l_ptr_bits.h" alt="" coords="2484,475,2655,519"/>
+<area shape="rect" id="node18" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="2341,567,2539,594"/>
+<area shape="rect" id="node28" href="$tensor__macros_8h.html" title="Macros for easy and efficient iteration over tensors. " alt="" coords="1216,642,1389,686"/>
+<area shape="rect" id="node29" href="$type__data_8h.html" title="Defines and implements TensorTypeData, a type traits class. " alt="" coords="1413,642,1573,686"/>
+<area shape="rect" id="node30" href="$slice_8h.html" title="Declares and implements Slice. " alt="" coords="1598,650,1770,678"/>
+<area shape="rect" id="node31" href="$vector__factory_8h.html" title="Declares and implements factories for short vectors. " alt="" coords="1598,734,1770,777"/>
+<area shape="rect" id="node39" href="$worldfwd_8h.html" title="Implements World. " alt="" coords="2711,232,2911,260"/>
+<area shape="rect" id="node47" href="$worldam_8h.html" title="Implements active message layer for World on top of RMI layer. " alt="" coords="3165,157,3361,184"/>
+<area shape="rect" id="node48" href="$worldtask_8h.html" title="Defines TaskInterface and implements WorldTaskQueue and associated stuff. " alt="" coords="2999,232,3201,260"/>
+<area shape="rect" id="node49" href="$worldgop_8h.html" title="Implements global operations. " alt="" coords="2847,157,3049,184"/>
+<area shape="rect" id="node50" href="$worlddc_8h.html" title="Implements WorldContainer. " alt="" coords="2324,232,2516,260"/>
+<area shape="rect" id="node42" href="$worldmpi_8h.html" title="Implements WorldMpiInterface. " alt="" coords="2573,308,2774,336"/>
+<area shape="rect" id="node43" href="$worldhashmap_8h.html" title="Defines and implements a concurrent hashmap. " alt="" coords="2175,483,2409,511"/>
+<area shape="rect" id="node44" href="$worldprofile_8h.html" title="madness/world/worldprofile.h" alt="" coords="1519,567,1737,594"/>
+<area shape="rect" id="node45" href="$uniqueid_8h.html" title="madness/world/uniqueid.h" alt="" coords="3026,483,3222,511"/>
+<area shape="rect" id="node46" href="$nodefaults_8h.html" title="Implements NO_DEFAULTS. " alt="" coords="3000,308,3208,336"/>
+</map>

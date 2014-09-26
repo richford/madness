@@ -1,0 +1,51 @@
+<map id="type_traits_bits.h" name="type_traits_bits.h">
+<area shape="rect" id="node2" href="$type__traits_8h.html" title="type_traits.h" alt="" coords="1384,81,1484,109"/>
+<area shape="rect" id="node3" href="$ref_8h.html" title="ref.h" alt="" coords="1292,157,1344,184"/>
+<area shape="rect" id="node4" href="$shared__ptr__bits_8h.html" title="shared_ptr_bits.h" alt="" coords="1368,157,1500,184"/>
+<area shape="rect" id="node35" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="1525,157,1615,184"/>
+<area shape="rect" id="node5" href="$shared__ptr_8h.html" title="shared_ptr.h" alt="" coords="1388,232,1491,260"/>
+<area shape="rect" id="node6" href="$tensor_8h.html" title="Defines and implements most of Tensor. " alt="" coords="1040,384,1114,412"/>
+<area shape="rect" id="node20" href="$binfsar_8h.html" title="Implements archive wrapping a binary filestream. " alt="" coords="1820,308,1898,336"/>
+<area shape="rect" id="node23" href="$deferred__cleanup_8h.html" title="deferred_cleanup.h" alt="" coords="1509,308,1655,336"/>
+<area shape="rect" id="node24" href="$deferred__deleter_8h.html" title="deferred_deleter.h" alt="" coords="1514,384,1655,412"/>
+<area shape="rect" id="node25" href="$scopedptr_8h.html" title="scopedptr.h" alt="" coords="528,308,626,336"/>
+<area shape="rect" id="node29" href="$worldmpi_8h.html" title="Implements WorldMpiInterface. " alt="" coords="5,460,100,487"/>
+<area shape="rect" id="node32" href="$worldfut_8h.html" title="Implements Future. " alt="" coords="2483,460,2571,487"/>
+<area shape="rect" id="node34" href="$worldref_8h.html" title="Implements RemoteReference which is for internal use. " alt="" coords="2398,384,2486,412"/>
+<area shape="rect" id="node7" href="$derivative_8h.html" title="Declaration and initialization of tree traversal functions and generic derivative. " alt="" coords="1767,535,1863,563"/>
+<area shape="rect" id="node8" href="$mra_8h.html" title="Main include file for MADNESS and defines Function interface. " alt="" coords="1544,611,1604,639"/>
+<area shape="rect" id="node11" href="$funcimpl_8h.html" title="Provides FunctionCommonData, FunctionImpl and FunctionFactory. " alt="" coords="707,535,798,563"/>
+<area shape="rect" id="node13" href="$fred_8cc.html" title="fred.cc" alt="" coords="951,460,1016,487"/>
+<area shape="rect" id="node14" href="$gmres_8h.html" title="Defines a general operator interface and a templated GMRES solver for solving linear equations..." alt="" coords="1040,460,1113,487"/>
+<area shape="rect" id="node15" href="$jimkernel_8cc.html" title="jimkernel.cc" alt="" coords="1137,460,1237,487"/>
+<area shape="rect" id="node16" href="$kain_8cc.html" title="kain.cc" alt="" coords="1261,460,1327,487"/>
+<area shape="rect" id="node17" href="$solvers_8h.html" title="Defines interfaces for optimization and non&#45;linear equation solvers. " alt="" coords="1402,460,1480,487"/>
+<area shape="rect" id="node19" href="$srconf_8h.html" title="handles the low&#45;level details of a separated representation tensor " alt="" coords="853,460,927,487"/>
+<area shape="rect" id="node9" href="$apps_2tdse_2tdse_8cc.html" title="Evolves the hydrogen atom in imaginary and also real time. " alt="" coords="1442,687,1508,714"/>
+<area shape="rect" id="node10" href="$tdse4_8cc.html" title="Evolves the hydrogen molecular ion in 4D ... 3 electron + 1 nuclear degree of freedom. " alt="" coords="1246,687,1321,714"/>
+<area shape="rect" id="node12" href="$mraimpl_8h.html" title="Declaration and initialization of static data, some implementation, some instantiation. " alt="" coords="1354,611,1442,639"/>
+<area shape="rect" id="node18" href="$gfit_8cc.html" title="gfit.cc" alt="" coords="1449,535,1510,563"/>
+<area shape="rect" id="node21" href="$parar_8h.html" title="Implements ParallelInputArchive and ParallelOutputArchive. " alt="" coords="1991,384,2059,412"/>
+<area shape="rect" id="node22" href="$worlddc_8h.html" title="Implements WorldContainer. " alt="" coords="2230,460,2315,487"/>
+<area shape="rect" id="node26" href="$safempi_8h.html" title="Serializes calls to MPI in case it does not support THREAD_MULTIPLE. " alt="" coords="346,384,431,412"/>
+<area shape="rect" id="node27" href="$debug_8cc.html" title="debug.cc" alt="" coords="125,460,205,487"/>
+<area shape="rect" id="node28" href="$safempi_8cc.html" title="safempi.cc" alt="" coords="229,460,319,487"/>
+<area shape="rect" id="node30" href="$worldrmi_8h.html" title="worldrmi.h" alt="" coords="343,460,435,487"/>
+<area shape="rect" id="node31" href="$worldthread_8cc.html" title="worldthread.cc" alt="" coords="458,460,575,487"/>
+<area shape="rect" id="node33" href="$dist__cache_8h.html" title="dist_cache.h" alt="" coords="2477,535,2578,563"/>
+<area shape="rect" id="node36" href="$archive_8h.html" title="Interface templates for the archives (serialization) " alt="" coords="2057,232,2137,260"/>
+<area shape="rect" id="node42" href="$print_8h.html" title="Defines simple templates for printing to std::cout &quot;a la Python&quot;. " alt="" coords="1408,384,1473,412"/>
+<area shape="rect" id="node48" href="$worldhash_8h.html" title="Defines hash functions for use in distributed containers. " alt="" coords="1515,232,1615,260"/>
+<area shape="rect" id="node49" href="$worldrange_8h.html" title="Implement Range class for parallel iteration. " alt="" coords="1639,232,1746,260"/>
+<area shape="rect" id="node50" href="$worldthread_8h.html" title="Implements Dqueue, Thread, ThreadBase and ThreadPool. " alt="" coords="455,384,567,412"/>
+<area shape="rect" id="node37" href="$bufar_8h.html" title="Implements an archive wrapping a memory buffer. " alt="" coords="2391,460,2459,487"/>
+<area shape="rect" id="node38" href="$mpiar_8h.html" title="mpiar.h" alt="" coords="2120,384,2191,412"/>
+<area shape="rect" id="node39" href="$textfsar_8h.html" title="Implements archive wrapping text file stream. " alt="" coords="2266,308,2349,336"/>
+<area shape="rect" id="node40" href="$vecar_8h.html" title="Implements archive wrapping an STL vector. " alt="" coords="2124,308,2192,336"/>
+<area shape="rect" id="node41" href="$worldptr_8h.html" title="worldptr.h" alt="" coords="2372,308,2461,336"/>
+<area shape="rect" id="node43" href="$chem_2corepotential_8h.html" title="corepotential.h" alt="" coords="1554,460,1674,487"/>
+<area shape="rect" id="node44" href="$DFcode_2corepotential_8h.html" title="corepotential.h" alt="" coords="1697,460,1816,487"/>
+<area shape="rect" id="node45" href="$jacob_2corepotential_8h.html" title="corepotential.h" alt="" coords="1840,460,1959,487"/>
+<area shape="rect" id="node46" href="$indexit_8h.html" title="Provides IndexIterator. " alt="" coords="2078,460,2156,487"/>
+<area shape="rect" id="node47" href="$print_8cc.html" title="print.cc" alt="" coords="1983,460,2053,487"/>
+</map>

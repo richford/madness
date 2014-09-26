@@ -1,0 +1,4 @@
+<map id="madness::Convolution1D&lt; Q &gt;" name="madness::Convolution1D&lt; Q &gt;">
+<area shape="rect" id="node2" href="$classmadness_1_1GaussianConvolution1D.html" title="1D convolution with (derivative) Gaussian; coeff and expnt given in simulation coordinates [0..." alt="" coords="5,81,235,124"/>
+<area shape="rect" id="node3" href="$classmadness_1_1GenericConvolution1D.html" title="Generic 1D convolution using brute force (i.e., slow) adaptive quadrature for rnlp. " alt="" coords="259,81,480,124"/>
+</map>

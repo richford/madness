@@ -1,0 +1,32 @@
+<map id="worldtask.h" name="worldtask.h">
+<area shape="rect" id="node3" href="$nodefaults_8h.html" title="Implements NO_DEFAULTS. " alt="" coords="607,635,815,662"/>
+<area shape="rect" id="node4" href="$worldrange_8h.html" title="Implement Range class for parallel iteration. " alt="" coords="285,467,498,495"/>
+<area shape="rect" id="node15" href="$worldtime_8h.html" title="Wrappers around platform dependent timers and performance info. " alt="" coords="839,635,1044,662"/>
+<area shape="rect" id="node19" href="$taskfn_8h.html" title="madness/world/taskfn.h" alt="" coords="1401,81,1581,109"/>
+<area shape="rect" id="node6" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="74,551,271,579"/>
+<area shape="rect" id="node9" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="1287,726,1487,754"/>
+<area shape="rect" id="node11" href="$type__traits_8h.html" title="madness/world/type\l_traits.h" alt="" coords="327,627,482,670"/>
+<area shape="rect" id="node13" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="5,817,204,845"/>
+<area shape="rect" id="node14" href="$function__traits__bits_8h.html" title="madness/world/function\l_traits_bits.h" alt="" coords="262,809,443,853"/>
+<area shape="rect" id="node10" href="$config_8h.html" title="madness/config.h" alt="" coords="1319,817,1456,845"/>
+<area shape="rect" id="node12" href="$type__traits__bits_8h.html" title="madness/world/type\l_traits_bits.h" alt="" coords="327,718,482,761"/>
+<area shape="rect" id="node20" href="$worlddep_8h.html" title="Defines DependencyInterface and CallbackInterface. " alt="" coords="1802,232,2002,260"/>
+<area shape="rect" id="node40" href="$worldthread_8h.html" title="Implements Dqueue, Thread, ThreadBase and ThreadPool. " alt="" coords="2438,384,2656,412"/>
+<area shape="rect" id="node47" href="$worldfut_8h.html" title="Implements Future. " alt="" coords="1194,157,1388,184"/>
+<area shape="rect" id="node21" href="$array_8h.html" title="madness/world/array.h" alt="" coords="1322,384,1495,412"/>
+<area shape="rect" id="node27" href="$worldmutex_8h.html" title="Implements Mutex, MutexFair, Spinlock, ConditionVariable. " alt="" coords="1740,551,1957,579"/>
+<area shape="rect" id="node30" href="$atomicint_8h.html" title="madness/world/atomicint.h" alt="" coords="1728,635,1929,662"/>
+<area shape="rect" id="node32" href="$worldfwd_8h.html" title="Implements World. " alt="" coords="1802,308,2002,336"/>
+<area shape="rect" id="node22" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="1220,635,1418,662"/>
+<area shape="rect" id="node23" href="$worldhash_8h.html" title="Defines hash functions for use in distributed containers. " alt="" coords="817,467,1024,495"/>
+<area shape="rect" id="node24" href="$stdarray_8h.html" title="madness/world/stdarray.h" alt="" coords="1423,551,1615,579"/>
+<area shape="rect" id="node28" href="$TAU_8h.html" title="madness/TAU.h" alt="" coords="2163,635,2286,662"/>
+<area shape="rect" id="node35" href="$worldmpi_8h.html" title="Implements WorldMpiInterface. " alt="" coords="687,384,888,412"/>
+<area shape="rect" id="node37" href="$worldhashmap_8h.html" title="Defines and implements a concurrent hashmap. " alt="" coords="962,384,1197,412"/>
+<area shape="rect" id="node39" href="$worldprofile_8h.html" title="madness/world/worldprofile.h" alt="" coords="1570,384,1788,412"/>
+<area shape="rect" id="node46" href="$uniqueid_8h.html" title="madness/world/uniqueid.h" alt="" coords="1863,384,2060,412"/>
+<area shape="rect" id="node36" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="572,460,743,503"/>
+<area shape="rect" id="node41" href="$dqueue_8h.html" title="Implements DQueue. " alt="" coords="2102,467,2291,495"/>
+<area shape="rect" id="node49" href="$worldref_8h.html" title="Implements RemoteReference which is for internal use. " alt="" coords="891,308,1086,336"/>
+<area shape="rect" id="node50" href="$move_8h.html" title="madness/world/move.h" alt="" coords="336,232,511,260"/>
+</map>

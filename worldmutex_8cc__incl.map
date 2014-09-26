@@ -1,0 +1,10 @@
+<map id="worldmutex.cc" name="worldmutex.cc">
+<area shape="rect" id="node2" href="$worldmutex_8h.html" title="Implements Mutex, MutexFair, Spinlock, ConditionVariable. " alt="" coords="527,81,744,109"/>
+<area shape="rect" id="node8" href="$worldtime_8h.html" title="Wrappers around platform dependent timers and performance info. " alt="" coords="129,157,334,184"/>
+<area shape="rect" id="node3" href="$TAU_8h.html" title="madness/TAU.h" alt="" coords="974,157,1097,184"/>
+<area shape="rect" id="node4" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="542,232,742,260"/>
+<area shape="rect" id="node7" href="$nodefaults_8h.html" title="Implements NO_DEFAULTS. " alt="" coords="742,157,950,184"/>
+<area shape="rect" id="node13" href="$atomicint_8h.html" title="madness/world/atomicint.h" alt="" coords="357,157,558,184"/>
+<area shape="rect" id="node15" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="1120,157,1318,184"/>
+<area shape="rect" id="node5" href="$config_8h.html" title="madness/config.h" alt="" coords="573,308,711,336"/>
+</map>

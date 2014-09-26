@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$singletonmadness_1_1WorldObject.html" title="madness::WorldObject\l\&lt; FunctionImpl\&lt; T, NDIM \&gt; \&gt;" alt="" coords="5,40,221,83"/>
+<area shape="rect" id="node2" href="$singletonmadness_1_1FunctionImpl.html" title="madness::FunctionImpl\l\&lt; T, MDIM \&gt;" alt="" coords="269,5,439,49"/>
+<area shape="rect" id="node3" href="$singletonmadness_1_1FunctionImpl.html" title="FunctionImpl holds all Function state to facilitate shallow copy semantics. " alt="" coords="269,73,439,117"/>
+</map>

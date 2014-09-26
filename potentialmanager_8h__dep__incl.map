@@ -1,0 +1,22 @@
+<map id="potentialmanager.h" name="potentialmanager.h">
+<area shape="rect" id="node2" href="$correlationfactor_8h.html" title="correlationfactor.h" alt="" coords="158,81,299,109"/>
+<area shape="rect" id="node12" href="$chem_2SCF_8h.html" title="SCF.h" alt="" coords="467,81,524,109"/>
+<area shape="rect" id="node3" href="$correlationfactor_8cc.html" title="correlationfactor.cc" alt="" coords="66,157,213,184"/>
+<area shape="rect" id="node4" href="$apps_2chem_2mp2_8cc.html" title="mp2.cc" alt="" coords="253,308,322,336"/>
+<area shape="rect" id="node5" href="$mp2_8h.html" title="Solves molecular MP2 equations. " alt="" coords="482,232,545,260"/>
+<area shape="rect" id="node8" href="$nemo_8h.html" title="nemo.h" alt="" coords="287,157,357,184"/>
+<area shape="rect" id="node10" href="$helium__exact_8cc.html" title="Solves the two&#45;particle system exactly. " alt="" coords="33,232,157,260"/>
+<area shape="rect" id="node6" href="$examples_2mp2_8cc.html" title="mp2.cc" alt="" coords="524,308,592,336"/>
+<area shape="rect" id="node7" href="$oep_8cc.html" title="optimized effective potentials for DFT " alt="" coords="437,308,500,336"/>
+<area shape="rect" id="node9" href="$apps_2chem_2nemo_8cc.html" title="nemo.cc" alt="" coords="232,232,308,260"/>
+<area shape="rect" id="node11" href="$examples_2nemo_8cc.html" title="solve the HF equations using numerical exponential MOs " alt="" coords="332,232,408,260"/>
+<area shape="rect" id="node13" href="$chem_2SCF_8cc.html" title="SCF.cc" alt="" coords="859,157,921,184"/>
+<area shape="rect" id="node14" href="$TDA_8h.html" title="TDA.h" alt="" coords="897,232,958,260"/>
+<area shape="rect" id="node17" href="$TDA__XC_8h.html" title="TDA_XC.h" alt="" coords="750,157,835,184"/>
+<area shape="rect" id="node19" href="$tdhf__CIS_8h.html" title="tdhf_CIS.h" alt="" coords="638,157,726,184"/>
+<area shape="rect" id="node21" href="$moldft_2moldft_8cc.html" title="moldft.cc" alt="" coords="533,157,615,184"/>
+<area shape="rect" id="node15" href="$TDA_8cc.html" title="TDA.cc" alt="" coords="939,308,1006,336"/>
+<area shape="rect" id="node16" href="$tdhf_8cc.html" title="compute the time&#45;dependent HF equations (currently CIS approximation) " alt="" coords="849,308,915,336"/>
+<area shape="rect" id="node18" href="$TDA__XC_8cc.html" title="TDA_XC.cc" alt="" coords="750,232,841,260"/>
+<area shape="rect" id="node20" href="$tdhf__CIS_8cc.html" title="tdhf_CIS.cc" alt="" coords="633,232,726,260"/>
+</map>

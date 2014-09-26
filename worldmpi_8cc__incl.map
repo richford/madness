@@ -1,0 +1,23 @@
+<map id="worldmpi.cc" name="worldmpi.cc">
+<area shape="rect" id="node2" href="$worldmpi_8h.html" title="Implements WorldMpiInterface. " alt="" coords="1318,81,1519,109"/>
+<area shape="rect" id="node3" href="$safempi_8h.html" title="Serializes calls to MPI in case it does not support THREAD_MULTIPLE. " alt="" coords="1086,157,1277,184"/>
+<area shape="rect" id="node29" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="1572,308,1743,352"/>
+<area shape="rect" id="node37" href="$worldtypes_8h.html" title="madness/world/worldtypes.h" alt="" coords="38,316,248,344"/>
+<area shape="rect" id="node4" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="1191,590,1391,618"/>
+<area shape="rect" id="node7" href="$worldmutex_8h.html" title="Implements Mutex, MutexFair, Spinlock, ConditionVariable. " alt="" coords="540,407,757,435"/>
+<area shape="rect" id="node21" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="780,407,977,435"/>
+<area shape="rect" id="node25" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="897,682,1095,709"/>
+<area shape="rect" id="node28" href="$scopedptr_8h.html" title="madness/world/scopedptr.h" alt="" coords="1415,232,1620,260"/>
+<area shape="rect" id="node5" href="$config_8h.html" title="madness/config.h" alt="" coords="1321,682,1458,709"/>
+<area shape="rect" id="node8" href="$TAU_8h.html" title="madness/TAU.h" alt="" coords="601,499,724,527"/>
+<area shape="rect" id="node10" href="$nodefaults_8h.html" title="Implements NO_DEFAULTS. " alt="" coords="140,499,348,527"/>
+<area shape="rect" id="node11" href="$worldtime_8h.html" title="Wrappers around platform dependent timers and performance info. " alt="" coords="372,499,577,527"/>
+<area shape="rect" id="node16" href="$atomicint_8h.html" title="madness/world/atomicint.h" alt="" coords="1332,499,1533,527"/>
+<area shape="rect" id="node18" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="1606,499,1805,527"/>
+<area shape="rect" id="node23" href="$type__traits_8h.html" title="madness/world/type\l_traits.h" alt="" coords="1052,491,1207,534"/>
+<area shape="rect" id="node27" href="$function__traits__bits_8h.html" title="madness/world/function\l_traits_bits.h" alt="" coords="692,674,873,717"/>
+<area shape="rect" id="node24" href="$type__traits__bits_8h.html" title="madness/world/type\l_traits_bits.h" alt="" coords="1012,582,1167,626"/>
+<area shape="rect" id="node26" href="$integral__constant_8h.html" title="madness/world/integral\l_constant.h" alt="" coords="1120,674,1297,717"/>
+<area shape="rect" id="node30" href="$boost__checked__delete__bits_8h.html" title="madness/world/boost\l_checked_delete_bits.h" alt="" coords="1883,400,2053,443"/>
+<area shape="rect" id="node31" href="$shared__ptr__bits_8h.html" title="madness/world/shared\l_ptr_bits.h" alt="" coords="1688,400,1859,443"/>
+</map>

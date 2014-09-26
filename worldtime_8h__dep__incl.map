@@ -1,0 +1,51 @@
+<map id="worldtime.h" name="worldtime.h">
+<area shape="rect" id="node2" href="$jimkernel_8cc.html" title="jimkernel.cc" alt="" coords="5,81,105,109"/>
+<area shape="rect" id="node3" href="$stubmpi_8h.html" title="stubmpi.h" alt="" coords="129,81,216,109"/>
+<area shape="rect" id="node4" href="$world_8cc.html" title="world.cc" alt="" coords="1039,838,1114,866"/>
+<area shape="rect" id="node5" href="$worldmutex_8cc.html" title="worldmutex.cc" alt="" coords="1413,157,1529,184"/>
+<area shape="rect" id="node6" href="$worldmutex_8h.html" title="Implements Mutex, MutexFair, Spinlock, ConditionVariable. " alt="" coords="514,81,625,109"/>
+<area shape="rect" id="node30" href="$worldtask_8h.html" title="Defines TaskInterface and implements WorldTaskQueue and associated stuff. " alt="" coords="1155,611,1251,639"/>
+<area shape="rect" id="node39" href="$worldrmi_8cc.html" title="worldrmi.cc" alt="" coords="1484,384,1581,412"/>
+<area shape="rect" id="node7" href="$mra1_8cc.html" title="mra1.cc" alt="" coords="257,914,330,941"/>
+<area shape="rect" id="node8" href="$mra2_8cc.html" title="mra2.cc" alt="" coords="680,914,753,941"/>
+<area shape="rect" id="node9" href="$mra3_8cc.html" title="mra3.cc" alt="" coords="453,914,526,941"/>
+<area shape="rect" id="node10" href="$mra4_8cc.html" title="mra4.cc" alt="" coords="781,914,854,941"/>
+<area shape="rect" id="node11" href="$mra5_8cc.html" title="mra5.cc" alt="" coords="356,914,429,941"/>
+<area shape="rect" id="node12" href="$mra6_8cc.html" title="mra6.cc" alt="" coords="579,914,652,941"/>
+<area shape="rect" id="node13" href="$deferred__cleanup_8h.html" title="deferred_cleanup.h" alt="" coords="817,611,963,639"/>
+<area shape="rect" id="node27" href="$dqueue_8h.html" title="Implements DQueue. " alt="" coords="1012,157,1094,184"/>
+<area shape="rect" id="node35" href="$worlddep_8h.html" title="Defines DependencyInterface and CallbackInterface. " alt="" coords="936,384,1030,412"/>
+<area shape="rect" id="node41" href="$safempi_8h.html" title="Serializes calls to MPI in case it does not support THREAD_MULTIPLE. " alt="" coords="836,157,920,184"/>
+<area shape="rect" id="node45" href="$worldhashmap_8h.html" title="Defines and implements a concurrent hashmap. " alt="" coords="442,232,570,260"/>
+<area shape="rect" id="node47" href="$worldref_8cc.html" title="worldref.cc" alt="" coords="514,384,607,412"/>
+<area shape="rect" id="node48" href="$worldprofile_8h.html" title="worldprofile.h" alt="" coords="1269,232,1380,260"/>
+<area shape="rect" id="node14" href="$deferred__cleanup_8cc.html" title="deferred_cleanup.cc" alt="" coords="952,914,1103,941"/>
+<area shape="rect" id="node15" href="$deferred__deleter_8h.html" title="deferred_deleter.h" alt="" coords="421,687,561,714"/>
+<area shape="rect" id="node25" href="$worldgop_8h.html" title="Implements global operations. " alt="" coords="1190,762,1285,790"/>
+<area shape="rect" id="node16" href="$worlddc_8h.html" title="Implements WorldContainer. " alt="" coords="341,762,426,790"/>
+<area shape="rect" id="node17" href="$mraimpl_8h.html" title="Declaration and initialization of static data, some implementation, some instantiation. " alt="" coords="439,838,527,866"/>
+<area shape="rect" id="node18" href="$world_8h.html" title="This header should include pretty much everything needed for the parallel runtime. " alt="" coords="1455,838,1525,866"/>
+<area shape="rect" id="node19" href="$chem_2distpm_8cc.html" title="distpm.cc" alt="" coords="1280,914,1364,941"/>
+<area shape="rect" id="node20" href="$DFcode_2distpm_8cc.html" title="distpm.cc" alt="" coords="1388,914,1472,941"/>
+<area shape="rect" id="node21" href="$dft_8h.html" title="dft.h" alt="" coords="1524,989,1576,1017"/>
+<area shape="rect" id="node22" href="$eigsolver_8h.html" title="eigsolver.h" alt="" coords="1545,914,1637,941"/>
+<area shape="rect" id="node23" href="$util_8h.html" title="util.h" alt="" coords="1201,914,1256,941"/>
+<area shape="rect" id="node24" href="$worldprofile_8cc.html" title="worldprofile.cc" alt="" coords="1661,914,1778,941"/>
+<area shape="rect" id="node26" href="$group_8cc.html" title="group.cc" alt="" coords="1251,838,1329,866"/>
+<area shape="rect" id="node28" href="$worldthread_8h.html" title="Implements Dqueue, Thread, ThreadBase and ThreadPool. " alt="" coords="1031,232,1143,260"/>
+<area shape="rect" id="node29" href="$taskfn_8h.html" title="taskfn.h" alt="" coords="1007,535,1080,563"/>
+<area shape="rect" id="node32" href="$worldobj_8h.html" title="Defines and implements WorldObject. " alt="" coords="586,687,676,714"/>
+<area shape="rect" id="node34" href="$worldfwd_8h.html" title="Implements World. " alt="" coords="858,308,951,336"/>
+<area shape="rect" id="node38" href="$worldrmi_8h.html" title="worldrmi.h" alt="" coords="1025,308,1117,336"/>
+<area shape="rect" id="node40" href="$worldthread_8cc.html" title="worldthread.cc" alt="" coords="1141,308,1258,336"/>
+<area shape="rect" id="node31" href="$group_8h.html" title="group.h" alt="" coords="1366,687,1438,714"/>
+<area shape="rect" id="node33" href="$worldtask_8cc.html" title="worldtask.cc" alt="" coords="1240,687,1342,714"/>
+<area shape="rect" id="node36" href="$worldfut_8h.html" title="Implements Future. " alt="" coords="887,460,975,487"/>
+<area shape="rect" id="node37" href="$dist__cache_8h.html" title="dist_cache.h" alt="" coords="881,535,981,563"/>
+<area shape="rect" id="node42" href="$debug_8cc.html" title="debug.cc" alt="" coords="695,232,775,260"/>
+<area shape="rect" id="node43" href="$safempi_8cc.html" title="safempi.cc" alt="" coords="800,232,889,260"/>
+<area shape="rect" id="node44" href="$worldmpi_8h.html" title="Implements WorldMpiInterface. " alt="" coords="913,232,1008,260"/>
+<area shape="rect" id="node46" href="$worldref_8h.html" title="Implements RemoteReference which is for internal use. " alt="" coords="543,308,631,336"/>
+<area shape="rect" id="node49" href="$mtxmq_8cc.html" title="mtxmq.cc" alt="" coords="1282,308,1367,336"/>
+<area shape="rect" id="node50" href="$mtxmq__avx__rjh_8cc.html" title="mtxmq_avx_rjh.cc" alt="" coords="1391,308,1530,336"/>
+</map>

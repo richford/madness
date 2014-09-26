@@ -1,0 +1,31 @@
+<map id="gfit.h" name="gfit.h">
+<area shape="rect" id="node2" href="$tensor_8h.html" title="Defines and implements most of Tensor. " alt="" coords="1542,81,1727,109"/>
+<area shape="rect" id="node50" href="$constants_8h.html" title="Defines common mathematical and physical constants. " alt="" coords="1752,81,1910,109"/>
+<area shape="rect" id="node3" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="2772,515,2972,542"/>
+<area shape="rect" id="node5" href="$ran_8h.html" title="madness/misc/ran.h" alt="" coords="1791,157,1945,184"/>
+<area shape="rect" id="node25" href="$posixmem_8h.html" title="Implement dummy posix_memalign if it is missing on the system. " alt="" coords="2863,157,3070,184"/>
+<area shape="rect" id="node27" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="2761,232,2932,276"/>
+<area shape="rect" id="node37" href="$archive_8h.html" title="Interface templates for the archives (serialization) " alt="" coords="1072,240,1258,268"/>
+<area shape="rect" id="node39" href="$basetensor_8h.html" title="Declares BaseTensor. " alt="" coords="431,332,646,359"/>
+<area shape="rect" id="node44" href="$aligned_8h.html" title="Provides routines for internal use optimized for aligned data. " alt="" coords="3095,157,3287,184"/>
+<area shape="rect" id="node46" href="$mxm_8h.html" title="Internal use only. " alt="" coords="2662,157,2839,184"/>
+<area shape="rect" id="node47" href="$mtxmq_8h.html" title="madness/tensor/mtxmq.h" alt="" coords="3310,157,3501,184"/>
+<area shape="rect" id="node48" href="$tensorexcept_8h.html" title="Declares and implements TensorException. " alt="" coords="573,240,800,268"/>
+<area shape="rect" id="node49" href="$tensoriter_8h.html" title="Declares TensorIterator. " alt="" coords="1246,157,1453,184"/>
+<area shape="rect" id="node4" href="$config_8h.html" title="madness/config.h" alt="" coords="2803,598,2941,626"/>
+<area shape="rect" id="node6" href="$worldthread_8h.html" title="Implements Dqueue, Thread, ThreadBase and ThreadPool. " alt="" coords="1831,240,2049,268"/>
+<area shape="rect" id="node7" href="$TAU_8h.html" title="madness/TAU.h" alt="" coords="2337,332,2460,359"/>
+<area shape="rect" id="node8" href="$dqueue_8h.html" title="Implements DQueue. " alt="" coords="1658,332,1846,359"/>
+<area shape="rect" id="node16" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="1438,332,1634,359"/>
+<area shape="rect" id="node17" href="$type__traits_8h.html" title="madness/world/type\l_traits.h" alt="" coords="1994,415,2150,459"/>
+<area shape="rect" id="node18" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="998,423,1197,451"/>
+<area shape="rect" id="node19" href="$function__traits__bits_8h.html" title="madness/world/function\l_traits_bits.h" alt="" coords="1423,415,1604,459"/>
+<area shape="rect" id="node28" href="$boost__checked__delete__bits_8h.html" title="madness/world/boost\l_checked_delete_bits.h" alt="" coords="2831,324,3001,367"/>
+<area shape="rect" id="node29" href="$shared__ptr__bits_8h.html" title="madness/world/shared\l_ptr_bits.h" alt="" coords="2535,324,2705,367"/>
+<area shape="rect" id="node30" href="$atomicint_8h.html" title="madness/world/atomicint.h" alt="" coords="2536,423,2736,451"/>
+<area shape="rect" id="node31" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="1628,423,1826,451"/>
+<area shape="rect" id="node40" href="$tensor__macros_8h.html" title="Macros for easy and efficient iteration over tensors. " alt="" coords="424,415,597,459"/>
+<area shape="rect" id="node41" href="$type__data_8h.html" title="Defines and implements TensorTypeData, a type traits class. " alt="" coords="240,415,400,459"/>
+<area shape="rect" id="node42" href="$slice_8h.html" title="Declares and implements Slice. " alt="" coords="43,423,216,451"/>
+<area shape="rect" id="node43" href="$vector__factory_8h.html" title="Declares and implements factories for short vectors. " alt="" coords="477,507,649,550"/>
+</map>

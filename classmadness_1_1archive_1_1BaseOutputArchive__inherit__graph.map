@@ -1,0 +1,10 @@
+<map id="madness::archive::BaseOutputArchive" name="madness::archive::BaseOutputArchive">
+<area shape="rect" id="node3" href="$classmadness_1_1archive_1_1BinaryFstreamOutputArchive.html" title="Wraps an archive around a binary file stream for output. " alt="" coords="552,5,732,49"/>
+<area shape="rect" id="node4" href="$classmadness_1_1archive_1_1BufferOutputArchive.html" title="Wraps an archive around a memory buffer for output. " alt="" coords="553,73,732,117"/>
+<area shape="rect" id="node5" href="$classmadness_1_1archive_1_1MPIOutputArchive.html" title="madness::archive::MPIOutput\lArchive" alt="" coords="538,141,747,185"/>
+<area shape="rect" id="node6" href="$classmadness_1_1archive_1_1MPIRawOutputArchive.html" title="madness::archive::MPIRaw\lOutputArchive" alt="" coords="548,209,737,253"/>
+<area shape="rect" id="node7" href="$classmadness_1_1archive_1_1ParallelOutputArchive.html" title="An archive for storing local or parallel data wrapping BinaryFstreamOutputArchive. " alt="" coords="549,277,736,321"/>
+<area shape="rect" id="node8" href="$classmadness_1_1archive_1_1TextFstreamOutputArchive.html" title="Wraps an archive around a text file stream for output. " alt="" coords="533,345,752,389"/>
+<area shape="rect" id="node9" href="$classmadness_1_1archive_1_1VectorOutputArchive.html" title="Wraps an archive around an STL vector for output. " alt="" coords="551,413,733,457"/>
+<area shape="rect" id="node2" href="$classmadness_1_1archive_1_1BaseArchive.html" title="Base class for all archives classes. " alt="" coords="5,217,222,245"/>
+</map>

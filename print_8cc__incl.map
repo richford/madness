@@ -1,0 +1,11 @@
+<map id="print.cc" name="print.cc">
+<area shape="rect" id="node2" href="$print_8h.html" title="Defines simple templates for printing to std::cout &quot;a la Python&quot;. " alt="" coords="358,81,530,109"/>
+<area shape="rect" id="node7" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="536,157,733,184"/>
+<area shape="rect" id="node14" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="759,423,958,451"/>
+<area shape="rect" id="node10" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="567,332,767,359"/>
+<area shape="rect" id="node12" href="$type__traits_8h.html" title="madness/world/type\l_traits.h" alt="" coords="557,232,712,276"/>
+<area shape="rect" id="node16" href="$function__traits__bits_8h.html" title="madness/world/function\l_traits_bits.h" alt="" coords="5,415,187,459"/>
+<area shape="rect" id="node11" href="$config_8h.html" title="madness/config.h" alt="" coords="598,423,735,451"/>
+<area shape="rect" id="node13" href="$type__traits__bits_8h.html" title="madness/world/type\l_traits_bits.h" alt="" coords="320,324,475,367"/>
+<area shape="rect" id="node15" href="$integral__constant_8h.html" title="madness/world/integral\l_constant.h" alt="" coords="305,415,482,459"/>
+</map>

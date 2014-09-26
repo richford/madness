@@ -1,0 +1,21 @@
+<map id="safempi.cc" name="safempi.cc">
+<area shape="rect" id="node2" href="$safempi_8h.html" title="Serializes calls to MPI in case it does not support THREAD_MULTIPLE. " alt="" coords="562,81,753,109"/>
+<area shape="rect" id="node17" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="1333,423,1532,451"/>
+<area shape="rect" id="node3" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="1694,515,1894,542"/>
+<area shape="rect" id="node6" href="$worldmutex_8h.html" title="Implements Mutex, MutexFair, Spinlock, ConditionVariable. " alt="" coords="1883,332,2100,359"/>
+<area shape="rect" id="node20" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="474,332,671,359"/>
+<area shape="rect" id="node24" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="5,606,204,634"/>
+<area shape="rect" id="node27" href="$scopedptr_8h.html" title="madness/world/scopedptr.h" alt="" coords="826,157,1031,184"/>
+<area shape="rect" id="node4" href="$config_8h.html" title="madness/config.h" alt="" coords="1725,606,1862,634"/>
+<area shape="rect" id="node7" href="$TAU_8h.html" title="madness/TAU.h" alt="" coords="1932,423,2055,451"/>
+<area shape="rect" id="node9" href="$nodefaults_8h.html" title="Implements NO_DEFAULTS. " alt="" coords="2416,423,2625,451"/>
+<area shape="rect" id="node10" href="$worldtime_8h.html" title="Wrappers around platform dependent timers and performance info. " alt="" coords="2187,423,2392,451"/>
+<area shape="rect" id="node15" href="$atomicint_8h.html" title="madness/world/atomicint.h" alt="" coords="1556,423,1757,451"/>
+<area shape="rect" id="node22" href="$type__traits_8h.html" title="madness/world/type\l_traits.h" alt="" coords="685,415,841,459"/>
+<area shape="rect" id="node26" href="$function__traits__bits_8h.html" title="madness/world/function\l_traits_bits.h" alt="" coords="227,598,409,641"/>
+<area shape="rect" id="node23" href="$type__traits__bits_8h.html" title="madness/world/type\l_traits_bits.h" alt="" coords="355,507,510,550"/>
+<area shape="rect" id="node25" href="$integral__constant_8h.html" title="madness/world/integral\l_constant.h" alt="" coords="432,598,609,641"/>
+<area shape="rect" id="node28" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="1086,232,1257,276"/>
+<area shape="rect" id="node29" href="$boost__checked__delete__bits_8h.html" title="madness/world/boost\l_checked_delete_bits.h" alt="" coords="1184,324,1353,367"/>
+<area shape="rect" id="node30" href="$shared__ptr__bits_8h.html" title="madness/world/shared\l_ptr_bits.h" alt="" coords="988,324,1159,367"/>
+</map>

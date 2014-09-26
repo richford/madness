@@ -1,0 +1,30 @@
+<map id="jimkernel.cc" name="jimkernel.cc">
+<area shape="rect" id="node2" href="$tensor_8h.html" title="Defines and implements most of Tensor. " alt="" coords="1109,81,1294,109"/>
+<area shape="rect" id="node39" href="$mtxmq_8h.html" title="madness/tensor/mtxmq.h" alt="" coords="5,165,196,192"/>
+<area shape="rect" id="node42" href="$print_8h.html" title="Defines simple templates for printing to std::cout &quot;a la Python&quot;. " alt="" coords="2538,256,2709,284"/>
+<area shape="rect" id="node44" href="$worldtime_8h.html" title="Wrappers around platform dependent timers and performance info. " alt="" coords="2922,340,3127,367"/>
+<area shape="rect" id="node3" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="455,515,655,542"/>
+<area shape="rect" id="node5" href="$ran_8h.html" title="madness/misc/ran.h" alt="" coords="1790,165,1944,192"/>
+<area shape="rect" id="node17" href="$posixmem_8h.html" title="Implement dummy posix_memalign if it is missing on the system. " alt="" coords="271,165,477,192"/>
+<area shape="rect" id="node19" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="806,157,977,200"/>
+<area shape="rect" id="node28" href="$archive_8h.html" title="Interface templates for the archives (serialization) " alt="" coords="1649,256,1835,284"/>
+<area shape="rect" id="node31" href="$basetensor_8h.html" title="Declares BaseTensor. " alt="" coords="705,340,920,367"/>
+<area shape="rect" id="node36" href="$aligned_8h.html" title="Provides routines for internal use optimized for aligned data. " alt="" coords="502,165,694,192"/>
+<area shape="rect" id="node38" href="$mxm_8h.html" title="Internal use only. " alt="" coords="1051,165,1228,192"/>
+<area shape="rect" id="node40" href="$tensorexcept_8h.html" title="Declares and implements TensorException. " alt="" coords="925,256,1153,284"/>
+<area shape="rect" id="node41" href="$tensoriter_8h.html" title="Declares TensorIterator. " alt="" coords="1353,165,1560,192"/>
+<area shape="rect" id="node4" href="$config_8h.html" title="madness/config.h" alt="" coords="487,598,624,626"/>
+<area shape="rect" id="node6" href="$worldthread_8h.html" title="Implements Dqueue, Thread, ThreadBase and ThreadPool. " alt="" coords="1989,256,2207,284"/>
+<area shape="rect" id="node7" href="$TAU_8h.html" title="madness/TAU.h" alt="" coords="2311,340,2434,367"/>
+<area shape="rect" id="node11" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="1989,340,2186,367"/>
+<area shape="rect" id="node13" href="$type__traits_8h.html" title="madness/world/type\l_traits.h" alt="" coords="1518,415,1673,459"/>
+<area shape="rect" id="node14" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="2145,423,2344,451"/>
+<area shape="rect" id="node15" href="$function__traits__bits_8h.html" title="madness/world/function\l_traits_bits.h" alt="" coords="1941,415,2122,459"/>
+<area shape="rect" id="node20" href="$boost__checked__delete__bits_8h.html" title="madness/world/boost\l_checked_delete_bits.h" alt="" coords="580,248,749,292"/>
+<area shape="rect" id="node21" href="$shared__ptr__bits_8h.html" title="madness/world/shared\l_ptr_bits.h" alt="" coords="1176,248,1347,292"/>
+<area shape="rect" id="node22" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="1204,340,1402,367"/>
+<area shape="rect" id="node32" href="$tensor__macros_8h.html" title="Macros for easy and efficient iteration over tensors. " alt="" coords="644,415,816,459"/>
+<area shape="rect" id="node33" href="$type__data_8h.html" title="Defines and implements TensorTypeData, a type traits class. " alt="" coords="841,415,1000,459"/>
+<area shape="rect" id="node34" href="$slice_8h.html" title="Declares and implements Slice. " alt="" coords="1076,423,1248,451"/>
+<area shape="rect" id="node35" href="$vector__factory_8h.html" title="Declares and implements factories for short vectors. " alt="" coords="1076,507,1248,550"/>
+</map>

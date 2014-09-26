@@ -1,0 +1,11 @@
+<map id="worldprofile.h" name="worldprofile.h">
+<area shape="rect" id="node2" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="769,232,969,260"/>
+<area shape="rect" id="node4" href="$worldtypes_8h.html" title="madness/world/worldtypes.h" alt="" coords="154,81,364,109"/>
+<area shape="rect" id="node6" href="$worldmutex_8h.html" title="Implements Mutex, MutexFair, Spinlock, ConditionVariable. " alt="" coords="711,81,928,109"/>
+<area shape="rect" id="node3" href="$config_8h.html" title="madness/config.h" alt="" coords="800,308,937,336"/>
+<area shape="rect" id="node7" href="$TAU_8h.html" title="madness/TAU.h" alt="" coords="709,157,831,184"/>
+<area shape="rect" id="node9" href="$nodefaults_8h.html" title="Implements NO_DEFAULTS. " alt="" coords="23,157,231,184"/>
+<area shape="rect" id="node10" href="$worldtime_8h.html" title="Wrappers around platform dependent timers and performance info. " alt="" coords="256,157,461,184"/>
+<area shape="rect" id="node14" href="$atomicint_8h.html" title="madness/world/atomicint.h" alt="" coords="484,157,685,184"/>
+<area shape="rect" id="node16" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="1066,157,1264,184"/>
+</map>

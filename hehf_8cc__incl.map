@@ -1,0 +1,44 @@
+<map id="hehf.cc" name="hehf.cc">
+<area shape="rect" id="node2" href="$mra_8h.html" title="Main include file for MADNESS and defines Function interface. " alt="" coords="1024,81,1179,109"/>
+<area shape="rect" id="node41" href="$operator_8h.html" title="Implements most functionality of separated operators. " alt="" coords="2060,157,2244,184"/>
+<area shape="rect" id="node3" href="$world_8h.html" title="This header should include pretty much everything needed for the parallel runtime. " alt="" coords="482,491,659,519"/>
+<area shape="rect" id="node11" href="$worlddc_8h.html" title="Implements WorldContainer. " alt="" coords="348,567,540,594"/>
+<area shape="rect" id="node12" href="$parar_8h.html" title="Implements ParallelInputArchive and ParallelOutputArchive. " alt="" coords="357,650,531,678"/>
+<area shape="rect" id="node16" href="$misc_8h.html" title="Header to declare stuff which has not yet found a home. " alt="" coords="245,407,408,435"/>
+<area shape="rect" id="node18" href="$tensor_8h.html" title="Defines and implements most of Tensor. " alt="" coords="1690,491,1875,519"/>
+<area shape="rect" id="node29" href="$key_8h.html" title="Multidimension Key for MRA tree and associated iterators. " alt="" coords="971,491,1122,519"/>
+<area shape="rect" id="node30" href="$twoscale_8h.html" title="madness/mra/twoscale.h" alt="" coords="1941,407,2126,435"/>
+<area shape="rect" id="node31" href="$legendre_8h.html" title="madness/mra/legendre.h" alt="" coords="1416,407,1602,435"/>
+<area shape="rect" id="node32" href="$indexit_8h.html" title="Provides IndexIterator. " alt="" coords="1208,316,1382,344"/>
+<area shape="rect" id="node33" href="$funcdefaults_8h.html" title="Provides FunctionDefaults and utilities for coordinate transformation. " alt="" coords="634,407,843,435"/>
+<area shape="rect" id="node34" href="$function__factory_8h.html" title="madness/mra/function\l_factory.h" alt="" coords="1221,400,1392,443"/>
+<area shape="rect" id="node35" href="$lbdeux_8h.html" title="Implements (2nd generation) static load/data balancing for functions. " alt="" coords="859,316,1032,344"/>
+<area shape="rect" id="node36" href="$funcimpl_8h.html" title="Provides FunctionCommonData, FunctionImpl and FunctionFactory. " alt="" coords="732,232,918,260"/>
+<area shape="rect" id="node38" href="$funcplot_8h.html" title="Defines/implements plotting interface for functions. " alt="" coords="1846,157,2029,184"/>
+<area shape="rect" id="node40" href="$derivative_8h.html" title="Declaration and initialization of tree traversal functions and generic derivative. " alt="" coords="296,316,488,344"/>
+<area shape="rect" id="node49" href="$functypedefs_8h.html" title="Provides typedefs to hide use of templates and to increase interoperability. " alt="" coords="1558,157,1770,184"/>
+<area shape="rect" id="node50" href="$vmra_8h.html" title="Defines operations on vectors of FunctionsThis file defines a number of operations on vectors of func..." alt="" coords="285,157,446,184"/>
+<area shape="rect" id="node4" href="$worldfwd_8h.html" title="Implements World. " alt="" coords="428,809,628,837"/>
+<area shape="rect" id="node7" href="$worldam_8h.html" title="Implements active message layer for World on top of RMI layer. " alt="" coords="571,734,767,761"/>
+<area shape="rect" id="node9" href="$worldtask_8h.html" title="Defines TaskInterface and implements WorldTaskQueue and associated stuff. " alt="" coords="195,809,397,837"/>
+<area shape="rect" id="node10" href="$worldgop_8h.html" title="Implements global operations. " alt="" coords="245,734,446,761"/>
+<area shape="rect" id="node5" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="1695,885,1895,913"/>
+<area shape="rect" id="node13" href="$archive_8h.html" title="Interface templates for the archives (serialization) " alt="" coords="843,734,1029,761"/>
+<area shape="rect" id="node15" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="706,809,904,837"/>
+<area shape="rect" id="node19" href="$ran_8h.html" title="madness/misc/ran.h" alt="" coords="1595,734,1749,761"/>
+<area shape="rect" id="node20" href="$posixmem_8h.html" title="Implement dummy posix_memalign if it is missing on the system. " alt="" coords="1891,650,2098,678"/>
+<area shape="rect" id="node21" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="2123,642,2293,686"/>
+<area shape="rect" id="node24" href="$basetensor_8h.html" title="Declares BaseTensor. " alt="" coords="1410,650,1625,678"/>
+<area shape="rect" id="node25" href="$aligned_8h.html" title="Provides routines for internal use optimized for aligned data. " alt="" coords="2235,567,2427,594"/>
+<area shape="rect" id="node26" href="$mxm_8h.html" title="Internal use only. " alt="" coords="1882,567,2059,594"/>
+<area shape="rect" id="node27" href="$mtxmq_8h.html" title="madness/tensor/mtxmq.h" alt="" coords="2501,567,2691,594"/>
+<area shape="rect" id="node28" href="$tensorexcept_8h.html" title="Declares and implements TensorException. " alt="" coords="1357,567,1584,594"/>
+<area shape="rect" id="node37" href="$function__common__data_8h.html" title="madness/mra/function\l_common_data.h" alt="" coords="664,308,835,352"/>
+<area shape="rect" id="node39" href="$constants_8h.html" title="Defines common mathematical and physical constants. " alt="" coords="1658,316,1816,344"/>
+<area shape="rect" id="node43" href="$adquad_8h.html" title="madness/mra/adquad.h" alt="" coords="1891,316,2069,344"/>
+<area shape="rect" id="node44" href="$tensor__lapack_8h.html" title="Prototypes for a partial interface from Tensor to LAPACK. " alt="" coords="2528,308,2701,352"/>
+<area shape="rect" id="node45" href="$simplecache_8h.html" title="madness/mra/simplecache.h" alt="" coords="2093,316,2301,344"/>
+<area shape="rect" id="node46" href="$convolution1d_8h.html" title="Compuates most matrix elements over 1D operators (including Gaussians) " alt="" coords="2189,232,2411,260"/>
+<area shape="rect" id="node47" href="$displacements_8h.html" title="madness/mra/displacements.h" alt="" coords="2435,232,2656,260"/>
+<area shape="rect" id="node48" href="$gfit_8h.html" title="fit isotropic functions to a set of Gaussians with controlled precision " alt="" coords="1826,232,1977,260"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="madness::ConvolutionData1D&lt; Q &gt;" name="madness::ConvolutionData1D&lt; Q &gt;">
+<area shape="rect" id="node3" href="$classmadness_1_1BaseTensor.html" title="The base class for tensors defines generic capabilities. " alt="" coords="5,187,163,215"/>
+<area shape="rect" id="node5" href="$singletonmadness_1_1tr1_1_1shptr_1_1shared__ptr.html" title="madness::tr1::shptr\l::shared_ptr\&lt; Q \&gt;" alt="" coords="11,82,157,125"/>
+<area shape="rect" id="node6" href="$singletonmadness_1_1tr1_1_1shptr_1_1shared__ptr.html" title="madness::tr1::shptr\l::shared_ptr\&lt; typename\l Tensor\&lt; Q \&gt;::scalar_type \&gt;" alt="" coords="255,142,458,201"/>
+</map>

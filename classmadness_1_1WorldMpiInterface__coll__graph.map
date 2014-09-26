@@ -1,0 +1,4 @@
+<map id="madness::WorldMpiInterface" name="madness::WorldMpiInterface">
+<area shape="rect" id="node2" href="$classmadness_1_1detail_1_1WorldMpiRuntime.html" title="MPI runtime reference counter. " alt="" coords="5,5,197,49"/>
+<area shape="rect" id="node3" href="$classSafeMPI_1_1Intracomm.html" title="Wrapper around MPI_Comm. Has a shallow copy constructor; use Create(Get_group()) for deep copy..." alt="" coords="221,13,370,41"/>
+</map>

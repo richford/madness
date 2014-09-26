@@ -1,0 +1,24 @@
+<map id="worldrmi.h" name="worldrmi.h">
+<area shape="rect" id="node2" href="$safempi_8h.html" title="Serializes calls to MPI in case it does not support THREAD_MULTIPLE. " alt="" coords="591,81,781,109"/>
+<area shape="rect" id="node36" href="$worldthread_8h.html" title="Implements Dqueue, Thread, ThreadBase and ThreadPool. " alt="" coords="1975,157,2194,184"/>
+<area shape="rect" id="node44" href="$worldtypes_8h.html" title="madness/world/worldtypes.h" alt="" coords="2588,81,2798,109"/>
+<area shape="rect" id="node3" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="1454,515,1654,542"/>
+<area shape="rect" id="node6" href="$worldmutex_8h.html" title="Implements Mutex, MutexFair, Spinlock, ConditionVariable. " alt="" coords="1744,332,1961,359"/>
+<area shape="rect" id="node20" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="978,332,1175,359"/>
+<area shape="rect" id="node24" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="579,606,777,634"/>
+<area shape="rect" id="node27" href="$scopedptr_8h.html" title="madness/world/scopedptr.h" alt="" coords="444,157,648,184"/>
+<area shape="rect" id="node4" href="$config_8h.html" title="madness/config.h" alt="" coords="1485,606,1623,634"/>
+<area shape="rect" id="node7" href="$TAU_8h.html" title="madness/TAU.h" alt="" coords="2366,423,2489,451"/>
+<area shape="rect" id="node9" href="$nodefaults_8h.html" title="Implements NO_DEFAULTS. " alt="" coords="1643,423,1851,451"/>
+<area shape="rect" id="node10" href="$worldtime_8h.html" title="Wrappers around platform dependent timers and performance info. " alt="" coords="1926,423,2131,451"/>
+<area shape="rect" id="node15" href="$atomicint_8h.html" title="madness/world/atomicint.h" alt="" coords="1267,423,1468,451"/>
+<area shape="rect" id="node17" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="355,423,553,451"/>
+<area shape="rect" id="node22" href="$type__traits_8h.html" title="madness/world/type\l_traits.h" alt="" coords="878,415,1033,459"/>
+<area shape="rect" id="node26" href="$function__traits__bits_8h.html" title="madness/world/function\l_traits_bits.h" alt="" coords="1094,598,1275,641"/>
+<area shape="rect" id="node23" href="$type__traits__bits_8h.html" title="madness/world/type\l_traits_bits.h" alt="" coords="987,507,1142,550"/>
+<area shape="rect" id="node25" href="$integral__constant_8h.html" title="madness/world/integral\l_constant.h" alt="" coords="893,598,1071,641"/>
+<area shape="rect" id="node28" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="470,232,641,276"/>
+<area shape="rect" id="node29" href="$boost__checked__delete__bits_8h.html" title="madness/world/boost\l_checked_delete_bits.h" alt="" coords="385,324,555,367"/>
+<area shape="rect" id="node30" href="$shared__ptr__bits_8h.html" title="madness/world/shared\l_ptr_bits.h" alt="" coords="579,324,750,367"/>
+<area shape="rect" id="node37" href="$dqueue_8h.html" title="Implements DQueue. " alt="" coords="1745,240,1933,268"/>
+</map>

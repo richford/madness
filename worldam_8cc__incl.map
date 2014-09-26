@@ -1,0 +1,38 @@
+<map id="worldam.cc" name="worldam.cc">
+<area shape="rect" id="node2" href="$worldam_8h.html" title="Implements active message layer for World on top of RMI layer. " alt="" coords="1454,384,1650,412"/>
+<area shape="rect" id="node31" href="$worldmpi_8h.html" title="Implements WorldMpiInterface. " alt="" coords="2623,559,2825,587"/>
+<area shape="rect" id="node36" href="$world_8h.html" title="This header should include pretty much everything needed for the parallel runtime. " alt="" coords="1245,81,1422,109"/>
+<area shape="rect" id="node3" href="$bufar_8h.html" title="Implements an archive wrapping a memory buffer. " alt="" coords="909,559,1083,587"/>
+<area shape="rect" id="node17" href="$worldrmi_8h.html" title="madness/world/worldrmi.h" alt="" coords="1648,559,1846,587"/>
+<area shape="rect" id="node30" href="$worldfwd_8h.html" title="Implements World. " alt="" coords="1193,467,1393,495"/>
+<area shape="rect" id="node4" href="$archive_8h.html" title="Interface templates for the archives (serialization) " alt="" coords="502,650,688,678"/>
+<area shape="rect" id="node14" href="$print_8h.html" title="Defines simple templates for printing to std::cout &quot;a la Python&quot;. " alt="" coords="1005,650,1176,678"/>
+<area shape="rect" id="node9" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="1131,734,1328,761"/>
+<area shape="rect" id="node13" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="994,817,1193,845"/>
+<area shape="rect" id="node12" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="1969,909,2169,936"/>
+<area shape="rect" id="node18" href="$safempi_8h.html" title="Serializes calls to MPI in case it does not support THREAD_MULTIPLE. " alt="" coords="2126,650,2317,678"/>
+<area shape="rect" id="node27" href="$worldthread_8h.html" title="Implements Dqueue, Thread, ThreadBase and ThreadPool. " alt="" coords="763,650,981,678"/>
+<area shape="rect" id="node28" href="$worldtypes_8h.html" title="madness/world/worldtypes.h" alt="" coords="1790,650,2000,678"/>
+<area shape="rect" id="node20" href="$worldmutex_8h.html" title="Implements Mutex, MutexFair, Spinlock, ConditionVariable. " alt="" coords="1815,734,2033,761"/>
+<area shape="rect" id="node23" href="$scopedptr_8h.html" title="madness/world/scopedptr.h" alt="" coords="2379,734,2584,761"/>
+<area shape="rect" id="node21" href="$nodefaults_8h.html" title="Implements NO_DEFAULTS. " alt="" coords="1773,817,1981,845"/>
+<area shape="rect" id="node22" href="$worldtime_8h.html" title="Wrappers around platform dependent timers and performance info. " alt="" coords="1544,817,1749,845"/>
+<area shape="rect" id="node24" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="2536,809,2707,853"/>
+<area shape="rect" id="node25" href="$boost__checked__delete__bits_8h.html" title="madness/world/boost\l_checked_delete_bits.h" alt="" coords="2430,901,2599,944"/>
+<area shape="rect" id="node26" href="$shared__ptr__bits_8h.html" title="madness/world/shared\l_ptr_bits.h" alt="" coords="2624,901,2795,944"/>
+<area shape="rect" id="node33" href="$worldhashmap_8h.html" title="Defines and implements a concurrent hashmap. " alt="" coords="245,559,480,587"/>
+<area shape="rect" id="node34" href="$worldprofile_8h.html" title="madness/world/worldprofile.h" alt="" coords="1870,559,2088,587"/>
+<area shape="rect" id="node35" href="$uniqueid_8h.html" title="madness/world/uniqueid.h" alt="" coords="230,650,426,678"/>
+<area shape="rect" id="node37" href="$worldtask_8h.html" title="Defines TaskInterface and implements WorldTaskQueue and associated stuff. " alt="" coords="967,467,1169,495"/>
+<area shape="rect" id="node40" href="$worldgop_8h.html" title="Implements global operations. " alt="" coords="1037,308,1238,336"/>
+<area shape="rect" id="node44" href="$worlddc_8h.html" title="Implements WorldContainer. " alt="" coords="716,157,908,184"/>
+<area shape="rect" id="node38" href="$worldrange_8h.html" title="Implement Range class for parallel iteration. " alt="" coords="1107,559,1320,587"/>
+<area shape="rect" id="node39" href="$taskfn_8h.html" title="madness/world/taskfn.h" alt="" coords="605,559,784,587"/>
+<area shape="rect" id="node41" href="$deferred__cleanup_8h.html" title="madness/world/deferred\l_cleanup.h" alt="" coords="2442,642,2625,686"/>
+<area shape="rect" id="node42" href="$group_8h.html" title="madness/world/group.h" alt="" coords="1048,384,1227,412"/>
+<area shape="rect" id="node43" href="$dist__cache_8h.html" title="madness/world/dist\l_cache.h" alt="" coords="740,460,892,503"/>
+<area shape="rect" id="node45" href="$parar_8h.html" title="Implements ParallelInputArchive and ParallelOutputArchive. " alt="" coords="988,232,1162,260"/>
+<area shape="rect" id="node46" href="$mpiar_8h.html" title="madness/world/mpiar.h" alt="" coords="215,384,393,412"/>
+<area shape="rect" id="node47" href="$worldobj_8h.html" title="Defines and implements WorldObject. " alt="" coords="468,384,665,412"/>
+<area shape="rect" id="node48" href="$deferred__deleter_8h.html" title="madness/world/deferred\l_deleter.h" alt="" coords="2417,551,2599,594"/>
+</map>

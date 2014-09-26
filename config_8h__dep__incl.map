@@ -1,0 +1,51 @@
+<map id="config.h" name="config.h">
+<area shape="rect" id="node2" href="$madness__config_8h.html" title="madness_config.h" alt="" coords="1938,81,2075,109"/>
+<area shape="rect" id="node3" href="$chem_2corepotential_8cc.html" title="corepotential.cc" alt="" coords="5,232,130,260"/>
+<area shape="rect" id="node4" href="$chem_2corepotential_8h.html" title="corepotential.h" alt="" coords="59,157,178,184"/>
+<area shape="rect" id="node5" href="$chem_2molecularbasis_8h.html" title="molecularbasis.h" alt="" coords="541,308,671,336"/>
+<area shape="rect" id="node6" href="$chem_2xcfunctional_8h.html" title="xcfunctional.h" alt="" coords="252,308,365,336"/>
+<area shape="rect" id="node7" href="$chem_2xcfunctional__ldaonly_8cc.html" title="xcfunctional_ldaonly.cc" alt="" coords="223,384,395,412"/>
+<area shape="rect" id="node8" href="$chem_2xcfunctional__libxc_8cc.html" title="xcfunctional_libxc.cc" alt="" coords="537,384,692,412"/>
+<area shape="rect" id="node9" href="$DFcode_2corepotential_8cc.html" title="corepotential.cc" alt="" coords="2424,232,2548,260"/>
+<area shape="rect" id="node10" href="$DFcode_2corepotential_8h.html" title="corepotential.h" alt="" coords="2427,157,2546,184"/>
+<area shape="rect" id="node11" href="$DFcode_2molecularbasis_8h.html" title="molecularbasis.h" alt="" coords="695,308,824,336"/>
+<area shape="rect" id="node12" href="$DFcode_2xcfunctional_8h.html" title="xcfunctional.h" alt="" coords="1051,308,1164,336"/>
+<area shape="rect" id="node13" href="$DFcode_2xcfunctional__ldaonly_8cc.html" title="xcfunctional_ldaonly.cc" alt="" coords="1023,384,1195,412"/>
+<area shape="rect" id="node14" href="$DFcode_2xcfunctional__libxc_8cc.html" title="xcfunctional_libxc.cc" alt="" coords="1222,384,1377,412"/>
+<area shape="rect" id="node15" href="$xcfunctional__madxc_8cc.html" title="xcfunctional_madxc.cc" alt="" coords="832,384,999,412"/>
+<area shape="rect" id="node16" href="$hf_2molecularbasis_8h.html" title="molecularbasis.h" alt="" coords="1545,308,1675,336"/>
+<area shape="rect" id="node17" href="$lda_8h.html" title="lda.h" alt="" coords="2570,157,2624,184"/>
+<area shape="rect" id="node18" href="$jacob_2corepotential_8cc.html" title="corepotential.cc" alt="" coords="2648,157,2772,184"/>
+<area shape="rect" id="node19" href="$jacob_2corepotential_8h.html" title="corepotential.h" alt="" coords="2796,157,2915,184"/>
+<area shape="rect" id="node20" href="$jacob_2molecularbasis_8h.html" title="molecularbasis.h" alt="" coords="1699,308,1828,336"/>
+<area shape="rect" id="node21" href="$fortran__ctypes_8h.html" title="Corresponding C and Fortran types. " alt="" coords="1047,157,1173,184"/>
+<area shape="rect" id="node22" href="$cblas_8h.html" title="Define BLAS like functions. " alt="" coords="1082,232,1149,260"/>
+<area shape="rect" id="node23" href="$meminfo_8cc.html" title="Memory stats per rank, usually platform specific calls. Invoke with rank and tag. ..." alt="" coords="2939,157,3036,184"/>
+<area shape="rect" id="node24" href="$ran_8h.html" title="ran.h" alt="" coords="1837,157,1892,184"/>
+<area shape="rect" id="node25" href="$tensor_8h.html" title="Defines and implements most of Tensor. " alt="" coords="1444,232,1518,260"/>
+<area shape="rect" id="node26" href="$twoscale_8h.html" title="twoscale.h" alt="" coords="1852,308,1941,336"/>
+<area shape="rect" id="node27" href="$aligned_8h.html" title="Provides routines for internal use optimized for aligned data. " alt="" coords="1440,308,1522,336"/>
+<area shape="rect" id="node28" href="$tensor_8cc.html" title="Completes the implementation of Tensor and instantiates all specializations for fast compiles..." alt="" coords="1938,384,2018,412"/>
+<area shape="rect" id="node29" href="$lapack_8cc.html" title="Partial interface from Tensor to LAPACK. " alt="" coords="2015,308,2096,336"/>
+<area shape="rect" id="node30" href="$mtxmq_8cc.html" title="mtxmq.cc" alt="" coords="2170,308,2255,336"/>
+<area shape="rect" id="node31" href="$mtxmq__avx__rjh_8cc.html" title="mtxmq_avx_rjh.cc" alt="" coords="2280,308,2418,336"/>
+<area shape="rect" id="node32" href="$lbdeux_8h.html" title="Implements (2nd generation) static load/data balancing for functions. " alt="" coords="3077,232,3154,260"/>
+<area shape="rect" id="node33" href="$legendre_8h.html" title="legendre.h" alt="" coords="3228,157,3318,184"/>
+<area shape="rect" id="node34" href="$basetensor_8h.html" title="Declares BaseTensor. " alt="" coords="1658,157,1762,184"/>
+<area shape="rect" id="node35" href="$elem_8cc.html" title="elem.cc" alt="" coords="3342,157,3412,184"/>
+<area shape="rect" id="node36" href="$elem_8h.html" title="elem.h" alt="" coords="3436,157,3501,184"/>
+<area shape="rect" id="node37" href="$mtxmq_8h.html" title="mtxmq.h" alt="" coords="2120,157,2199,184"/>
+<area shape="rect" id="node38" href="$vmath_8cc.html" title="vmath.cc" alt="" coords="3525,157,3604,184"/>
+<area shape="rect" id="node39" href="$vmath_8h.html" title="vmath.h" alt="" coords="3628,157,3702,184"/>
+<area shape="rect" id="node40" href="$array_8h.html" title="array.h" alt="" coords="1177,232,1243,260"/>
+<area shape="rect" id="node41" href="$atomicint_8h.html" title="atomicint.h" alt="" coords="3110,157,3204,184"/>
+<area shape="rect" id="node42" href="$debug_8cc.html" title="debug.cc" alt="" coords="3870,384,3950,412"/>
+<area shape="rect" id="node43" href="$posixmem_8h.html" title="Implement dummy posix_memalign if it is missing on the system. " alt="" coords="1357,157,1458,184"/>
+<area shape="rect" id="node44" href="$safempi_8h.html" title="Serializes calls to MPI in case it does not support THREAD_MULTIPLE. " alt="" coords="3813,308,3898,336"/>
+<area shape="rect" id="node45" href="$shared__ptr_8h.html" title="shared_ptr.h" alt="" coords="1482,157,1584,184"/>
+<area shape="rect" id="node46" href="$stdarray_8h.html" title="stdarray.h" alt="" coords="1247,157,1333,184"/>
+<area shape="rect" id="node47" href="$type__traits_8h.html" title="type_traits.h" alt="" coords="3777,157,3878,184"/>
+<area shape="rect" id="node48" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="3810,232,3901,260"/>
+<area shape="rect" id="node49" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="882,157,973,184"/>
+<area shape="rect" id="node50" href="$worldfwd_8h.html" title="Implements World. " alt="" coords="4003,157,4097,184"/>
+</map>

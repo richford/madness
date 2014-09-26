@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$singletonmadness_1_1WorldObject.html" title="Implements most parts of a globally addressable object (via unique ID) " alt="" coords="5,108,171,151"/>
+<area shape="rect" id="node2" href="$singletonmadness_1_1FunctionImpl.html" title="madness::FunctionImpl\l\&lt; double, NDIM \&gt;" alt="" coords="223,5,393,49"/>
+<area shape="rect" id="node3" href="$singletonmadness_1_1FunctionImpl.html" title="madness::FunctionImpl\l\&lt; Q, NDIM \&gt;" alt="" coords="223,73,393,117"/>
+<area shape="rect" id="node4" href="$singletonmadness_1_1FunctionImpl.html" title="madness::FunctionImpl\l\&lt; R, NDIM \&gt;" alt="" coords="223,141,393,185"/>
+<area shape="rect" id="node5" href="$singletonmadness_1_1FunctionImpl.html" title="madness::FunctionImpl\l\&lt; std::complex\&lt; double\l \&gt;, NDIM \&gt;" alt="" coords="219,208,397,267"/>
+</map>

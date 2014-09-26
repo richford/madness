@@ -1,0 +1,32 @@
+<map id="worldref.h" name="worldref.h">
+<area shape="rect" id="node2" href="$atomicint_8h.html" title="madness/world/atomicint.h" alt="" coords="1673,499,1874,527"/>
+<area shape="rect" id="node6" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="1472,308,1643,352"/>
+<area shape="rect" id="node17" href="$worldtypes_8h.html" title="madness/world/worldtypes.h" alt="" coords="2695,316,2905,344"/>
+<area shape="rect" id="node19" href="$archive_8h.html" title="Interface templates for the archives (serialization) " alt="" coords="387,316,573,344"/>
+<area shape="rect" id="node28" href="$worldam_8h.html" title="Implements active message layer for World on top of RMI layer. " alt="" coords="1014,81,1210,109"/>
+<area shape="rect" id="node45" href="$worldhashmap_8h.html" title="Defines and implements a concurrent hashmap. " alt="" coords="144,232,379,260"/>
+<area shape="rect" id="node50" href="$worldptr_8h.html" title="madness/world/worldptr.h" alt="" coords="1813,81,2008,109"/>
+<area shape="rect" id="node3" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="1861,582,2061,610"/>
+<area shape="rect" id="node4" href="$config_8h.html" title="madness/config.h" alt="" coords="1893,658,2030,686"/>
+<area shape="rect" id="node7" href="$boost__checked__delete__bits_8h.html" title="madness/world/boost\l_checked_delete_bits.h" alt="" coords="1653,400,1822,443"/>
+<area shape="rect" id="node8" href="$shared__ptr__bits_8h.html" title="madness/world/shared\l_ptr_bits.h" alt="" coords="1204,400,1375,443"/>
+<area shape="rect" id="node9" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="614,499,812,527"/>
+<area shape="rect" id="node12" href="$type__traits_8h.html" title="madness/world/type\l_traits.h" alt="" coords="1190,491,1346,534"/>
+<area shape="rect" id="node25" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="983,407,1180,435"/>
+<area shape="rect" id="node26" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="391,499,590,527"/>
+<area shape="rect" id="node27" href="$function__traits__bits_8h.html" title="madness/world/function\l_traits_bits.h" alt="" coords="935,491,1116,534"/>
+<area shape="rect" id="node29" href="$bufar_8h.html" title="Implements an archive wrapping a memory buffer. " alt="" coords="646,232,821,260"/>
+<area shape="rect" id="node33" href="$worldrmi_8h.html" title="madness/world/worldrmi.h" alt="" coords="1320,232,1518,260"/>
+<area shape="rect" id="node43" href="$worldfwd_8h.html" title="Implements World. " alt="" coords="1811,157,2011,184"/>
+<area shape="rect" id="node30" href="$print_8h.html" title="Defines simple templates for printing to std::cout &quot;a la Python&quot;. " alt="" coords="648,316,819,344"/>
+<area shape="rect" id="node34" href="$safempi_8h.html" title="Serializes calls to MPI in case it does not support THREAD_MULTIPLE. " alt="" coords="1897,316,2087,344"/>
+<area shape="rect" id="node40" href="$worldthread_8h.html" title="Implements Dqueue, Thread, ThreadBase and ThreadPool. " alt="" coords="1046,316,1264,344"/>
+<area shape="rect" id="node35" href="$worldmutex_8h.html" title="Implements Mutex, MutexFair, Spinlock, ConditionVariable. " alt="" coords="2289,407,2506,435"/>
+<area shape="rect" id="node36" href="$TAU_8h.html" title="madness/TAU.h" alt="" coords="1999,499,2121,527"/>
+<area shape="rect" id="node38" href="$nodefaults_8h.html" title="Implements NO_DEFAULTS. " alt="" coords="2796,499,3004,527"/>
+<area shape="rect" id="node39" href="$worldtime_8h.html" title="Wrappers around platform dependent timers and performance info. " alt="" coords="2305,499,2511,527"/>
+<area shape="rect" id="node44" href="$worldmpi_8h.html" title="Implements WorldMpiInterface. " alt="" coords="1742,232,1943,260"/>
+<area shape="rect" id="node48" href="$worldprofile_8h.html" title="madness/world/worldprofile.h" alt="" coords="2366,232,2584,260"/>
+<area shape="rect" id="node49" href="$uniqueid_8h.html" title="madness/world/uniqueid.h" alt="" coords="2018,232,2214,260"/>
+<area shape="rect" id="node46" href="$worldhash_8h.html" title="Defines hash functions for use in distributed containers. " alt="" coords="1666,316,1873,344"/>
+</map>

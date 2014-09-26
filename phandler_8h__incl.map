@@ -1,0 +1,42 @@
+<map id="phandler.h" name="phandler.h">
+<area shape="rect" id="node2" href="$muParser_8h.html" title="Definition of the standard floating point parser. " alt="" coords="723,400,947,427"/>
+<area shape="rect" id="node16" href="$mra_8h.html" title="Main include file for MADNESS and defines Function interface. " alt="" coords="1877,81,2032,109"/>
+<area shape="rect" id="node5" href="$muParserBase_8h.html" title="This file contains the class definition of the muparser engine. " alt="" coords="547,475,669,503"/>
+<area shape="rect" id="node11" href="$muParserDef_8h.html" title="This file contains standard definitions used by the parser. " alt="" coords="550,710,666,738"/>
+<area shape="rect" id="node12" href="$muParserStack_8h.html" title="This file defines the stack used by muparser. " alt="" coords="349,551,477,579"/>
+<area shape="rect" id="node13" href="$muParserError_8h.html" title="This file defines the error class used by the parser. " alt="" coords="195,627,320,654"/>
+<area shape="rect" id="node14" href="$muParserTokenReader_8h.html" title="This file contains the parser token reader definition. " alt="" coords="394,627,571,654"/>
+<area shape="rect" id="node15" href="$muParserBytecode_8h.html" title="Definition of the parser bytecode class. " alt="" coords="646,551,797,579"/>
+<area shape="rect" id="node17" href="$world_8h.html" title="This header should include pretty much everything needed for the parallel runtime. " alt="" coords="2189,400,2366,427"/>
+<area shape="rect" id="node23" href="$worlddc_8h.html" title="Implements WorldContainer. " alt="" coords="1862,475,2053,503"/>
+<area shape="rect" id="node24" href="$parar_8h.html" title="Implements ParallelInputArchive and ParallelOutputArchive. " alt="" coords="1928,551,2102,579"/>
+<area shape="rect" id="node28" href="$misc_8h.html" title="Header to declare stuff which has not yet found a home. " alt="" coords="1184,475,1347,503"/>
+<area shape="rect" id="node29" href="$tensor_8h.html" title="Defines and implements most of Tensor. " alt="" coords="2663,551,2849,579"/>
+<area shape="rect" id="node38" href="$key_8h.html" title="Multidimension Key for MRA tree and associated iterators. " alt="" coords="1566,400,1717,427"/>
+<area shape="rect" id="node39" href="$twoscale_8h.html" title="madness/mra/twoscale.h" alt="" coords="2909,316,3094,344"/>
+<area shape="rect" id="node40" href="$legendre_8h.html" title="madness/mra/legendre.h" alt="" coords="2648,316,2834,344"/>
+<area shape="rect" id="node41" href="$indexit_8h.html" title="Provides IndexIterator. " alt="" coords="944,316,1118,344"/>
+<area shape="rect" id="node42" href="$funcdefaults_8h.html" title="Provides FunctionDefaults and utilities for coordinate transformation. " alt="" coords="2096,316,2304,344"/>
+<area shape="rect" id="node43" href="$function__factory_8h.html" title="madness/mra/function\l_factory.h" alt="" coords="1445,308,1616,352"/>
+<area shape="rect" id="node44" href="$lbdeux_8h.html" title="Implements (2nd generation) static load/data balancing for functions. " alt="" coords="1928,232,2101,260"/>
+<area shape="rect" id="node45" href="$funcimpl_8h.html" title="Provides FunctionCommonData, FunctionImpl and FunctionFactory. " alt="" coords="1438,232,1624,260"/>
+<area shape="rect" id="node46" href="$funcplot_8h.html" title="Defines/implements plotting interface for functions. " alt="" coords="2103,157,2286,184"/>
+<area shape="rect" id="node47" href="$derivative_8h.html" title="Declaration and initialization of tree traversal functions and generic derivative. " alt="" coords="1712,232,1904,260"/>
+<area shape="rect" id="node48" href="$operator_8h.html" title="Implements most functionality of separated operators. " alt="" coords="3308,551,3492,579"/>
+<area shape="rect" id="node49" href="$functypedefs_8h.html" title="Provides typedefs to hide use of templates and to increase interoperability. " alt="" coords="2310,157,2522,184"/>
+<area shape="rect" id="node50" href="$vmra_8h.html" title="Defines operations on vectors of FunctionsThis file defines a number of operations on vectors of func..." alt="" coords="1815,157,1977,184"/>
+<area shape="rect" id="node18" href="$worldfwd_8h.html" title="Implements World. " alt="" coords="1848,710,2048,738"/>
+<area shape="rect" id="node20" href="$worldam_8h.html" title="Implements active message layer for World on top of RMI layer. " alt="" coords="1541,627,1737,654"/>
+<area shape="rect" id="node21" href="$worldtask_8h.html" title="Defines TaskInterface and implements WorldTaskQueue and associated stuff. " alt="" coords="2293,710,2496,738"/>
+<area shape="rect" id="node22" href="$worldgop_8h.html" title="Implements global operations. " alt="" coords="2021,627,2222,654"/>
+<area shape="rect" id="node19" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="3180,794,3380,821"/>
+<area shape="rect" id="node25" href="$archive_8h.html" title="Interface templates for the archives (serialization) " alt="" coords="1760,627,1946,654"/>
+<area shape="rect" id="node27" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="2072,710,2270,738"/>
+<area shape="rect" id="node30" href="$ran_8h.html" title="madness/misc/ran.h" alt="" coords="2736,627,2891,654"/>
+<area shape="rect" id="node31" href="$posixmem_8h.html" title="Implement dummy posix_memalign if it is missing on the system. " alt="" coords="2902,710,3109,738"/>
+<area shape="rect" id="node32" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="3133,702,3304,746"/>
+<area shape="rect" id="node34" href="$basetensor_8h.html" title="Declares BaseTensor. " alt="" coords="2914,627,3129,654"/>
+<area shape="rect" id="node35" href="$aligned_8h.html" title="Provides routines for internal use optimized for aligned data. " alt="" coords="3304,627,3496,654"/>
+<area shape="rect" id="node36" href="$mxm_8h.html" title="Internal use only. " alt="" coords="2485,627,2662,654"/>
+<area shape="rect" id="node37" href="$mtxmq_8h.html" title="madness/tensor/mtxmq.h" alt="" coords="3519,627,3710,654"/>
+</map>

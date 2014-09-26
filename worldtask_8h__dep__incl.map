@@ -1,0 +1,51 @@
+<map id="worldtask.h" name="worldtask.h">
+<area shape="rect" id="node2" href="$group_8h.html" title="group.h" alt="" coords="1209,81,1281,109"/>
+<area shape="rect" id="node4" href="$worldgop_8h.html" title="Implements global operations. " alt="" coords="1223,157,1318,184"/>
+<area shape="rect" id="node31" href="$world_8h.html" title="This header should include pretty much everything needed for the parallel runtime. " alt="" coords="1256,384,1326,412"/>
+<area shape="rect" id="node48" href="$world_8cc.html" title="world.cc" alt="" coords="1307,232,1382,260"/>
+<area shape="rect" id="node49" href="$worldobj_8h.html" title="Defines and implements WorldObject. " alt="" coords="2777,232,2867,260"/>
+<area shape="rect" id="node50" href="$worldtask_8cc.html" title="worldtask.cc" alt="" coords="1507,81,1609,109"/>
+<area shape="rect" id="node3" href="$group_8cc.html" title="group.cc" alt="" coords="1105,232,1182,260"/>
+<area shape="rect" id="node5" href="$parar_8h.html" title="Implements ParallelInputArchive and ParallelOutputArchive. " alt="" coords="2102,232,2169,260"/>
+<area shape="rect" id="node46" href="$worldgop_8cc.html" title="worldgop.cc" alt="" coords="5,460,106,487"/>
+<area shape="rect" id="node6" href="$mra_8h.html" title="Main include file for MADNESS and defines Function interface. " alt="" coords="1782,611,1841,639"/>
+<area shape="rect" id="node26" href="$worlddc_8h.html" title="Implements WorldContainer. " alt="" coords="2385,308,2470,336"/>
+<area shape="rect" id="node7" href="$chem_2distpm_8cc.html" title="distpm.cc" alt="" coords="800,687,884,714"/>
+<area shape="rect" id="node8" href="$DFcode_2distpm_8cc.html" title="distpm.cc" alt="" coords="1187,687,1271,714"/>
+<area shape="rect" id="node9" href="$dft_8h.html" title="dft.h" alt="" coords="1077,762,1130,790"/>
+<area shape="rect" id="node11" href="$eigsolver_8h.html" title="eigsolver.h" alt="" coords="1344,687,1436,714"/>
+<area shape="rect" id="node13" href="$hartreefock_8h.html" title="hartreefock.h" alt="" coords="1598,762,1705,790"/>
+<area shape="rect" id="node14" href="$util_8h.html" title="util.h" alt="" coords="1108,687,1163,714"/>
+<area shape="rect" id="node15" href="$libxc_8h.html" title="libxc.h" alt="" coords="1505,762,1569,790"/>
+<area shape="rect" id="node16" href="$electronicstructureapp_8h.html" title="electronicstructureapp.h" alt="" coords="1658,838,1837,866"/>
+<area shape="rect" id="node17" href="$solver_8h.html" title="solver.h" alt="" coords="1501,838,1573,866"/>
+<area shape="rect" id="node18" href="$lda_8h.html" title="lda.h" alt="" coords="1510,687,1564,714"/>
+<area shape="rect" id="node19" href="$localize__boys_8cc.html" title="localize_boys.cc" alt="" coords="908,687,1032,714"/>
+<area shape="rect" id="node20" href="$mra1_8cc.html" title="mra1.cc" alt="" coords="2491,687,2564,714"/>
+<area shape="rect" id="node21" href="$mra2_8cc.html" title="mra2.cc" alt="" coords="2978,687,3051,714"/>
+<area shape="rect" id="node22" href="$mra3_8cc.html" title="mra3.cc" alt="" coords="2588,687,2661,714"/>
+<area shape="rect" id="node23" href="$mra4_8cc.html" title="mra4.cc" alt="" coords="2686,687,2759,714"/>
+<area shape="rect" id="node24" href="$mra5_8cc.html" title="mra5.cc" alt="" coords="2783,687,2856,714"/>
+<area shape="rect" id="node25" href="$mra6_8cc.html" title="mra6.cc" alt="" coords="2880,687,2953,714"/>
+<area shape="rect" id="node10" href="$dft_8cc.html" title="dft.cc" alt="" coords="1075,838,1132,866"/>
+<area shape="rect" id="node12" href="$eigsolver_8cc.html" title="eigsolver.cc" alt="" coords="1274,762,1371,790"/>
+<area shape="rect" id="node27" href="$derivative_8h.html" title="Declaration and initialization of tree traversal functions and generic derivative. " alt="" coords="2174,535,2270,563"/>
+<area shape="rect" id="node28" href="$funcdefaults_8h.html" title="Provides FunctionDefaults and utilities for coordinate transformation. " alt="" coords="2275,460,2388,487"/>
+<area shape="rect" id="node30" href="$mraimpl_8h.html" title="Declaration and initialization of static data, some implementation, some instantiation. " alt="" coords="2773,611,2861,639"/>
+<area shape="rect" id="node29" href="$funcimpl_8h.html" title="Provides FunctionCommonData, FunctionImpl and FunctionFactory. " alt="" coords="2349,535,2439,563"/>
+<area shape="rect" id="node32" href="$eigen__solver_8cc.html" title="eigen_solver.cc" alt="" coords="1008,535,1127,563"/>
+<area shape="rect" id="node33" href="$apps_2ii_2systolic_8h.html" title="systolic.h" alt="" coords="996,460,1077,487"/>
+<area shape="rect" id="node34" href="$examples_2hello_8cc.html" title="Simplest example program for MADNESS. " alt="" coords="1672,460,1743,487"/>
+<area shape="rect" id="node35" href="$legendre_8cc.html" title="Legendre quadrature, polynomials and scaling functions. " alt="" coords="1492,535,1587,563"/>
+<area shape="rect" id="node36" href="$legendre_8h.html" title="legendre.h" alt="" coords="1506,460,1597,487"/>
+<area shape="rect" id="node37" href="$twoscale_8cc.html" title="Routines to provide twoscale &amp; correlation coeffs for Legendre basis. " alt="" coords="1676,535,1771,563"/>
+<area shape="rect" id="node38" href="$twoscale_8h.html" title="twoscale.h" alt="" coords="1767,460,1856,487"/>
+<area shape="rect" id="node39" href="$distributed__matrix_8h.html" title="distributed_matrix.h" alt="" coords="781,535,933,563"/>
+<area shape="rect" id="node40" href="$madness_2tensor_2systolic_8h.html" title="systolic.h" alt="" coords="810,611,890,639"/>
+<area shape="rect" id="node41" href="$archive__type__names_8cc.html" title="archive_type_names.cc" alt="" coords="1879,460,2047,487"/>
+<area shape="rect" id="node42" href="$binsorter_8h.html" title="binsorter.h" alt="" coords="2565,460,2657,487"/>
+<area shape="rect" id="node43" href="$deferred__cleanup_8cc.html" title="deferred_cleanup.cc" alt="" coords="333,460,484,487"/>
+<area shape="rect" id="node44" href="$redirectio_8cc.html" title="redirectio.cc" alt="" coords="509,460,610,487"/>
+<area shape="rect" id="node45" href="$worldam_8cc.html" title="worldam.cc" alt="" coords="635,460,730,487"/>
+<area shape="rect" id="node47" href="$worldprofile_8cc.html" title="worldprofile.cc" alt="" coords="754,460,871,487"/>
+</map>

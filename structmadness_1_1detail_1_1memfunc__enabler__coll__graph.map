@@ -1,0 +1,4 @@
+<map id="madness::detail::memfunc_enabler&lt; memfnT &gt;" name="madness::detail::memfunc_enabler&lt; memfnT &gt;">
+<area shape="rect" id="node2" href="$structmadness_1_1lazy__enable__if.html" title="madness::lazy_enable\l_if\&lt; std::is_member_function\l_pointer\&lt; memfnT \&gt;, task_result\l_type\&lt; memfnT \&gt; \&gt;" alt="" coords="256,13,492,88"/>
+<area shape="rect" id="node3" href="$structmadness_1_1lazy__enable__if__c.html" title="madness::lazy_enable\l_if_c\&lt; std::is_member\l_function_pointer\&lt; memfnT\l \&gt;::value, task_result_type\l\&lt; memfnT \&gt; \&gt;" alt="" coords="5,5,208,96"/>
+</map>

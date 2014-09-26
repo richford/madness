@@ -1,0 +1,43 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classmadness_1_1FunctionFunctorInterface.html" title="madness::FunctionFunctor\lInterface\&lt; complexd, NDIM \&gt;" alt="" coords="5,76,220,120"/>
+<area shape="rect" id="node2" href="$classbaseWF.html" title="baseWF" alt="" coords="328,84,398,112"/>
+<area shape="rect" id="node3" href="$classBoundWF.html" title="BoundWF" alt="" coords="590,5,671,33"/>
+<area shape="rect" id="node4" href="$classExpikr.html" title="Expikr" alt="" coords="600,57,661,85"/>
+<area shape="rect" id="node5" href="$classGaussian.html" title="Gaussian" alt="" coords="591,161,670,189"/>
+<area shape="rect" id="node6" href="$classScatteringWF.html" title="ScatteringWF" alt="" coords="578,109,683,137"/>
+<area shape="rect" id="node7" href="$classPhiK.html" title="PhiK" alt="" coords="804,136,854,164"/>
+<area shape="rect" id="node8" href="$classPhikl.html" title="Phikl" alt="" coords="803,84,855,112"/>
+<area shape="rect" id="node9" href="$classmadness_1_1FunctionFunctorInterface.html" title="madness::FunctionFunctor\lInterface\&lt; double, 3 \&gt;" alt="" coords="268,977,459,1021"/>
+<area shape="rect" id="node10" href="$classFrequencyIncident.html" title="FrequencyIncident" alt="" coords="561,1585,700,1613"/>
+<area shape="rect" id="node11" href="$structgauss__function.html" title="Gauss_function structure is needed to mimic noise. " alt="" coords="572,213,690,241"/>
+<area shape="rect" id="node12" href="$classGaussianBF.html" title="Abstract Gaussian basis function. Must be overriden to specify angular momenta (s, p, d, etc.). " alt="" coords="584,265,677,293"/>
+<area shape="rect" id="node16" href="$classmadness_1_1AtomicBasisFunctor.html" title="madness::AtomicBasisFunctor" alt="" coords="525,369,737,397"/>
+<area shape="rect" id="node17" href="$classmadness_1_1CoreOrbitalDerivativeFunctor.html" title="madness::CoreOrbitalDerivative\lFunctor" alt="" coords="518,421,743,465"/>
+<area shape="rect" id="node18" href="$classmadness_1_1CoreOrbitalFunctor.html" title="madness::CoreOrbitalFunctor" alt="" coords="526,489,735,517"/>
+<area shape="rect" id="node19" href="$classmadness_1_1CorePotentialDerivativeFunctor.html" title="madness::CorePotentialDerivative\lFunctor" alt="" coords="512,541,749,585"/>
+<area shape="rect" id="node20" href="$structmadness_1_1diffuse__functions.html" title="Functor that adds diffuse 1s functions on given coordinates with given signs (phases) ..." alt="" coords="533,609,729,637"/>
+<area shape="rect" id="node21" href="$classmadness_1_1DipoleFunctor.html" title="A MADNESS functor to compute either x, y, or z. " alt="" coords="542,661,719,689"/>
+<area shape="rect" id="node22" href="$classmadness_1_1MolecularCorePotentialFunctor.html" title="madness::MolecularCorePotential\lFunctor" alt="" coords="513,713,748,757"/>
+<area shape="rect" id="node23" href="$classmadness_1_1MolecularDerivativeFunctor.html" title="madness::MolecularDerivative\lFunctor" alt="" coords="524,781,737,825"/>
+<area shape="rect" id="node24" href="$classmadness_1_1MolecularGuessDensityFunctor.html" title="madness::MolecularGuessDensity\lFunctor" alt="" coords="514,849,748,893"/>
+<area shape="rect" id="node25" href="$classmadness_1_1MolecularPotentialFunctor.html" title="madness::MolecularPotential\lFunctor" alt="" coords="528,917,733,961"/>
+<area shape="rect" id="node26" href="$classmadness_1_1MomentFunctor.html" title="A MADNESS functor to compute the cartesian moment x^i * y^j * z^k (i, j, k integer and &gt;= 0) ..." alt="" coords="537,985,725,1013"/>
+<area shape="rect" id="node27" href="$classmadness_1_1ProjRLMFunctor.html" title="madness::ProjRLMFunctor" alt="" coords="537,1037,724,1065"/>
+<area shape="rect" id="node28" href="$structmadness_1_1Solver_1_1GuessDensity.html" title="madness::Solver\&lt; T,\l NDIM \&gt;::GuessDensity" alt="" coords="546,1089,715,1133"/>
+<area shape="rect" id="node29" href="$classmadness_1_1VLocalFunctor.html" title="madness::VLocalFunctor" alt="" coords="542,1157,719,1185"/>
+<area shape="rect" id="node30" href="$classMolecularNuclearChargeDensityFunctor.html" title="MolecularNuclearChargeDensity\lFunctor" alt="" coords="517,1209,744,1253"/>
+<area shape="rect" id="node31" href="$classMolecularSurface.html" title="MolecularSurface" alt="" coords="565,1741,696,1769"/>
+<area shape="rect" id="node32" href="$classMolecularVolumeComplementMask.html" title="MolecularVolumeComplementMask" alt="" coords="507,1793,755,1821"/>
+<area shape="rect" id="node33" href="$classMolecularVolumeExponentialSwitch.html" title="Switches between positive values Vint and Vext with special log derivative. " alt="" coords="526,1277,735,1321"/>
+<area shape="rect" id="node34" href="$classMolecularVolumeExponentialSwitchLogGrad.html" title="Returns the requested component of the derivative of the log of MolecularVolumeExponentialSwitch. " alt="" coords="526,1345,735,1389"/>
+<area shape="rect" id="node35" href="$classMolecularVolumeExponentialSwitchReciprocal.html" title="Computes the reciprocal of MolecularVolumeExponentialSwitch. " alt="" coords="526,1413,735,1457"/>
+<area shape="rect" id="node36" href="$classMolecularVolumeMask.html" title="MolecularVolumeMask" alt="" coords="548,1637,713,1665"/>
+<area shape="rect" id="node37" href="$classMolecularVolumeMaskGrad.html" title="MolecularVolumeMaskGrad" alt="" coords="532,1689,729,1717"/>
+<area shape="rect" id="node38" href="$structnoise.html" title="Try to create noise using random gauss functions. " alt="" coords="603,1481,658,1509"/>
+<area shape="rect" id="node39" href="$classTimeIncident.html" title="TimeIncident" alt="" coords="578,1533,683,1561"/>
+<area shape="rect" id="node40" href="$classTipMolecule.html" title="Setup the tip&#45;molecule problem. " alt="" coords="581,317,680,345"/>
+<area shape="rect" id="node13" href="$classDBF.html" title="A d basis function. " alt="" coords="806,265,852,293"/>
+<area shape="rect" id="node14" href="$classPBF.html" title="A p basis function. " alt="" coords="807,317,851,345"/>
+<area shape="rect" id="node15" href="$classSBF.html" title="An s basis function. " alt="" coords="807,213,850,241"/>
+<area shape="rect" id="node41" href="$classMolecularMaskBase.html" title="MolecularMaskBase" alt="" coords="290,1716,436,1744"/>
+</map>

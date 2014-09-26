@@ -1,0 +1,33 @@
+<map id="worldgop.h" name="worldgop.h">
+<area shape="rect" id="node2" href="$worldtypes_8h.html" title="madness/world/worldtypes.h" alt="" coords="3442,590,3652,618"/>
+<area shape="rect" id="node4" href="$bufar_8h.html" title="Implements an archive wrapping a memory buffer. " alt="" coords="93,407,267,435"/>
+<area shape="rect" id="node20" href="$worldfwd_8h.html" title="Implements World. " alt="" coords="1560,407,1760,435"/>
+<area shape="rect" id="node43" href="$deferred__cleanup_8h.html" title="madness/world/deferred\l_cleanup.h" alt="" coords="389,491,571,534"/>
+<area shape="rect" id="node44" href="$worldtask_8h.html" title="Defines TaskInterface and implements WorldTaskQueue and associated stuff. " alt="" coords="2000,157,2203,184"/>
+<area shape="rect" id="node48" href="$group_8h.html" title="madness/world/group.h" alt="" coords="1441,81,1620,109"/>
+<area shape="rect" id="node50" href="$dist__cache_8h.html" title="madness/world/dist\l_cache.h" alt="" coords="1018,232,1169,276"/>
+<area shape="rect" id="node5" href="$archive_8h.html" title="Interface templates for the archives (serialization) " alt="" coords="646,499,832,527"/>
+<area shape="rect" id="node17" href="$print_8h.html" title="Defines simple templates for printing to std::cout &quot;a la Python&quot;. " alt="" coords="144,499,315,527"/>
+<area shape="rect" id="node11" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="1166,674,1362,701"/>
+<area shape="rect" id="node15" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="1021,749,1219,777"/>
+<area shape="rect" id="node16" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="629,749,827,777"/>
+<area shape="rect" id="node13" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="1300,825,1500,853"/>
+<area shape="rect" id="node14" href="$config_8h.html" title="madness/config.h" alt="" coords="1331,901,1469,929"/>
+<area shape="rect" id="node22" href="$worldmpi_8h.html" title="Implements WorldMpiInterface. " alt="" coords="1509,499,1710,527"/>
+<area shape="rect" id="node27" href="$nodefaults_8h.html" title="Implements NO_DEFAULTS. " alt="" coords="3611,749,3819,777"/>
+<area shape="rect" id="node31" href="$worldhashmap_8h.html" title="Defines and implements a concurrent hashmap. " alt="" coords="856,499,1091,527"/>
+<area shape="rect" id="node35" href="$worldprofile_8h.html" title="madness/world/worldprofile.h" alt="" coords="1835,499,2053,527"/>
+<area shape="rect" id="node37" href="$worldthread_8h.html" title="Implements Dqueue, Thread, ThreadBase and ThreadPool. " alt="" coords="2502,499,2720,527"/>
+<area shape="rect" id="node42" href="$uniqueid_8h.html" title="madness/world/uniqueid.h" alt="" coords="2128,499,2325,527"/>
+<area shape="rect" id="node23" href="$safempi_8h.html" title="Serializes calls to MPI in case it does not support THREAD_MULTIPLE. " alt="" coords="1177,590,1367,618"/>
+<area shape="rect" id="node29" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="411,582,581,626"/>
+<area shape="rect" id="node24" href="$worldmutex_8h.html" title="Implements Mutex, MutexFair, Spinlock, ConditionVariable. " alt="" coords="2715,674,2933,701"/>
+<area shape="rect" id="node25" href="$TAU_8h.html" title="madness/TAU.h" alt="" coords="2763,749,2885,777"/>
+<area shape="rect" id="node28" href="$worldtime_8h.html" title="Wrappers around platform dependent timers and performance info. " alt="" coords="3017,749,3223,777"/>
+<area shape="rect" id="node32" href="$worldhash_8h.html" title="Defines hash functions for use in distributed containers. " alt="" coords="1391,590,1598,618"/>
+<area shape="rect" id="node38" href="$dqueue_8h.html" title="Implements DQueue. " alt="" coords="2590,590,2778,618"/>
+<area shape="rect" id="node45" href="$worldrange_8h.html" title="Implement Range class for parallel iteration. " alt="" coords="1531,324,1744,352"/>
+<area shape="rect" id="node46" href="$taskfn_8h.html" title="madness/world/taskfn.h" alt="" coords="2012,240,2191,268"/>
+<area shape="rect" id="node47" href="$worldfut_8h.html" title="Implements Future. " alt="" coords="1768,324,1963,352"/>
+<area shape="rect" id="node49" href="$dist__keys_8h.html" title="madness/world/dist\l_keys.h" alt="" coords="3442,400,3593,443"/>
+</map>

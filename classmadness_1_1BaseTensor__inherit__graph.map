@@ -1,0 +1,5 @@
+<map id="madness::BaseTensor" name="madness::BaseTensor">
+<area shape="rect" id="node2" title="A tensor is a multidimension array. " alt="" coords="237,31,404,58"/>
+<area shape="rect" id="node3" href="$singletonmadness_1_1GenTensor.html" title="madness::GenTensor\&lt; T \&gt;" alt="" coords="480,5,672,33"/>
+<area shape="rect" id="node4" title="Indexing a non&#45;constant tensor with slices returns a SliceTensor. " alt="" coords="479,57,674,85"/>
+</map>

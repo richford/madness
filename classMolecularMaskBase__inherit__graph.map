@@ -1,0 +1,6 @@
+<map id="MolecularMaskBase" name="MolecularMaskBase">
+<area shape="rect" id="node2" href="$classMolecularSurface.html" title="MolecularSurface" alt="" coords="257,5,389,33"/>
+<area shape="rect" id="node3" href="$classMolecularVolumeComplementMask.html" title="MolecularVolumeComplementMask" alt="" coords="199,57,447,85"/>
+<area shape="rect" id="node4" href="$classMolecularVolumeMask.html" title="MolecularVolumeMask" alt="" coords="240,109,406,137"/>
+<area shape="rect" id="node5" href="$classMolecularVolumeMaskGrad.html" title="MolecularVolumeMaskGrad" alt="" coords="225,161,421,189"/>
+</map>

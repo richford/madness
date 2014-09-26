@@ -1,0 +1,6 @@
+<map id="madness::OptimizerInterface" name="madness::OptimizerInterface">
+<area shape="rect" id="node2" href="$classmadness_1_1QuasiNewton.html" title="Optimization via quasi&#45;Newton (BFGS or SR1 update) " alt="" coords="270,5,441,33"/>
+<area shape="rect" id="node3" href="$classmadness_1_1SteepestDescent.html" title="Unconstrained minimization via steepest descent. " alt="" coords="260,57,451,85"/>
+<area shape="rect" id="node5" title="Optimization via quasi&#45;Newton (BFGS or SR1 update) " alt="" coords="303,161,409,189"/>
+<area shape="rect" id="node6" title="Optimization via steepest descent. " alt="" coords="293,213,419,241"/>
+</map>

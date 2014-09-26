@@ -1,0 +1,21 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classmadness_1_1archive_1_1BaseArchive.html" title="Base class for all archives classes. " alt="" coords="5,440,222,468"/>
+<area shape="rect" id="node2" href="$classmadness_1_1archive_1_1BaseInputArchive.html" title="Base class for input archives classes. " alt="" coords="310,244,513,287"/>
+<area shape="rect" id="node10" href="$classmadness_1_1archive_1_1BaseOutputArchive.html" title="Base class for output archives classes. " alt="" coords="304,652,519,695"/>
+<area shape="rect" id="node3" href="$classmadness_1_1archive_1_1BinaryFstreamInputArchive.html" title="Wraps an archive around a binary file stream for input. " alt="" coords="620,5,800,49"/>
+<area shape="rect" id="node4" href="$classmadness_1_1archive_1_1BufferInputArchive.html" title="Wraps an archive around a memory buffer for input. " alt="" coords="621,73,800,117"/>
+<area shape="rect" id="node5" href="$classmadness_1_1archive_1_1MPIInputArchive.html" title="madness::archive::MPIInput\lArchive" alt="" coords="612,141,809,185"/>
+<area shape="rect" id="node6" href="$classmadness_1_1archive_1_1MPIRawInputArchive.html" title="madness::archive::MPIRaw\lInputArchive" alt="" coords="616,209,805,253"/>
+<area shape="rect" id="node7" href="$classmadness_1_1archive_1_1ParallelInputArchive.html" title="An archive for storing local or parallel data wrapping BinaryFstreamInputArchive. ..." alt="" coords="617,413,804,457"/>
+<area shape="rect" id="node8" href="$classmadness_1_1archive_1_1TextFstreamInputArchive.html" title="Wraps an archive around a text file stream for input. " alt="" coords="601,277,820,321"/>
+<area shape="rect" id="node9" href="$classmadness_1_1archive_1_1VectorInputArchive.html" title="Wraps an archive around an STL vector for input. " alt="" coords="619,345,801,389"/>
+<area shape="rect" id="node11" href="$classmadness_1_1archive_1_1BinaryFstreamOutputArchive.html" title="Wraps an archive around a binary file stream for output. " alt="" coords="620,481,800,525"/>
+<area shape="rect" id="node12" href="$classmadness_1_1archive_1_1BufferOutputArchive.html" title="Wraps an archive around a memory buffer for output. " alt="" coords="621,549,800,593"/>
+<area shape="rect" id="node13" href="$classmadness_1_1archive_1_1MPIOutputArchive.html" title="madness::archive::MPIOutput\lArchive" alt="" coords="606,617,815,661"/>
+<area shape="rect" id="node14" href="$classmadness_1_1archive_1_1MPIRawOutputArchive.html" title="madness::archive::MPIRaw\lOutputArchive" alt="" coords="616,685,805,729"/>
+<area shape="rect" id="node15" href="$classmadness_1_1archive_1_1ParallelOutputArchive.html" title="An archive for storing local or parallel data wrapping BinaryFstreamOutputArchive. " alt="" coords="617,889,804,933"/>
+<area shape="rect" id="node16" href="$classmadness_1_1archive_1_1TextFstreamOutputArchive.html" title="Wraps an archive around a text file stream for output. " alt="" coords="601,753,820,797"/>
+<area shape="rect" id="node17" href="$classmadness_1_1archive_1_1VectorOutputArchive.html" title="Wraps an archive around an STL vector for output. " alt="" coords="619,821,801,865"/>
+<area shape="rect" id="node18" href="$classmadness_1_1archive_1_1BaseParallelArchive.html" title="madness::archive::BaseParallel\lArchive\&lt; BinaryFstreamInputArchive \&gt;" alt="" coords="276,413,547,457"/>
+<area shape="rect" id="node19" href="$classmadness_1_1archive_1_1BaseParallelArchive.html" title="madness::archive::BaseParallel\lArchive\&lt; BinaryFstreamOutputArchive \&gt;" alt="" coords="270,889,553,933"/>
+</map>

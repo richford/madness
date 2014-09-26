@@ -1,0 +1,8 @@
+<map id="TipMolecule" name="TipMolecule">
+<area shape="rect" id="node2" href="$classmadness_1_1FunctionFunctorInterface.html" title="madness::FunctionFunctor\lInterface\&lt; double, 3 \&gt;" alt="" coords="348,5,539,49"/>
+<area shape="rect" id="node3" href="$classmadness_1_1SignedDFInterface.html" title="madness::SignedDFInterface\&lt; 3 \&gt;" alt="" coords="323,73,564,101"/>
+<area shape="rect" id="node4" href="$classmadness_1_1GaussianDomainMask.html" title="Use a Gaussian for the surface function and the corresponding erf for the domain mask. " alt="" coords="330,125,556,153"/>
+<area shape="rect" id="node5" href="$classmadness_1_1DomainMaskInterface.html" title="The interface for masking functions defined by signed distance functions. " alt="" coords="5,125,231,153"/>
+<area shape="rect" id="node7" href="$classmadness_1_1BaseTensor.html" title="The base class for tensors defines generic capabilities. " alt="" coords="39,177,197,205"/>
+<area shape="rect" id="node8" href="$singletonmadness_1_1tr1_1_1shptr_1_1shared__ptr.html" title="madness::tr1::shptr\l::shared_ptr\&lt; double \&gt;" alt="" coords="32,229,204,273"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="bufar.h" name="bufar.h">
+<area shape="rect" id="node2" href="$archive_8h.html" title="Interface templates for the archives (serialization) " alt="" coords="654,81,841,109"/>
+<area shape="rect" id="node21" href="$print_8h.html" title="Defines simple templates for printing to std::cout &quot;a la Python&quot;. " alt="" coords="864,81,1036,109"/>
+<area shape="rect" id="node8" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="526,157,723,184"/>
+<area shape="rect" id="node15" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="810,423,1008,451"/>
+<area shape="rect" id="node18" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="80,157,278,184"/>
+<area shape="rect" id="node11" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="582,332,782,359"/>
+<area shape="rect" id="node13" href="$type__traits_8h.html" title="madness/world/type\l_traits.h" alt="" coords="490,232,645,276"/>
+<area shape="rect" id="node17" href="$function__traits__bits_8h.html" title="madness/world/function\l_traits_bits.h" alt="" coords="54,415,235,459"/>
+<area shape="rect" id="node12" href="$config_8h.html" title="madness/config.h" alt="" coords="648,423,785,451"/>
+<area shape="rect" id="node14" href="$type__traits__bits_8h.html" title="madness/world/type\l_traits_bits.h" alt="" coords="403,324,558,367"/>
+<area shape="rect" id="node16" href="$integral__constant_8h.html" title="madness/world/integral\l_constant.h" alt="" coords="447,415,624,459"/>
+</map>

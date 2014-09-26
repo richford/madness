@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$structmadness_1_1detail_1_1is__movable.html" title="Type trait for movable objects. " alt="" coords="176,5,316,49"/>
+<area shape="rect" id="node3" href="$structmadness_1_1is__derived__from_3_01A_00_01A_01_4.html" title="True if A is derived from B and is not B. " alt="" coords="170,73,321,117"/>
+<area shape="rect" id="node4" href="$structmadness_1_1is__future.html" title="Boost&#45;type&#45;trait&#45;like testing of if a type is a future. " alt="" coords="156,141,336,169"/>
+<area shape="rect" id="node5" href="$classmadness_1_1is__reference__wrapper.html" title="Type trait for reference wrapper. " alt="" coords="164,193,327,237"/>
+<area shape="rect" id="node6" href="$structmadness_1_1tr1_1_1detail_1_1function__traits.html" title="Function traits in the spirt of boost function traits. " alt="" coords="139,261,353,305"/>
+</map>

@@ -1,0 +1,35 @@
+<map id="convolution1d.h" name="convolution1d.h">
+<area shape="rect" id="node2" href="$array_8h.html" title="madness/world/array.h" alt="" coords="1121,256,1294,284"/>
+<area shape="rect" id="node19" href="$constants_8h.html" title="Defines common mathematical and physical constants. " alt="" coords="3348,89,3506,117"/>
+<area shape="rect" id="node21" href="$tensor_8h.html" title="Defines and implements most of Tensor. " alt="" coords="2073,172,2258,200"/>
+<area shape="rect" id="node37" href="$aligned_8h.html" title="Provides routines for internal use optimized for aligned data. " alt="" coords="2851,256,3043,284"/>
+<area shape="rect" id="node40" href="$mtxmq_8h.html" title="madness/tensor/mtxmq.h" alt="" coords="3067,256,3257,284"/>
+<area shape="rect" id="node43" href="$simplecache_8h.html" title="madness/mra/simplecache.h" alt="" coords="710,89,918,117"/>
+<area shape="rect" id="node45" href="$adquad_8h.html" title="madness/mra/adquad.h" alt="" coords="3146,89,3324,117"/>
+<area shape="rect" id="node48" href="$twoscale_8h.html" title="madness/mra/twoscale.h" alt="" coords="2938,89,3122,117"/>
+<area shape="rect" id="node49" href="$tensor__lapack_8h.html" title="Prototypes for a partial interface from Tensor to LAPACK. " alt="" coords="2640,81,2812,124"/>
+<area shape="rect" id="node3" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="2364,530,2565,558"/>
+<area shape="rect" id="node5" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="727,439,925,467"/>
+<area shape="rect" id="node8" href="$worldhash_8h.html" title="Defines hash functions for use in distributed containers. " alt="" coords="57,347,264,375"/>
+<area shape="rect" id="node14" href="$stdarray_8h.html" title="madness/world/stdarray.h" alt="" coords="1692,347,1885,375"/>
+<area shape="rect" id="node4" href="$config_8h.html" title="madness/config.h" alt="" coords="2396,614,2533,641"/>
+<area shape="rect" id="node9" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="354,439,551,467"/>
+<area shape="rect" id="node12" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="144,530,342,558"/>
+<area shape="rect" id="node15" href="$stdarray__bits_8h.html" title="madness/world/stdarray\l_bits.h" alt="" coords="1716,431,1896,474"/>
+<area shape="rect" id="node22" href="$ran_8h.html" title="madness/misc/ran.h" alt="" coords="2146,256,2300,284"/>
+<area shape="rect" id="node26" href="$posixmem_8h.html" title="Implement dummy posix_memalign if it is missing on the system. " alt="" coords="2324,256,2531,284"/>
+<area shape="rect" id="node28" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="2555,248,2726,292"/>
+<area shape="rect" id="node33" href="$archive_8h.html" title="Interface templates for the archives (serialization) " alt="" coords="287,347,474,375"/>
+<area shape="rect" id="node35" href="$basetensor_8h.html" title="Declares BaseTensor. " alt="" coords="1369,439,1584,467"/>
+<area shape="rect" id="node39" href="$mxm_8h.html" title="Internal use only. " alt="" coords="1895,256,2072,284"/>
+<area shape="rect" id="node41" href="$tensorexcept_8h.html" title="Declares and implements TensorException. " alt="" coords="599,347,826,375"/>
+<area shape="rect" id="node42" href="$tensoriter_8h.html" title="Declares TensorIterator. " alt="" coords="1525,256,1732,284"/>
+<area shape="rect" id="node23" href="$worldthread_8h.html" title="Implements Dqueue, Thread, ThreadBase and ThreadPool. " alt="" coords="951,347,1170,375"/>
+<area shape="rect" id="node29" href="$boost__checked__delete__bits_8h.html" title="madness/world/boost\l_checked_delete_bits.h" alt="" coords="2553,340,2723,383"/>
+<area shape="rect" id="node30" href="$shared__ptr__bits_8h.html" title="madness/world/shared\l_ptr_bits.h" alt="" coords="1295,340,1466,383"/>
+<area shape="rect" id="node36" href="$tensor__macros_8h.html" title="Macros for easy and efficient iteration over tensors. " alt="" coords="1390,522,1563,566"/>
+<area shape="rect" id="node44" href="$key_8h.html" title="Multidimension Key for MRA tree and associated iterators. " alt="" coords="486,172,638,200"/>
+<area shape="rect" id="node46" href="$legendre_8h.html" title="madness/mra/legendre.h" alt="" coords="3382,172,3568,200"/>
+<area shape="rect" id="node47" href="$world_8h.html" title="This header should include pretty much everything needed for the parallel runtime. " alt="" coords="3331,256,3507,284"/>
+<area shape="rect" id="node50" href="$fortran__ctypes_8h.html" title="Corresponding C and Fortran types. " alt="" coords="2086,439,2275,467"/>
+</map>

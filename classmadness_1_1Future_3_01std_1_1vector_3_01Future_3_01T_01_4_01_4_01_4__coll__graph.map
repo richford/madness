@@ -1,0 +1,6 @@
+<map id="madness::Future&lt; std::vector&lt; Future&lt; T &gt; &gt; &gt;" name="madness::Future&lt; std::vector&lt; Future&lt; T &gt; &gt; &gt;">
+<area shape="rect" id="node2" href="$classmadness_1_1DependencyInterface.html" title="Provides interface for tracking dependencies. " alt="" coords="89,81,311,109"/>
+<area shape="rect" id="node3" href="$classmadness_1_1CallbackInterface.html" title="This class used for callbacks (e.g., for dependency tracking) " alt="" coords="5,5,202,33"/>
+<area shape="rect" id="node4" href="$classmadness_1_1Spinlock.html" title="Spinlock using pthread spinlock operations. " alt="" coords="227,5,367,33"/>
+<area shape="rect" id="node5" href="$classNO__DEFAULTS.html" title="Disables default copy constructor and assignment operators. " alt="" coords="335,81,448,109"/>
+</map>

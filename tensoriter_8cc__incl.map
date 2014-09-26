@@ -1,0 +1,31 @@
+<map id="tensoriter.cc" name="tensoriter.cc">
+<area shape="rect" id="node2" href="$tensor_8h.html" title="Defines and implements most of Tensor. " alt="" coords="1066,81,1251,109"/>
+<area shape="rect" id="node3" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="2731,598,2931,626"/>
+<area shape="rect" id="node5" href="$ran_8h.html" title="madness/misc/ran.h" alt="" coords="1139,157,1293,184"/>
+<area shape="rect" id="node30" href="$posixmem_8h.html" title="Implement dummy posix_memalign if it is missing on the system. " alt="" coords="2403,157,2610,184"/>
+<area shape="rect" id="node32" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="2541,232,2712,276"/>
+<area shape="rect" id="node38" href="$archive_8h.html" title="Interface templates for the archives (serialization) " alt="" coords="877,240,1064,268"/>
+<area shape="rect" id="node40" href="$basetensor_8h.html" title="Declares BaseTensor. " alt="" coords="573,332,787,359"/>
+<area shape="rect" id="node45" href="$aligned_8h.html" title="Provides routines for internal use optimized for aligned data. " alt="" coords="2635,157,2827,184"/>
+<area shape="rect" id="node47" href="$mxm_8h.html" title="Internal use only. " alt="" coords="2850,157,3027,184"/>
+<area shape="rect" id="node48" href="$mtxmq_8h.html" title="madness/tensor/mtxmq.h" alt="" coords="3045,515,3235,542"/>
+<area shape="rect" id="node49" href="$tensorexcept_8h.html" title="Declares and implements TensorException. " alt="" coords="566,240,794,268"/>
+<area shape="rect" id="node50" href="$tensoriter_8h.html" title="Declares TensorIterator. " alt="" coords="235,157,442,184"/>
+<area shape="rect" id="node4" href="$config_8h.html" title="madness/config.h" alt="" coords="2762,674,2899,701"/>
+<area shape="rect" id="node6" href="$worldthread_8h.html" title="Implements Dqueue, Thread, ThreadBase and ThreadPool. " alt="" coords="1685,240,1904,268"/>
+<area shape="rect" id="node7" href="$TAU_8h.html" title="madness/TAU.h" alt="" coords="1808,515,1931,542"/>
+<area shape="rect" id="node8" href="$dqueue_8h.html" title="Implements DQueue. " alt="" coords="1323,332,1511,359"/>
+<area shape="rect" id="node21" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="1535,332,1732,359"/>
+<area shape="rect" id="node9" href="$worldmutex_8h.html" title="Implements Mutex, MutexFair, Spinlock, ConditionVariable. " alt="" coords="1903,423,2121,451"/>
+<area shape="rect" id="node11" href="$atomicint_8h.html" title="madness/world/atomicint.h" alt="" coords="2567,515,2768,542"/>
+<area shape="rect" id="node12" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="1410,515,1608,542"/>
+<area shape="rect" id="node22" href="$type__traits_8h.html" title="madness/world/type\l_traits.h" alt="" coords="2354,415,2510,459"/>
+<area shape="rect" id="node23" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="1138,423,1336,451"/>
+<area shape="rect" id="node24" href="$function__traits__bits_8h.html" title="madness/world/function\l_traits_bits.h" alt="" coords="1504,415,1685,459"/>
+<area shape="rect" id="node33" href="$boost__checked__delete__bits_8h.html" title="madness/world/boost\l_checked_delete_bits.h" alt="" coords="2671,324,2841,367"/>
+<area shape="rect" id="node34" href="$shared__ptr__bits_8h.html" title="madness/world/shared\l_ptr_bits.h" alt="" coords="2375,324,2545,367"/>
+<area shape="rect" id="node41" href="$tensor__macros_8h.html" title="Macros for easy and efficient iteration over tensors. " alt="" coords="504,415,677,459"/>
+<area shape="rect" id="node42" href="$type__data_8h.html" title="Defines and implements TensorTypeData, a type traits class. " alt="" coords="701,415,861,459"/>
+<area shape="rect" id="node43" href="$slice_8h.html" title="Declares and implements Slice. " alt="" coords="308,423,481,451"/>
+<area shape="rect" id="node44" href="$vector__factory_8h.html" title="Declares and implements factories for short vectors. " alt="" coords="309,507,481,550"/>
+</map>

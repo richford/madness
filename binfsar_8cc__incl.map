@@ -1,0 +1,17 @@
+<map id="binfsar.cc" name="binfsar.cc">
+<area shape="rect" id="node2" href="$binfsar_8h.html" title="Implements archive wrapping a binary filestream. " alt="" coords="611,81,796,109"/>
+<area shape="rect" id="node20" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="1615,347,1813,375"/>
+<area shape="rect" id="node4" href="$archive_8h.html" title="Interface templates for the archives (serialization) " alt="" coords="337,165,523,192"/>
+<area shape="rect" id="node23" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="942,157,1113,200"/>
+<area shape="rect" id="node10" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="506,256,703,284"/>
+<area shape="rect" id="node17" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="242,530,440,558"/>
+<area shape="rect" id="node13" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="1025,439,1225,467"/>
+<area shape="rect" id="node15" href="$type__traits_8h.html" title="madness/world/type\l_traits.h" alt="" coords="743,340,898,383"/>
+<area shape="rect" id="node19" href="$function__traits__bits_8h.html" title="madness/world/function\l_traits_bits.h" alt="" coords="463,522,645,566"/>
+<area shape="rect" id="node14" href="$config_8h.html" title="madness/config.h" alt="" coords="1056,530,1193,558"/>
+<area shape="rect" id="node16" href="$type__traits__bits_8h.html" title="madness/world/type\l_traits_bits.h" alt="" coords="642,431,797,474"/>
+<area shape="rect" id="node18" href="$integral__constant_8h.html" title="madness/world/integral\l_constant.h" alt="" coords="763,522,940,566"/>
+<area shape="rect" id="node24" href="$boost__checked__delete__bits_8h.html" title="madness/world/boost\l_checked_delete_bits.h" alt="" coords="1279,248,1448,292"/>
+<area shape="rect" id="node25" href="$shared__ptr__bits_8h.html" title="madness/world/shared\l_ptr_bits.h" alt="" coords="1033,248,1203,292"/>
+<area shape="rect" id="node26" href="$atomicint_8h.html" title="madness/world/atomicint.h" alt="" coords="1231,347,1432,375"/>
+</map>

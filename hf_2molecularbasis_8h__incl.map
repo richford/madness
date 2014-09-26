@@ -1,0 +1,30 @@
+<map id="molecularbasis.h" name="molecularbasis.h">
+<area shape="rect" id="node2" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="312,423,512,451"/>
+<area shape="rect" id="node4" href="$constants_8h.html" title="Defines common mathematical and physical constants. " alt="" coords="3437,81,3595,109"/>
+<area shape="rect" id="node5" href="$mentity_8h.html" title="mentity.h" alt="" coords="2484,165,2567,192"/>
+<area shape="rect" id="node18" href="$tinyxml_8h.html" title="madness/tinyxml/tinyxml.h" alt="" coords="2876,165,3076,192"/>
+<area shape="rect" id="node23" href="$tensor_8h.html" title="Defines and implements most of Tensor. " alt="" coords="1151,81,1337,109"/>
+<area shape="rect" id="node3" href="$config_8h.html" title="madness/config.h" alt="" coords="343,515,481,542"/>
+<area shape="rect" id="node14" href="$misc_8h.html" title="Header to declare stuff which has not yet found a home. " alt="" coords="2384,256,2547,284"/>
+<area shape="rect" id="node15" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="1250,340,1448,367"/>
+<area shape="rect" id="node24" href="$ran_8h.html" title="madness/misc/ran.h" alt="" coords="964,165,1119,192"/>
+<area shape="rect" id="node31" href="$posixmem_8h.html" title="Implement dummy posix_memalign if it is missing on the system. " alt="" coords="361,165,567,192"/>
+<area shape="rect" id="node33" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="592,157,763,200"/>
+<area shape="rect" id="node37" href="$archive_8h.html" title="Interface templates for the archives (serialization) " alt="" coords="1288,256,1474,284"/>
+<area shape="rect" id="node39" href="$basetensor_8h.html" title="Declares BaseTensor. " alt="" coords="1901,340,2115,367"/>
+<area shape="rect" id="node44" href="$aligned_8h.html" title="Provides routines for internal use optimized for aligned data. " alt="" coords="144,165,336,192"/>
+<area shape="rect" id="node46" href="$mxm_8h.html" title="Internal use only. " alt="" coords="1445,165,1622,192"/>
+<area shape="rect" id="node47" href="$mtxmq_8h.html" title="madness/tensor/mtxmq.h" alt="" coords="383,340,574,367"/>
+<area shape="rect" id="node48" href="$tensorexcept_8h.html" title="Declares and implements TensorException. " alt="" coords="1549,256,1776,284"/>
+<area shape="rect" id="node49" href="$tensoriter_8h.html" title="Declares TensorIterator. " alt="" coords="1761,165,1967,192"/>
+<area shape="rect" id="node25" href="$worldthread_8h.html" title="Implements Dqueue, Thread, ThreadBase and ThreadPool. " alt="" coords="800,256,1018,284"/>
+<area shape="rect" id="node26" href="$TAU_8h.html" title="madness/TAU.h" alt="" coords="699,340,821,367"/>
+<area shape="rect" id="node28" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="846,340,1042,367"/>
+<area shape="rect" id="node29" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="950,423,1149,451"/>
+<area shape="rect" id="node34" href="$boost__checked__delete__bits_8h.html" title="madness/world/boost\l_checked_delete_bits.h" alt="" coords="505,248,674,292"/>
+<area shape="rect" id="node35" href="$shared__ptr__bits_8h.html" title="madness/world/shared\l_ptr_bits.h" alt="" coords="1043,248,1213,292"/>
+<area shape="rect" id="node40" href="$tensor__macros_8h.html" title="Macros for easy and efficient iteration over tensors. " alt="" coords="2184,415,2357,459"/>
+<area shape="rect" id="node41" href="$type__data_8h.html" title="Defines and implements TensorTypeData, a type traits class. " alt="" coords="1949,415,2109,459"/>
+<area shape="rect" id="node42" href="$slice_8h.html" title="Declares and implements Slice. " alt="" coords="1752,423,1925,451"/>
+<area shape="rect" id="node43" href="$vector__factory_8h.html" title="Declares and implements factories for short vectors. " alt="" coords="1753,507,1925,550"/>
+</map>

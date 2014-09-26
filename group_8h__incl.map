@@ -1,0 +1,28 @@
+<map id="group.h" name="group.h">
+<area shape="rect" id="node2" href="$dist__keys_8h.html" title="madness/world/dist\l_keys.h" alt="" coords="1522,384,1673,427"/>
+<area shape="rect" id="node14" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="5,718,203,746"/>
+<area shape="rect" id="node17" href="$worldfwd_8h.html" title="Implements World. " alt="" coords="1840,392,2040,419"/>
+<area shape="rect" id="node46" href="$worldtask_8h.html" title="Defines TaskInterface and implements WorldTaskQueue and associated stuff. " alt="" coords="1888,81,2091,109"/>
+<area shape="rect" id="node3" href="$uniqueid_8h.html" title="madness/world/uniqueid.h" alt="" coords="1573,475,1769,503"/>
+<area shape="rect" id="node13" href="$worldtypes_8h.html" title="madness/world/worldtypes.h" alt="" coords="1573,559,1783,587"/>
+<area shape="rect" id="node6" href="$worldhash_8h.html" title="Defines hash functions for use in distributed containers. " alt="" coords="1241,559,1448,587"/>
+<area shape="rect" id="node7" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="1106,794,1306,821"/>
+<area shape="rect" id="node9" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="1243,642,1440,670"/>
+<area shape="rect" id="node11" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="916,718,1114,746"/>
+<area shape="rect" id="node8" href="$config_8h.html" title="madness/config.h" alt="" coords="1137,869,1274,897"/>
+<area shape="rect" id="node20" href="$worldmpi_8h.html" title="Implements WorldMpiInterface. " alt="" coords="988,475,1189,503"/>
+<area shape="rect" id="node26" href="$nodefaults_8h.html" title="Implements NO_DEFAULTS. " alt="" coords="3274,718,3482,746"/>
+<area shape="rect" id="node33" href="$worldhashmap_8h.html" title="Defines and implements a concurrent hashmap. " alt="" coords="1212,475,1447,503"/>
+<area shape="rect" id="node37" href="$worldprofile_8h.html" title="madness/world/worldprofile.h" alt="" coords="1909,475,2127,503"/>
+<area shape="rect" id="node40" href="$worldthread_8h.html" title="Implements Dqueue, Thread, ThreadBase and ThreadPool. " alt="" coords="2387,475,2605,503"/>
+<area shape="rect" id="node21" href="$safempi_8h.html" title="Serializes calls to MPI in case it does not support THREAD_MULTIPLE. " alt="" coords="725,559,916,587"/>
+<area shape="rect" id="node31" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="192,551,363,594"/>
+<area shape="rect" id="node23" href="$worldmutex_8h.html" title="Implements Mutex, MutexFair, Spinlock, ConditionVariable. " alt="" coords="2476,642,2693,670"/>
+<area shape="rect" id="node24" href="$TAU_8h.html" title="madness/TAU.h" alt="" coords="2527,718,2650,746"/>
+<area shape="rect" id="node27" href="$worldtime_8h.html" title="Wrappers around platform dependent timers and performance info. " alt="" coords="2782,718,2987,746"/>
+<area shape="rect" id="node41" href="$dqueue_8h.html" title="Implements DQueue. " alt="" coords="2402,559,2591,587"/>
+<area shape="rect" id="node47" href="$worldrange_8h.html" title="Implement Range class for parallel iteration. " alt="" coords="488,559,702,587"/>
+<area shape="rect" id="node48" href="$taskfn_8h.html" title="madness/world/taskfn.h" alt="" coords="2243,157,2422,184"/>
+<area shape="rect" id="node49" href="$worlddep_8h.html" title="Defines DependencyInterface and CallbackInterface. " alt="" coords="2437,308,2638,336"/>
+<area shape="rect" id="node50" href="$worldfut_8h.html" title="Implements Future. " alt="" coords="2168,232,2363,260"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="worldthread.h" name="worldthread.h">
+<area shape="rect" id="node2" href="$TAU_8h.html" title="madness/TAU.h" alt="" coords="1827,256,1949,284"/>
+<area shape="rect" id="node3" href="$dqueue_8h.html" title="Implements DQueue. " alt="" coords="1074,81,1262,109"/>
+<area shape="rect" id="node25" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="427,81,624,109"/>
+<area shape="rect" id="node4" href="$worldmutex_8h.html" title="Implements Mutex, MutexFair, Spinlock, ConditionVariable. " alt="" coords="1234,165,1451,192"/>
+<area shape="rect" id="node5" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="1165,347,1365,375"/>
+<area shape="rect" id="node8" href="$nodefaults_8h.html" title="Implements NO_DEFAULTS. " alt="" coords="1097,256,1305,284"/>
+<area shape="rect" id="node9" href="$worldtime_8h.html" title="Wrappers around platform dependent timers and performance info. " alt="" coords="767,256,972,284"/>
+<area shape="rect" id="node14" href="$atomicint_8h.html" title="madness/world/atomicint.h" alt="" coords="1602,256,1803,284"/>
+<area shape="rect" id="node16" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="1380,256,1578,284"/>
+<area shape="rect" id="node6" href="$config_8h.html" title="madness/config.h" alt="" coords="1197,431,1334,459"/>
+<area shape="rect" id="node26" href="$type__traits_8h.html" title="madness/world/type\l_traits.h" alt="" coords="448,157,603,200"/>
+<area shape="rect" id="node28" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="210,347,409,375"/>
+<area shape="rect" id="node30" href="$function__traits__bits_8h.html" title="madness/world/function\l_traits_bits.h" alt="" coords="5,340,187,383"/>
+<area shape="rect" id="node27" href="$type__traits__bits_8h.html" title="madness/world/type\l_traits_bits.h" alt="" coords="436,248,591,292"/>
+<area shape="rect" id="node29" href="$integral__constant_8h.html" title="madness/world/integral\l_constant.h" alt="" coords="525,340,702,383"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="binfsar.h" name="binfsar.h">
+<area shape="rect" id="node3" href="$archive_8h.html" title="Interface templates for the archives (serialization) " alt="" coords="277,89,463,117"/>
+<area shape="rect" id="node22" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="838,81,1009,124"/>
+<area shape="rect" id="node9" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="497,180,694,208"/>
+<area shape="rect" id="node16" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="120,455,319,482"/>
+<area shape="rect" id="node19" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="899,272,1097,299"/>
+<area shape="rect" id="node12" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="762,363,962,391"/>
+<area shape="rect" id="node14" href="$type__traits_8h.html" title="madness/world/type\l_traits.h" alt="" coords="670,264,825,307"/>
+<area shape="rect" id="node18" href="$function__traits__bits_8h.html" title="madness/world/function\l_traits_bits.h" alt="" coords="342,447,523,490"/>
+<area shape="rect" id="node13" href="$config_8h.html" title="madness/config.h" alt="" coords="935,455,1072,482"/>
+<area shape="rect" id="node15" href="$type__traits__bits_8h.html" title="madness/world/type\l_traits_bits.h" alt="" coords="520,355,676,399"/>
+<area shape="rect" id="node17" href="$integral__constant_8h.html" title="madness/world/integral\l_constant.h" alt="" coords="641,447,819,490"/>
+<area shape="rect" id="node23" href="$boost__checked__delete__bits_8h.html" title="madness/world/boost\l_checked_delete_bits.h" alt="" coords="900,172,1070,216"/>
+<area shape="rect" id="node24" href="$shared__ptr__bits_8h.html" title="madness/world/shared\l_ptr_bits.h" alt="" coords="1129,172,1299,216"/>
+<area shape="rect" id="node25" href="$atomicint_8h.html" title="madness/world/atomicint.h" alt="" coords="1487,272,1688,299"/>
+</map>

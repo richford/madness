@@ -1,0 +1,13 @@
+<map id="textfsar.cc" name="textfsar.cc">
+<area shape="rect" id="node2" href="$textfsar_8h.html" title="Implements archive wrapping text file stream. " alt="" coords="115,81,305,109"/>
+<area shape="rect" id="node5" href="$archive_8h.html" title="Interface templates for the archives (serialization) " alt="" coords="266,157,453,184"/>
+<area shape="rect" id="node11" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="446,232,643,260"/>
+<area shape="rect" id="node18" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="676,499,875,527"/>
+<area shape="rect" id="node21" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="914,232,1112,260"/>
+<area shape="rect" id="node14" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="639,407,839,435"/>
+<area shape="rect" id="node16" href="$type__traits_8h.html" title="madness/world/type\l_traits.h" alt="" coords="410,308,565,352"/>
+<area shape="rect" id="node20" href="$function__traits__bits_8h.html" title="madness/world/function\l_traits_bits.h" alt="" coords="82,491,263,534"/>
+<area shape="rect" id="node15" href="$config_8h.html" title="madness/config.h" alt="" coords="899,499,1036,527"/>
+<area shape="rect" id="node17" href="$type__traits__bits_8h.html" title="madness/world/type\l_traits_bits.h" alt="" coords="410,400,565,443"/>
+<area shape="rect" id="node19" href="$integral__constant_8h.html" title="madness/world/integral\l_constant.h" alt="" coords="475,491,652,534"/>
+</map>

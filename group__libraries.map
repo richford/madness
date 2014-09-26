@@ -1,0 +1,8 @@
+<map id="MADNESS libraries" name="MADNESS libraries">
+<area shape="rect" id="node1" href="$group__misc.html" title="Miscellany" alt="" coords="251,5,339,33"/>
+<area shape="rect" id="node2" href="$group__parallel__runtime.html" title="Parallel programming\l environment" alt="" coords="215,57,375,101"/>
+<area shape="rect" id="node3" href="$group__tensor.html" title="Tensors or multidimension\l arrays" alt="" coords="199,125,392,169"/>
+<area shape="rect" id="node4" href="$group__mra.html" title="Multiresolution analaysis" alt="" coords="205,193,385,221"/>
+<area shape="rect" id="node6" href="$group__solvers.html" title="Iterative solvers for\l linear/non&#45;linear equations\l and optimizers" alt="" coords="193,246,397,305"/>
+<area shape="rect" id="node7" href="$group__linalg.html" title="Linear algebra (interface\l to LAPACK)" alt="" coords="206,328,384,372"/>
+</map>

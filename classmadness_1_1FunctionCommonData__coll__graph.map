@@ -1,0 +1,5 @@
+<map id="madness::FunctionCommonData&lt; T, NDIM &gt;" name="madness::FunctionCommonData&lt; T, NDIM &gt;">
+<area shape="rect" id="node2" href="$classmadness_1_1Slice.html" title="A slice defines a sub&#45;range or patch of a dimension. " alt="" coords="7,112,122,140"/>
+<area shape="rect" id="node4" href="$classmadness_1_1BaseTensor.html" title="The base class for tensors defines generic capabilities. " alt="" coords="74,13,231,41"/>
+<area shape="rect" id="node5" href="$singletonmadness_1_1tr1_1_1shptr_1_1shared__ptr.html" title="madness::tr1::shptr\l::shared_ptr\&lt; double \&gt;" alt="" coords="256,5,428,49"/>
+</map>

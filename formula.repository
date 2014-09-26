@@ -1,0 +1,263 @@
+\form#0:$ U(r) = \sum_k A_k r^(n_k-2) exp(-alpha_k r^2) \sum_m |Y_lm \rangle \langle Y_lm| $
+\form#1:$\sum_m |Y_lm \rangle \langle Y_lm|$
+\form#2:\[ \chi_{k{*} i}(1) = \int dr_2 \frac{k(2) i(2)}{|r_1-r_2|} \]
+\form#3:\[ \chi_{ki{*}}(1) = \int dr_2 \frac{k(2) i(2)}{|r_1-r_2|} \]
+\form#4:\[ \xi_{k{*}i,j}(1) = \chi_{ki}(1) j(1) \]
+\form#5:\[ \xi_{ki{*},j{*}}(1) = \chi_{k{*}i}(1) j(1) \]
+\form#6:$(ij|kl)$
+\form#7:$i>=j$
+\form#8:$k>=l$
+\form#9:$(ij|kl)=(kl|ij)$
+\form#10:\[ f = 2/3 * \omega |<x | \vec \mu | i >| ^2 * 2 \]
+\form#11:$ x $
+\form#12:$ i $
+\form#13:\[ f = 2/(3 * \omega) |<x | \vec p | i >| ^2 * 2 \]
+\form#14:\[ Int[i,p] = \int \frac{1}{r_{12}} \phi_i(1) * \phi_p(1) \]
+\form#15:\[ F_{pq} = < x^p_i | F | x^q_i > + < x^p_i | \Gamma^q | \phi_i > \]
+\form#16:\[ < \vec x^p | \vec x^q > = \sum_i x^p_i x^q_i \]
+\form#17:\[ f(x,x_{\mathrm{min}},x_{\mathrm{max}}) = \left\{ \begin{array}{ll} x_{\mathrm{min}} & x < x_{\mathrm{min}} p(x,x_{\mathrm{min}},x_{\mathrm{max}}) & x_{\mathrm{min}} \leq x_{\mathrm{max}} x & x_{\mathrm{max}} < x \end{array} \right. \]
+\form#18:$p(x)$
+\form#19:$p(x_{min})=x_{min}$
+\form#20:$p(x_{max})=x_{max}$
+\form#21:$dp(x_{max})/dx=1$
+\form#22:$dp(x_{min})/dx=d^2p(x_{min})/dx^2=d^2p(x_{max})/dx^2=0$
+\form#23:$ E[\rho] = \int \epsilon[\rho(x)] dx$
+\form#24:$ \rho_{\alpha} $
+\form#25:$ \sigma_{\alpha\alpha} = \nabla \rho_{\alpha}.\nabla \rho_{\alpha} $
+\form#26:$ \rho_{\beta} $
+\form#27:$ \sigma_{\alpha\beta} = \nabla \rho_{\alpha}.\nabla \rho_{\beta} $
+\form#28:$ \sigma_{\beta\beta} = \nabla \rho_{\beta}.\nabla \rho_{\beta} $
+\form#29:$ \sigma_{\mu \nu} = \nabla \rho_{\mu} . \nabla \rho_{\nu} $
+\form#30:$ \mu, \nu = \alpha$
+\form#31:$ \beta $
+\form#32:$ < \phi | \hat V | \psi > = \int \left( \frac{\partial \epsilon}{\partial \rho_{\alpha}} \phi \psi + \left( 2 \frac{\partial \epsilon}{\partial \sigma_{\alpha \alpha}} + \frac{\partial \epsilon}{\partial \sigma_{\alpha \beta}} \right) \nabla \rho_{\alpha} . \nabla \left( \phi \psi \right) \right) dx $
+\form#33:$ < \phi_{\alpha} | \hat V | \psi_{\alpha} > = \int \left( \frac{\partial \epsilon}{\partial \rho_{\alpha}} \phi \psi + \left( 2 \frac{\partial \epsilon}{\partial \sigma_{\alpha \alpha}} \nabla \rho_{\alpha} + \frac{\partial \epsilon}{\partial \sigma_{\alpha \beta}} \nabla \rho_{\beta} \right) . \nabla \left( \phi \psi \right) \right) dx $
+\form#34:$ V_{\alpha} = \frac{\partial \epsilon}{\partial \rho_{\alpha}} - \left(\nabla . \left(2 \frac{\partial \epsilon}{\partial \sigma_{\alpha \alpha}} \nabla \rho_{\alpha} + \frac{\partial \epsilon}{\partial \sigma_{\alpha \beta}} \nabla \rho_{\beta} \right) \right) $
+\form#35:$ \frac{\partial \epsilon}{\partial \rho_{\alpha}}$
+\form#36:$ 2 \frac{\partial \epsilon}{\partial \sigma_{\alpha \alpha}} + \frac{\partial \epsilon}{\partial \sigma_{\alpha \beta}}$
+\form#37:$ \frac{\partial \epsilon}{\partial \rho_{\beta}}$
+\form#38:$ \frac{\partial \epsilon}{\partial \sigma_{\alpha \alpha}} $
+\form#39:$ \frac{\partial \epsilon}{\partial \sigma_{\alpha \beta}} $
+\form#40:$ \frac{\partial \epsilon}{\partial \sigma_{\beta \beta}} $
+\form#41:\[ f(x,x_{\mathrm{min}},x_{\mathrm{max}}) = \left\{ \begin{array}{ll} x_{\mathrm{min}} & x < x_{\mathrm{min}} \\ p(x,x_{\mathrm{min}},x_{\mathrm{max}}) & x_{\mathrm{min}} \leq x_{\mathrm{max}} \\ x & x_{\mathrm{max}} < x \end{array} \right. \]
+\form#42:\[ c^2 = a^2 + b^2 \]
+\form#43:\[ z = frac{x}{1 - y^2} \]
+\form#44:\[ \nabla^2 u - p(\varepsilon) S (u-g) = \varphi f, \]
+\form#45:$u$
+\form#46:$\varepsilon$
+\form#47:$p(\varepsilon)$
+\form#48:$2/\varepsilon$
+\form#49:$S$
+\form#50:$g$
+\form#51:$\varphi$
+\form#52:$f$
+\form#53:$R$
+\form#54:$g = Y_0^0$
+\form#55:$g = Y_1^0$
+\form#56:$g = Y_2^0$
+\form#57:$ f = 1 $
+\form#58:$-G$
+\form#59:$ e^2 \frac{hope}{despair} $
+\form#60:\[ \left( -\frac{1}{2} \nabla^2 + V(r) \right) \psi(r) = E \psi(r) \]
+\form#61:\[ V(r) = \frac{1}{2} |r|^2 \]
+\form#62:\[ \psi(r) = \left( -\frac{1}{2} \nabla^2 - E \right)^{-1} V(r) \psi(r) \]
+\form#63:\[ \left(-\nabla^2 + \mu^2 \right) G(r,r'; \mu) = \delta(r-r') \]
+\form#64:\[ G(r,r'; \mu) = \frac{e^{-\mu |r-r'|}}{4 \pi |r-r|} \]
+\form#65:$\mu$
+\form#66:$\mu = \sqrt{-2 E}$
+\form#67:$\Delta$
+\form#68:\[ \psi(r) = \left( -\frac{1}{2} \nabla^2 - E + \Delta \right)^{-1} \left( V(r) -\Delta\right) \psi(r) \]
+\form#69:$\psi(r)=\pi^{-1/4}\exp(-r^2 / 2)$
+\form#70:$r=$
+\form#71:$V$
+\form#72:$Delta$
+\form#73:$\Delta=7$
+\form#74:\[ U(r) = \frac{\Delta^2 (r)}{\rho^{2/3} (r)} \]
+\form#75:$ \Delta $
+\form#76:$ \rho $
+\form#77:$ r $
+\form#78:$ Delta $
+\form#79:$ \rho() $
+\form#80:$ rho^{-2/3} $
+\form#81:$ rho $
+\form#82:\[ \Delta(r) = exp(- | r | ) \]
+\form#83:\[ \rho(r) = exp(- 2 | r | ) = \Delta^2(r) \]
+\form#84:\[ U(r) = \frac{\Delta^2 (r)}{\rho^{2/3} (r)} = exp( - 2 | r | / 3) \]
+\form#85:$ U(r) $
+\form#86:\[ \nabla . \left( \epsilon(r) \nabla u(r) \right) = - 4 \pi \rho(r) \]
+\form#87:\[ \nabla^2 u(r) = - \frac{1}{\epsilon(r)} \left( 4 \pi \rho(r) + \nabla \epsilon(r) . \nabla u(r) \right) \]
+\form#88:$\rho / \epsilon$
+\form#89:$\nabla \epsilon . \nabla u / \epsilon$
+\form#90:$-1 / 4 \pi |r-s|$
+\form#91:$G(r,s) = 1/|r-s|$
+\form#92:$-1/4\pi$
+\form#93:\[ u = G * \left(\rho_{\mbox{vol}} + \rho_{\mbox{surf}} \right) \]
+\form#94:\[ \rho_{\mbox{vol}} = \frac{\rho}{\epsilon} \]
+\form#95:\[ \rho_{\mbox{surf}} = \frac{\nabla \epsilon . \nabla u}{4 \pi \epsilon} \]
+\form#96:$R=2$
+\form#97:$\epsilon_1 = 1$
+\form#98:$\epsilon_2 = 10$
+\form#99:\[ u(r) = \left \lbrace \begin{array}{cc} \frac{1}{\epsilon_2 |r|} & |r| > R \\ \frac{1}{\epsilon_1 |r|} + \left( \frac{1}{\epsilon_2} - \frac{1}{\epsilon_1} \right) \frac{1}{R} & |r| < R \end{array} \right . \]
+\form#100:\[ q_{\mbox{surface}} = -\frac{\epsilon_2 - \epsilon_1}{\epsilon_2} = -0.9 \]
+\form#101:$C(r)$
+\form#102:\[ C(r) = H(R-|r|) \]
+\form#103:$H(x)$
+\form#104:\[ \epsilon(r) = \epsilon_1 C(r) + \epsilon_2 \left( 1 - C(r) \right) \]
+\form#105:\[ H(x,\sigma) = \frac{1}{2} \left( 1 + \mathop{\mathrm{erf}} \frac{x}{\sigma} \right) \]
+\form#106:$\sigma$
+\form#107:$\xi=100$
+\form#108:\[ \rho(r) = \left(\pi \xi \right)^{-3/2} e^{-\xi |r|^2} \]
+\form#109:$u(r)$
+\form#110:$m$
+\form#111:\[ u^{(m+1)} = \alpha u^{(m)} + (1-\alpha) G * \left(\rho^{(m)}_{\mbox{vol}} + \rho^{(m)}_{\mbox{surf}} \right) \]
+\form#112:$ \alpha \in [0,1]$
+\form#113:$\alpha$
+\form#114:$f(r)$
+\form#115:$d=3$
+\form#116:$F(x)$
+\form#117:\[ g(r) = F(f(r)) \]
+\form#118:\[ \nabla . \left( \epsilon(r) \nabla v(r) \right) = 0 \]
+\form#119:\[ \nabla^2 v(r) = - \frac{1}{\epsilon} \nabla \epsilon(r) . \nabla v(r) \]
+\form#120:$-1 / |r-s|$
+\form#121:$v(\infty)=0$
+\form#122:$- \partial v / \partial z(\infty) = E$
+\form#123:$v = - E z$
+\form#124:\[ v(r) = - E z + u(r) \]
+\form#125:\[ \nabla^2 u(r) = \frac{1}{\epsilon} \nabla \epsilon(r) . \left(E - \nabla u(r) \right) \]
+\form#126:$\sigma<0.2$
+\form#127:$k=8, \mbox{thresh}=1e-5$
+\form#128:\[ E = \frac{\langle \psi \mid - \frac{1}{2} \nabla^2 - \frac{1}{r} \mid \psi \rangle}{\langle \psi \mid \psi \rangle} \]
+\form#129:\[ \psi(r) = e^{-r} \]
+\form#130:$ \psi(\infty)=0 $
+\form#131:\[ \langle \psi \mid \nabla^2 \mid \psi \rangle = - \langle \nabla \psi \mid \nabla \psi \rangle \]
+\form#132:$-\frac{1}{2}$
+\form#133:\[ \frac{\partial u}{\partial t} = c \nabla^2 u(r,t) \]
+\form#134:\[ \frac{1}{\sqrt{4 \pi c t}} \exp \frac{-x^2}{4 c t} \]
+\form#135:\[ \frac{\partial u(x,t)}{\partial t} = c \nabla^2 u(x,t) + V_p(x,t) u(x,t) \]
+\form#136:$ V_p = 0 $
+\form#137:\[ G_0(x,t) = \frac{1}{\sqrt{4 \pi c t}} \exp \frac{-x^2}{4 c t} \]
+\form#138:$ V_p $
+\form#139:\[ G(x,t) = G_0(x,t/2) * \exp(V_p t) * G_0(x,t/2) + O(t^3) \]
+\form#140:$ V_p(x,t)=\mbox{constant} $
+\form#141:\begin{eqnarray*} \hat{F} \phi(r) &=& \epsilon \phi(r) \\ \hat{F} &=& -\frac{1}{2} \nabla^2 - \frac{2}{r} + u(r) \\ u(r) &=& \int \frac{\rho(s)}{| r - s |} d^3s \\ \rho(r) &=& \phi(r)^2 \end{eqnarray*}
+\form#142:$ u(r) $
+\form#143:$ \rho(r) $
+\form#144:\[ \phi = - 2 G_{\mu} * ( V \phi) \]
+\form#145:$ \mu = \sqrt{-2E} $
+\form#146:$G_{\mu}$
+\form#147:\[ \left( - \nabla^2 + \mu^2 \right) G(r,r^{\prime}) = \delta(r,r^{\prime}) \]
+\form#148:$ \exp(-2r) $
+\form#149:$T~=~-\frac{1}{2} \nabla^2 $
+\form#150:$ \phi $
+\form#151:$ <T \phi, \phi > $
+\form#152:$ < \nabla \phi, \nabla \phi > $
+\form#153:\[ V_(r,\sigma) = \exp \left( \log V_{int} C(r,\sigma) + \log V_{ext} (1 - C(r,\sigma) \right) = V_{ext} \exp \left( \log \frac{V_{int}}{V_{ext}} C(r,\sigma) \right) = V_{int} \exp \left( \log \frac{V_{ext}}{V_{int}} \overline{C}(r,\sigma) \right) \]
+\form#154:$ C(r,\sigma) $
+\form#155:$ \overline{C} $
+\form#156:\[ \nabla \log V = \frac{\nabla V}{V} = \log \frac{V_{int}}{V_{ext}} \nabla C \]
+\form#157:$ \nabla C $
+\form#158:$ \| V_{ext} - V_{int} \| $
+\form#159:$ C $
+\form#160:$ \sigma $
+\form#161:$ \nabla \log \epsilon $
+\form#162:\begin{eqnarray*} u_t - u \cdot \nabla u + \nabla p & = &\mu \Delta u + f \\ \nabla \cdot u & = & 0 \end{eqnarray*}
+\form#163:$ f $
+\form#164:$ \mu $
+\form#165:$ n+1 $
+\form#166:\[ \Delta p = \nabla \cdot (f - u_{n} \cdot \nabla u_{n} ) \]
+\form#167:$p$
+\form#168:\[ (\frac{1}{ \delta t \mu } - \Delta) u_{n+1} = \frac {f - \nabla p - u_n \cdot \nabla u_n }{ \mu } + \frac {u_n}{ \delta t \mu } \]
+\form#169:$u_{n+1}$
+\form#170:\[ -\nabla^2 \psi(x) + V(x) \psi(x) = E \psi(x) \]
+\form#171:\[ V(x) = -a \exp(-b x^2) + \frac{c}{(n(x)+\eta)^{1/3}} - d n(x)^{5/3} + V_{\mbox{shift}} \]
+\form#172:$ a $
+\form#173:$ b $
+\form#174:$ c $
+\form#175:$ d $
+\form#176:$ V_{\mbox{shift}} $
+\form#177:\[ n(x) = \psi(x)^2 \]
+\form#178:\[ \psi = - 2 G_{\mu} * \left ( V \psi \right) \]
+\form#179:$ G_{\mu}$
+\form#180:\[ \left( - \frac{d^2}{dx^2} + \mu^2 \right) G(x,x^{\prime}) = \delta(x-x^{\prime}) \]
+\form#181:$ \eta $
+\form#182:$r(u) = 0$
+\form#183:\[ \int_0^{10} sin(x) dx \]
+\form#184:$ sin(x) $
+\form#185:$ u(0) $
+\form#186:\[ \frac{du}{dt} = \hat{L} u + N(u) \]
+\form#187:$ t $
+\form#188:$ u(t) $
+\form#189:$ \hat{L} $
+\form#190:$ N $
+\form#191:\[ u(t) = \exp(t \hat{L} ) u(0) + \int_0^t \exp((t-\tau)\hat{L}) N(u(\tau)) d\tau \]
+\form#192:$ n $
+\form#193:$ O\left(t^{2n+1}\right) $
+\form#194:$ 1+(n_{it}+1)n +n_{it}n^2 $
+\form#195:$ n_{it} $
+\form#196:$ t+\Delta $
+\form#197:$ \exp{\tau \hat{L}} u $
+\form#198:$ \tau \in (0,\Delta) $
+\form#199:$ T \in (t,t+\Delta) $
+\form#200:$ u $
+\form#201:$ T $
+\form#202:\[ -\nabla^2 \psi(x,t) + V(x,t) \psi(x,t) = i\psi_t(x,t) \]
+\form#203:\[ V(x,t) = -8 \exp((x - v \cdot t)^2) \]
+\form#204:$ v $
+\form#205:\[ \psi(x,t) = \psi(x,0) * G(x,t) - \int_0^t V(x,s) \cdot \psi(x,s) * G(x,t-s) ds \]
+\form#206:$ G $
+\form#207:\[ \left( - \frac{d^2}{dx^2} - i \frac{d}{dt} \right) G(x) = \delta(x)). \]
+\form#208:$ \psi(x,t) $
+\form#209:$n$
+\form#210:$ [0,t] $
+\form#211:$ \psi $
+\form#212:\[ \psi^{m+1}(x,t) - \psi^{m}(x,t) = - \int_0^t V(x,s) \cdot ( \psi^{m}(x,s) - \psi^{m-1}(x,s)) * G(x,t-s) ds \]
+\form#213:\[ \delta^{m+1}(x,t) = - \int_0^t V(x,s) \cdot \delta^{m}(x,s) * G(x,t-s) ds \]
+\form#214:$ \delta^m $
+\form#215:$ m_{th} $
+\form#216:$t$
+\form#217:$ \nabla $
+\form#218:$0 <= \mbox{mask(sdf)} <= 1$
+\form#219:\[ \varphi(d) = \frac{1}{2}\left( 1 - \tanh\left( \frac{3d}{\varepsilon} \right) \right) \]
+\form#220:$d$
+\form#221:\[ B(\varphi) = \frac{36}{\varepsilon} \varphi^2 (1-\varphi)^2. \]
+\form#222:$36/\varepsilon$
+\form#223:\[ \int_{-\infty}^\infty B(s) \, ds = 1 \]
+\form#224:$ |8 \epsilon| $
+\form#225:$ \epsilon $
+\form#226:\[ \int_{-\epsilon/2}^{\epsilon/2} B(s) \, ds \doteq 0.987 \]
+\form#227:\[ \int_{-\epsilon}^{\epsilon} B(s) \, ds \doteq 0.999963 \]
+\form#228:\[ \sqrt{x^2 + y^2} - c * z = 0 \]
+\form#229:$ z $
+\form#230:\[ x^2 + y^2 - c * z == 0 \]
+\form#231:\[ \mathbf{C} \leftarrow \alpha \mathbf{A}^{\mathrm{OpA}} \mathbf{B}^{\mathrm{OpB}} + \beta \mathbf{C} \]
+\form#232:$ \mathbf{A} $
+\form#233:$ \mathbf{B} $
+\form#234:$ \mathbf{C} $
+\form#235:\[ \mathbf{y} \leftarrow \alpha \mathbf{A}^{\mathrm{OpA}} \mathbf{x} + \beta \mathbf{y} \]
+\form#236:$ \mathbf{x} $
+\form#237:$ \mathbf{y} $
+\form#238:\[ \mathbf{A} \leftarrow \alpha \mathbf{x} \mathbf{y}^{\mathrm{T}} + \mathbf{A} \]
+\form#239:$ \mathbf{x} \mathbf{y}^{\mathrm{T}} $
+\form#240:\[ u \leftarrow \alpha \mathbf{x} \cdot \mathbf{y} \]
+\form#241:\[ \mathbf{x} \leftarrow \alpha \mathbf{x} \]
+\form#242:$ \mathbf{A} \vec{x} = \vec{b} $
+\form#243:$\mathbf{A}$
+\form#244:$\vec{b}$
+\form#245:$\vec{x}$
+\form#246:$||\mathbf{A} \vec{x} - \vec{b}||$
+\form#247:$|| \vec{x}_{iter} - \vec{x}_{iter-1}||$
+\form#248:\[ \vec{x} \leftarrow c \vec{x} \]
+\form#249:\[ \vec{x} \leftarrow a \vec{x} + b \vec{y} \]
+\form#250:$ f(x)=0 $
+\form#251:$ j $
+\form#252:$ m $
+\form#253:\begin{eqnarray*} Q_{i j} & = & \langle x_i \mid f_j \rangle \\ A_{i j} & = & \langle x_i - x_m \mid f_j - f_m \rangle = Q_{i j} - Q_{m j} - Q_{i m} + Q{m m} \\ b_i & =& -\langle x_i - x_m \mid f_m \rangle = -Q_{i m} + Q_{m m} \end{eqnarray*}
+\form#254:\[ A c = b \]
+\form#255:\[ c_m = 1 - \sum_{i<m} c_i \]
+\form#256:\[ x_{m+1} = \sum_{i \le m}{c_i ( x_i - f_i)} \]
+\form#257:$ Q $
+\form#258:$ x_i $
+\form#259:$ f_j $
+\form#260:$ R(*,*,\ldots) \rightarrow I(*,*,\ldots) $
+\form#261:$ R(*) \rightarrow I(i,*) $
+\form#262:$ ||v||_2 = \sqrt{\sum_{k=1}^N v_i^2} $

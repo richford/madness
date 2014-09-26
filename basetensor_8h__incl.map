@@ -1,0 +1,8 @@
+<map id="basetensor.h" name="basetensor.h">
+<area shape="rect" id="node3" href="$tensor__macros_8h.html" title="Macros for easy and efficient iteration over tensors. " alt="" coords="105,81,278,124"/>
+<area shape="rect" id="node4" href="$type__data_8h.html" title="Defines and implements TensorTypeData, a type traits class. " alt="" coords="302,81,462,124"/>
+<area shape="rect" id="node5" href="$slice_8h.html" title="Declares and implements Slice. " alt="" coords="486,89,659,117"/>
+<area shape="rect" id="node6" href="$vector__factory_8h.html" title="Declares and implements factories for short vectors. " alt="" coords="528,172,700,216"/>
+<area shape="rect" id="node8" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="734,89,934,117"/>
+<area shape="rect" id="node9" href="$config_8h.html" title="madness/config.h" alt="" coords="765,180,903,208"/>
+</map>

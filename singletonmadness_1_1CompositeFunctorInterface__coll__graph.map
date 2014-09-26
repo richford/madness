@@ -1,0 +1,5 @@
+<map id="madness::CompositeFunctorInterface&lt; T, NDIM, MDIM &gt;" name="madness::CompositeFunctorInterface&lt; T, NDIM, MDIM &gt;">
+<area shape="rect" id="node2" href="$classmadness_1_1FunctionFunctorInterface.html" title="Abstract base class interface required for functors used as input to Functions. " alt="" coords="9,5,200,49"/>
+<area shape="rect" id="node3" href="$singletonmadness_1_1tr1_1_1shptr_1_1shared__ptr.html" title="madness::tr1::shptr\l::shared_ptr\&lt; FunctionImpl\l\&lt; T, MDIM \&gt; \&gt;" alt="" coords="5,80,203,139"/>
+<area shape="rect" id="node4" href="$singletonmadness_1_1tr1_1_1shptr_1_1shared__ptr.html" title="madness::tr1::shptr\l::shared_ptr\&lt; madness\l::FunctionImpl \&gt;" alt="" coords="19,163,189,222"/>
+</map>

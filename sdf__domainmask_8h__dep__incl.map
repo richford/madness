@@ -1,0 +1,12 @@
+<map id="sdf_domainmask.h" name="sdf_domainmask.h">
+<area shape="rect" id="node2" href="$sdf__shape__2D_8h.html" title="Implements the SignedDFInterface for common 2&#45;D geometric objects.This file provides signed distance ..." alt="" coords="100,81,223,109"/>
+<area shape="rect" id="node3" href="$sdf__shape__3D_8h.html" title="Implements the SignedDFInterface for common 3&#45;D geometric objects.This file provides signed distance ..." alt="" coords="247,81,369,109"/>
+<area shape="rect" id="node4" href="$density_8h.html" title="density.h" alt="" coords="20,157,100,184"/>
+<area shape="rect" id="node6" href="$jacob_2moldft_8cc.html" title="moldft.cc" alt="" coords="152,232,234,260"/>
+<area shape="rect" id="node7" href="$svpe_8h.html" title="svpe.h" alt="" coords="175,157,238,184"/>
+<area shape="rect" id="node8" href="$maxwell_8cc.html" title="maxwell.cc" alt="" coords="262,157,354,184"/>
+<area shape="rect" id="node9" href="$colloid_8cc.html" title="colloid.cc" alt="" coords="377,157,460,184"/>
+<area shape="rect" id="node10" href="$molecularsurface_8cc.html" title="molecularsurface.cc" alt="" coords="484,157,633,184"/>
+<area shape="rect" id="node11" href="$sdf__shape__tester_8cc.html" title="Demonstrates/tests use of 3D shape functions. " alt="" coords="658,157,804,184"/>
+<area shape="rect" id="node5" href="$nanophoto_8cc.html" title="Code for the nanophotonics example in the article M.G. Reuter et al., Comput. Phys. Commun. 183, pp. 1&#45;7 (2012). " alt="" coords="5,232,115,260"/>
+</map>

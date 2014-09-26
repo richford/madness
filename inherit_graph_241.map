@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classmadness_1_1FunctionFunctorInterface.html" title="madness::FunctionFunctor\lInterface\&lt; double, NDIM \&gt;" alt="" coords="5,117,201,161"/>
+<area shape="rect" id="node2" href="$classmadness_1_1DomainMaskSDFFunctor.html" title="Framework for combining a signed distance function (sdf) with a domain mask to produce MADNESS functi..." alt="" coords="249,49,491,93"/>
+<area shape="rect" id="node3" href="$classmadness_1_1TwoElectronInterface.html" title="madness::TwoElectronInterface\l\&lt; double, 6 \&gt;" alt="" coords="260,117,481,161"/>
+<area shape="rect" id="node9" href="$classYl0.html" title="Yl0" alt="" coords="349,185,391,213"/>
+<area shape="rect" id="node4" href="$classmadness_1_1BSHFunctionInterface.html" title="a function like f(x) = exp(&#45;mu x)/x " alt="" coords="545,5,768,33"/>
+<area shape="rect" id="node5" href="$classmadness_1_1ElectronRepulsionInterface.html" title="a function like f(x)=1/x " alt="" coords="556,57,757,101"/>
+<area shape="rect" id="node6" href="$classmadness_1_1FGInterface.html" title="a function like f(x) = (1 &#45; exp(&#45;mu x))/x " alt="" coords="577,125,736,153"/>
+<area shape="rect" id="node7" href="$classmadness_1_1SlaterF12Interface.html" title="a function like f(x) = (1 &#45; exp(&#45;mu x))/(2 gamma) " alt="" coords="555,177,758,205"/>
+<area shape="rect" id="node8" href="$classmadness_1_1SlaterFunctionInterface.html" title="a function like f(x)=exp(&#45;mu x) " alt="" coords="539,229,774,257"/>
+</map>

@@ -1,0 +1,31 @@
+<map id="tensor_lapack.h" name="tensor_lapack.h">
+<area shape="rect" id="node2" href="$tensor_8h.html" title="Defines and implements most of Tensor. " alt="" coords="2287,81,2472,109"/>
+<area shape="rect" id="node50" href="$fortran__ctypes_8h.html" title="Corresponding C and Fortran types. " alt="" coords="1665,332,1854,359"/>
+<area shape="rect" id="node3" href="$madness__config_8h.html" title="madness/madness_config.h" alt="" coords="1405,515,1605,542"/>
+<area shape="rect" id="node5" href="$ran_8h.html" title="madness/misc/ran.h" alt="" coords="1341,157,1495,184"/>
+<area shape="rect" id="node25" href="$posixmem_8h.html" title="Implement dummy posix_memalign if it is missing on the system. " alt="" coords="421,157,628,184"/>
+<area shape="rect" id="node27" href="$shared__ptr_8h.html" title="madness/world/shared\l_ptr.h" alt="" coords="25,232,196,276"/>
+<area shape="rect" id="node37" href="$archive_8h.html" title="Interface templates for the archives (serialization) " alt="" coords="2204,240,2390,268"/>
+<area shape="rect" id="node39" href="$basetensor_8h.html" title="Declares BaseTensor. " alt="" coords="2847,332,3061,359"/>
+<area shape="rect" id="node44" href="$aligned_8h.html" title="Provides routines for internal use optimized for aligned data. " alt="" coords="1950,157,2142,184"/>
+<area shape="rect" id="node46" href="$mxm_8h.html" title="Internal use only. " alt="" coords="3091,157,3268,184"/>
+<area shape="rect" id="node47" href="$mtxmq_8h.html" title="madness/tensor/mtxmq.h" alt="" coords="1736,157,1927,184"/>
+<area shape="rect" id="node48" href="$tensorexcept_8h.html" title="Declares and implements TensorException. " alt="" coords="2702,240,2929,268"/>
+<area shape="rect" id="node49" href="$tensoriter_8h.html" title="Declares TensorIterator. " alt="" coords="2352,157,2559,184"/>
+<area shape="rect" id="node4" href="$config_8h.html" title="madness/config.h" alt="" coords="1436,598,1573,626"/>
+<area shape="rect" id="node6" href="$worldthread_8h.html" title="Implements Dqueue, Thread, ThreadBase and ThreadPool. " alt="" coords="820,240,1038,268"/>
+<area shape="rect" id="node7" href="$TAU_8h.html" title="madness/TAU.h" alt="" coords="983,332,1106,359"/>
+<area shape="rect" id="node8" href="$dqueue_8h.html" title="Implements DQueue. " alt="" coords="1401,332,1590,359"/>
+<area shape="rect" id="node16" href="$typestuff_8h.html" title="Grossly simplified Boost&#45;like type traits and templates. " alt="" coords="1181,332,1378,359"/>
+<area shape="rect" id="node17" href="$type__traits_8h.html" title="madness/world/type\l_traits.h" alt="" coords="914,415,1069,459"/>
+<area shape="rect" id="node18" href="$enable__if_8h.html" title="madness/world/enable_if.h" alt="" coords="2171,423,2369,451"/>
+<area shape="rect" id="node19" href="$function__traits__bits_8h.html" title="madness/world/function\l_traits_bits.h" alt="" coords="1338,415,1519,459"/>
+<area shape="rect" id="node28" href="$boost__checked__delete__bits_8h.html" title="madness/world/boost\l_checked_delete_bits.h" alt="" coords="25,324,195,367"/>
+<area shape="rect" id="node29" href="$shared__ptr__bits_8h.html" title="madness/world/shared\l_ptr_bits.h" alt="" coords="321,324,492,367"/>
+<area shape="rect" id="node30" href="$atomicint_8h.html" title="madness/world/atomicint.h" alt="" coords="584,423,785,451"/>
+<area shape="rect" id="node31" href="$worldexc_8h.html" title="Implements MadnessException. " alt="" coords="1948,423,2146,451"/>
+<area shape="rect" id="node40" href="$tensor__macros_8h.html" title="Macros for easy and efficient iteration over tensors. " alt="" coords="2849,415,3022,459"/>
+<area shape="rect" id="node41" href="$type__data_8h.html" title="Defines and implements TensorTypeData, a type traits class. " alt="" coords="3046,415,3206,459"/>
+<area shape="rect" id="node42" href="$slice_8h.html" title="Declares and implements Slice. " alt="" coords="3230,423,3403,451"/>
+<area shape="rect" id="node43" href="$vector__factory_8h.html" title="Declares and implements factories for short vectors. " alt="" coords="3231,507,3403,550"/>
+</map>
